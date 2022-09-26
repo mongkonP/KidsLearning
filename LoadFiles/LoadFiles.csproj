@@ -7,14 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="TORServices.Forms">
-      <HintPath>..\..\..\testClassTOR\TORServices\File DLL\TORServices.Forms.dll</HintPath>
-    </Reference>
     <Reference Include="TORServices.Network">
-      <HintPath>..\..\..\testClassTOR\TORServices\File DLL\TORServices.Network.dll</HintPath>
+      <HintPath>..\..\..\Test_Code\test_Csharp_TOR\testClassTOR\TORServices\File DLL\TORServices.Network.dll</HintPath>
     </Reference>
     <Reference Include="TORServices.Systems">
-      <HintPath>..\..\..\testClassTOR\TORServices\File DLL\TORServices.Systems.dll</HintPath>
+      <HintPath>..\..\..\Test_Code\test_Csharp_TOR\testClassTOR\TORServices\File DLL\TORServices.Systems.dll</HintPath>
     </Reference>
   </ItemGroup>
 

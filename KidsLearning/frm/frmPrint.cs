@@ -152,7 +152,7 @@ namespace KidsLearning.frm
         {
            panel1.Controls.Clear();
 
-           panel1.Controls.Add(new prnMath_010DateTime003AD_BE());
+           //panel1.Controls.Add(new prnMath_010DateTime003AD_BE());
 
             // pictureBox1.Image = KidsLearning.Classed.Exten.ExtGraphics.ImageFromNumber(12);
             // pictureBox2.Image = KidsLearning.Classed.Exten.ExtGraphics.ImageFromNumber(12,100,100);
