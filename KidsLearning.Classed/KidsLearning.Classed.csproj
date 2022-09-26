@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.7.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\testClassTOR\TORServices\File DLL\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack">
+      <HintPath>..\..\..\testClassTOR\TORServices\File DLL\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell">
+      <HintPath>..\..\..\testClassTOR\TORServices\File DLL\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Drawings">
+      <HintPath>..\..\..\testClassTOR\TORServices\File DLL\TORServices.Drawings.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Forms">
+      <HintPath>..\..\..\testClassTOR\TORServices\File DLL\TORServices.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Maths">
+      <HintPath>..\..\..\testClassTOR\TORServices\File DLL\TORServices.Maths.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.PathFile">
+      <HintPath>..\..\..\testClassTOR\TORServices\File DLL\TORServices.PathFile.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Systems">
+      <HintPath>..\..\..\testClassTOR\TORServices\File DLL\TORServices.Systems.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Controls\NumberSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\PanelPrint.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="frmAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmWaitFormDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

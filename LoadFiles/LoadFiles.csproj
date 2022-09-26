@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="TORServices.Forms">
+      <HintPath>..\..\..\testClassTOR\TORServices\File DLL\TORServices.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Network">
+      <HintPath>..\..\..\testClassTOR\TORServices\File DLL\TORServices.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Systems">
+      <HintPath>..\..\..\testClassTOR\TORServices\File DLL\TORServices.Systems.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

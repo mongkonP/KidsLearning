@@ -1,0 +1,220 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Ext\" />
+    <Folder Include="ptnBio\" />
+    <Folder Include="ptnMth\P_1\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="5.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KidsLearning.Classed\KidsLearning.Classed.csproj" />
+    <ProjectReference Include="..\KidsLearning.Control\KidsLearning.Control.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="EPPlus">
+      <HintPath>X:\DATA_LAB\DATA_LAB\EPPlus.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="TORServices.Drawings">
+      <HintPath>..\..\..\testClassTOR\TORServices\File DLL\TORServices.Drawings.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Forms">
+      <HintPath>..\..\..\testClassTOR\TORServices\File DLL\TORServices.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Maths">
+      <HintPath>..\..\..\testClassTOR\TORServices\File DLL\TORServices.Maths.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Systems">
+      <HintPath>..\..\..\testClassTOR\TORServices\File DLL\TORServices.Systems.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="ptnChem\ptnChem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnCoding\ptnCoding_Flowchart_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnEng\prnEng002WordLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnEng\prnEngWordSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnEng\prnEng003Sentences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnEng\prnEng002SpellingWord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnEng\prnEng001CompareTh_En.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnEng\prnEng.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m02OP\op002Minus_pic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m02OP\op004PlusMinus_Num_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m02OP\op007MultipliedDivide_05Positive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m02OP\op007MultipliedDivide_04SubSection_Detail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m02OP\op007MultipliedDivide_03SubSection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m02OP\op006NumberByLine_PlusMinus.cs" />
+    <Compile Update="ptnMth\m01Num\num008Odd01Pic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m02OP\op010FractionRuleofthreePercent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m05GaugeUnit\prnMath_010DateTime001Time.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m01Num\num009Fraction_02NumberConvert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m02OP\op009Fraction02SortDivision.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m02OP\op009Fraction01LongDivision.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m01Num\num009Fraction_LongDivision.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m02OP\op010FractionPlusMinus_02Num.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m04Trigono\prnMath_015GaugeLength_02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m06Equation\prnMath_013Money_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m06Equation\prnMath_013Money_4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m06Equation\prnMath_013Money_3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m05GaugeUnit\prnMath_010DateTime004AD_BE_Age.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnPhy\ptnPhy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnSci\ptnSci.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnTh\ptnTh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="prnEng - Copy.resx">
+      <DependentUpon>prnEng.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnEng\prnEng - Copy - Copy %282%29 - Copy %282%29.resx">
+      <DependentUpon>prnEng.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnEng\prnEng - Copy - Copy %282%29 - Copy - Copy.resx">
+      <DependentUpon>prnEng.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnEng\prnEng - Copy - Copy %282%29 - Copy.resx">
+      <DependentUpon>prnEng.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnEng\prnEng - Copy - Copy %282%29.resx">
+      <DependentUpon>prnEng.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnEng\prnEng - Copy - Copy %283%29 - Copy.resx">
+      <DependentUpon>prnEng.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnEng\prnEng - Copy - Copy %283%29.resx">
+      <DependentUpon>prnEng.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnEng\prnEng - Copy - Copy %284%29.resx">
+      <DependentUpon>prnEng.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnEng\prnEng - Copy - Copy - Copy %282%29 - Copy.resx">
+      <DependentUpon>prnEng.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnEng\prnEng - Copy - Copy - Copy %282%29.resx">
+      <DependentUpon>prnEng.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnEng\prnEng - Copy - Copy - Copy %283%29.resx">
+      <DependentUpon>prnEng.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnEng\prnEng - Copy - Copy - Copy - Copy %282%29.resx">
+      <DependentUpon>prnEng - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnEng\prnEng - Copy - Copy - Copy - Copy - Copy.resx">
+      <DependentUpon>prnEng - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnEng\prnEng - Copy - Copy - Copy - Copy.resx">
+      <DependentUpon>prnEng - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnEng\prnEng - Copy - Copy - Copy.resx">
+      <DependentUpon>prnEng - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnEng\prnEng - Copy - Copy.resx">
+      <DependentUpon>prnEng.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnEng\prnEng - Copy.resx">
+      <DependentUpon>prnEng.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnMth\prnMath_93Money_1 - Copy %282%29 - Copy.resx">
+      <DependentUpon>prnMath_93Money_1 - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnMth\prnMath_93Money_1 - Copy %282%29.resx">
+      <DependentUpon>prnMath_93Money_1.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnMth\prnMath_93Money_1 - Copy %283%29.resx">
+      <DependentUpon>prnMath_93Money_1.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnMth\prnMath_93Money_1 - Copy - Copy %282%29.resx">
+      <DependentUpon>prnMath_93Money_1 - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnMth\prnMath_93Money_1 - Copy - Copy - Copy.resx">
+      <DependentUpon>prnMath_93Money_1 - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnMth\prnMath_93Money_1 - Copy - Copy.resx">
+      <DependentUpon>prnMath_93Money_1 - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnMth\prnMath_93Money_1 - Copy.resx">
+      <DependentUpon>prnMath_93Money_1.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ptnMth\m05GaugeUnit\prnMath_95DateTime_AD_BE - Copy.resx">
+      <DependentUpon>prnMath_010DateTime003AD_BE.resx</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
