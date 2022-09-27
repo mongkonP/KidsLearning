@@ -52,7 +52,7 @@ namespace KidsLearning.Print.ptnMth.m01Num
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.numberSelect1);
-            this.groupBox1.Size = new System.Drawing.Size(470, 739);
+            this.groupBox1.Size = new System.Drawing.Size(470, 602);
             this.groupBox1.Controls.SetChildIndex(this.numberSelect1, 0);
             this.groupBox1.Controls.SetChildIndex(this.panel2, 0);
             // 
@@ -65,11 +65,11 @@ namespace KidsLearning.Print.ptnMth.m01Num
             // groupBox2
             // 
             this.groupBox2.Location = new System.Drawing.Point(470, 0);
-            this.groupBox2.Size = new System.Drawing.Size(1001, 739);
+            this.groupBox2.Size = new System.Drawing.Size(894, 602);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(995, 717);
+            this.printPreviewControl1.Size = new System.Drawing.Size(888, 580);
             // 
             // numberSelect1
             // 
@@ -80,11 +80,11 @@ namespace KidsLearning.Print.ptnMth.m01Num
             this.numberSelect1.TabIndex = 2;
             this.numberSelect1.NumberSelectChanged += new System.EventHandler(this.numberSelect1_NumberSelectChanged);
             // 
-            // prnMath_004NumberArabicThaiStringRoman
+            // num004NumberArabicThaiStringRoman
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.Name = "prnMath_004NumberArabicThaiStringRoman";
-            this.Size = new System.Drawing.Size(1471, 739);
+            this.Name = "num004NumberArabicThaiStringRoman";
+            this.Size = new System.Drawing.Size(1364, 602);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

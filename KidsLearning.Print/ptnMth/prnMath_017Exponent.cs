@@ -48,7 +48,7 @@ namespace KidsLearning.Print.ptnMth
             // 
             // groupBox1
             // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 791);
+            this.groupBox1.Size = new System.Drawing.Size(250, 602);
             // 
             // panel2
             // 
@@ -57,17 +57,17 @@ namespace KidsLearning.Print.ptnMth
             // 
             // groupBox2
             // 
-            this.groupBox2.Size = new System.Drawing.Size(722, 791);
+            this.groupBox2.Size = new System.Drawing.Size(872, 602);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(716, 769);
+            this.printPreviewControl1.Size = new System.Drawing.Size(866, 580);
             // 
             // prnMath_017Exponent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.Name = "prnMath_017Exponent";
-            this.Size = new System.Drawing.Size(972, 791);
+            this.Size = new System.Drawing.Size(1122, 602);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

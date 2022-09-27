@@ -53,7 +53,8 @@ namespace KidsLearning.Print.ptnMth.m04Trigono
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(3, 593);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(3, 19);
             // 
             // groupBox2
             // 

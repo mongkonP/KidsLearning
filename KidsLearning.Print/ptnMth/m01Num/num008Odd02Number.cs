@@ -54,7 +54,7 @@ namespace KidsLearning.Print.ptnMth.m01Num
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.numberSelect1);
-            this.groupBox1.Size = new System.Drawing.Size(493, 760);
+            this.groupBox1.Size = new System.Drawing.Size(493, 602);
             this.groupBox1.Controls.SetChildIndex(this.numberSelect1, 0);
             this.groupBox1.Controls.SetChildIndex(this.panel2, 0);
             // 
@@ -67,11 +67,11 @@ namespace KidsLearning.Print.ptnMth.m01Num
             // groupBox2
             // 
             this.groupBox2.Location = new System.Drawing.Point(493, 0);
-            this.groupBox2.Size = new System.Drawing.Size(787, 760);
+            this.groupBox2.Size = new System.Drawing.Size(871, 602);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(781, 738);
+            this.printPreviewControl1.Size = new System.Drawing.Size(865, 580);
             // 
             // numberSelect1
             // 
@@ -83,11 +83,11 @@ namespace KidsLearning.Print.ptnMth.m01Num
             this.numberSelect1.NumberSelectChanged += new System.EventHandler(this.numberSelect1_NumberSelectChanged);
             this.numberSelect1.MouseCaptureChanged += new System.EventHandler(this.numberSelect1_MouseCaptureChanged);
             // 
-            // prnMath_008Odd02Number
+            // num008Odd02Number
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.Name = "prnMath_008Odd02Number";
-            this.Size = new System.Drawing.Size(1280, 760);
+            this.Name = "num008Odd02Number";
+            this.Size = new System.Drawing.Size(1364, 602);
             this.Load += new System.EventHandler(this.prnMath_01Num07Odd02Number_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

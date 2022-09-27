@@ -337,13 +337,13 @@ namespace KidsLearning.frm
             // 
             this.menuCount16.Name = "menuCount16";
             this.menuCount16.Size = new System.Drawing.Size(476, 30);
-            this.menuCount16.Text = "toolStripMenuItem11";
+            this.menuCount16.Text = "ตัวประกอบของจำนวนนับ";
             // 
             // menuCount17
             // 
             this.menuCount17.Name = "menuCount17";
             this.menuCount17.Size = new System.Drawing.Size(476, 30);
-            this.menuCount17.Text = "toolStripMenuItem12";
+            this.menuCount17.Text = "เลขนัยสำคัญ และ การปัดเศษ";
             // 
             // menuCount18
             // 
@@ -527,13 +527,13 @@ namespace KidsLearning.frm
             // 
             this.nemuOP16.Name = "nemuOP16";
             this.nemuOP16.Size = new System.Drawing.Size(513, 30);
-            this.nemuOP16.Text = "toolStripMenuItem16";
+            this.nemuOP16.Text = "การบวกลบ เศษส่วน แบบรูปภาพ";
             // 
             // nemuOP17
             // 
             this.nemuOP17.Name = "nemuOP17";
             this.nemuOP17.Size = new System.Drawing.Size(513, 30);
-            this.nemuOP17.Text = "toolStripMenuItem17";
+            this.nemuOP17.Text = "+,-,x,÷ เศษส่วน แบบตัวเลข";
             // 
             // nemuOP18
             // 

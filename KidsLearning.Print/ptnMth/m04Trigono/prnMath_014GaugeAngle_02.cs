@@ -50,10 +50,12 @@ namespace KidsLearning.Print.ptnMth.m04Trigono
             // groupBox1
             // 
             this.groupBox1.Size = new System.Drawing.Size(250, 699);
+            
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(3, 577);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(3, 19);
             // 
             // groupBox2
             // 
@@ -98,7 +100,7 @@ namespace KidsLearning.Print.ptnMth.m04Trigono
                     pen.EndCap = LineCap.ArrowAnchor;
                     e.Graphics.DrawLine(pen, xC + 200, yC, 600, yC);
                 }
-                e.Graphics.DrawString($"มุม {RandomNumberGenerator.GetInt32(30, 170)} องศา ", fontDetail, new SolidBrush(Color.Black), xC + 200, yC);
+                e.Graphics.DrawString($"มุม {RandomNumberGenerator.GetInt32(30, 170)} องศา ", fontDetail, new SolidBrush(Color.Black), xC + 500, yC - 50);
 
 
 

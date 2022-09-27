@@ -56,7 +56,7 @@ namespace KidsLearning.Print.ptnMth.m01Num
             // 
             this.groupBox1.Controls.Add(this.checkBox2);
             this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 699);
+            this.groupBox1.Size = new System.Drawing.Size(250, 602);
             this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
             this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
             this.groupBox1.Controls.SetChildIndex(this.panel2, 0);
@@ -68,11 +68,11 @@ namespace KidsLearning.Print.ptnMth.m01Num
             // 
             // groupBox2
             // 
-            this.groupBox2.Size = new System.Drawing.Size(948, 699);
+            this.groupBox2.Size = new System.Drawing.Size(1114, 602);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(942, 677);
+            this.printPreviewControl1.Size = new System.Drawing.Size(1108, 580);
             // 
             // checkBox1
             // 
@@ -100,11 +100,11 @@ namespace KidsLearning.Print.ptnMth.m01Num
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.Click += new System.EventHandler(this.checkBox1_Click);
             // 
-            // prnMath_011Num09Fraction_01
+            // num009Fraction_01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.Name = "prnMath_011Num09Fraction_01";
-            this.Size = new System.Drawing.Size(1198, 699);
+            this.Name = "num009Fraction_01";
+            this.Size = new System.Drawing.Size(1364, 602);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel2.ResumeLayout(false);

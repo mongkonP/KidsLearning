@@ -297,13 +297,13 @@ namespace KidsLearning.frm
         private void menuCount16_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
+            panel1.Controls.Add(new num010NumSubdivision());
         }
 
         private void menuCount17_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
+            panel1.Controls.Add(new num011SignificantFigure01());
         }
 
         private void menuCount18_Click(object sender, EventArgs e)
@@ -593,13 +593,13 @@ namespace KidsLearning.frm
         private void nemuOP16_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
+            panel1.Controls.Add(new op010FractionPlusMinus_01Pic());
         }
 
         private void nemuOP17_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
+            panel1.Controls.Add(new op010FractionPlusMinus_02Num());
         }
 
         private void nemuOP18_Click(object sender, EventArgs e)

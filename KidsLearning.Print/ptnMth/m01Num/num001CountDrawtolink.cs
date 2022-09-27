@@ -29,7 +29,7 @@ namespace KidsLearning.Print.ptnMth.m01Num
             // 
             // groupBox1
             // 
-            this.groupBox1.Size = new System.Drawing.Size(244, 707);
+            this.groupBox1.Size = new System.Drawing.Size(244, 602);
             // 
             // panel2
             // 
@@ -40,17 +40,17 @@ namespace KidsLearning.Print.ptnMth.m01Num
             // groupBox2
             // 
             this.groupBox2.Location = new System.Drawing.Point(244, 0);
-            this.groupBox2.Size = new System.Drawing.Size(1257, 707);
+            this.groupBox2.Size = new System.Drawing.Size(1120, 602);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(1251, 685);
+            this.printPreviewControl1.Size = new System.Drawing.Size(1114, 580);
             // 
-            // prnMath_001Drawtolink
+            // num001CountDrawtolink
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.Name = "prnMath_001Drawtolink";
-            this.Size = new System.Drawing.Size(1501, 707);
+            this.Name = "num001CountDrawtolink";
+            this.Size = new System.Drawing.Size(1364, 602);
             this.Load += new System.EventHandler(this.prnMath_01_Num_01_1to50_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

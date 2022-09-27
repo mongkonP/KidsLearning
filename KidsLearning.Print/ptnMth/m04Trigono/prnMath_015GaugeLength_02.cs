@@ -49,25 +49,26 @@ namespace KidsLearning.Print.ptnMth.m04Trigono
             // 
             // groupBox1
             // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 715);
+            this.groupBox1.Size = new System.Drawing.Size(250, 602);
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(3, 593);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(3, 19);
             // 
             // groupBox2
             // 
-            this.groupBox2.Size = new System.Drawing.Size(781, 715);
+            this.groupBox2.Size = new System.Drawing.Size(1032, 602);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(775, 693);
+            this.printPreviewControl1.Size = new System.Drawing.Size(1026, 580);
             // 
-            // prnMath_91_Num_01_1to15_5
+            // prnMath_015GaugeLength_02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.Name = "prnMath_91_Num_01_1to15_5";
-            this.Size = new System.Drawing.Size(1031, 715);
+            this.Name = "prnMath_015GaugeLength_02";
+            this.Size = new System.Drawing.Size(1282, 602);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
