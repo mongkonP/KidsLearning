@@ -84,6 +84,15 @@
     <Compile Update="ptnEng\prnEng.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ptnMth\m01Num\num011_03.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m01Num\num011_02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m01Num\num011Decimal_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="ptnMth\m01Num\num011SignificantFigure01.cs">
       <SubType>UserControl</SubType>
     </Compile>

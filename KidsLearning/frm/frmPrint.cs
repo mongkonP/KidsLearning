@@ -309,7 +309,7 @@ namespace KidsLearning.frm
         private void menuCount18_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
+            panel1.Controls.Add(new num011Decimal_01());
         }
 
         private void menuCount19_Click(object sender, EventArgs e)

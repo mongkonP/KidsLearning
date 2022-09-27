@@ -349,7 +349,7 @@ namespace KidsLearning.frm
             // 
             this.menuCount18.Name = "menuCount18";
             this.menuCount18.Size = new System.Drawing.Size(476, 30);
-            this.menuCount18.Text = "toolStripMenuItem13";
+            this.menuCount18.Text = "การคูณ/หาร ทศนิยมด้วย 10 100 และ 1,000";
             // 
             // menuCount19
             // 

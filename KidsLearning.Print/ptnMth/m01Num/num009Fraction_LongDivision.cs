@@ -69,7 +69,7 @@ namespace KidsLearning.Print.ptnMth.m01Num
             // 
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Controls.Add(this.panel3);
-            this.groupBox1.Size = new System.Drawing.Size(250, 707);
+            this.groupBox1.Size = new System.Drawing.Size(250, 607);
             this.groupBox1.Controls.SetChildIndex(this.panel3, 0);
             this.groupBox1.Controls.SetChildIndex(this.panel1, 0);
             this.groupBox1.Controls.SetChildIndex(this.panel2, 0);
@@ -81,11 +81,11 @@ namespace KidsLearning.Print.ptnMth.m01Num
             // 
             // groupBox2
             // 
-            this.groupBox2.Size = new System.Drawing.Size(1127, 707);
+            this.groupBox2.Size = new System.Drawing.Size(1131, 607);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(1121, 685);
+            this.printPreviewControl1.Size = new System.Drawing.Size(1125, 585);
             // 
             // panel1
             // 
@@ -185,11 +185,11 @@ namespace KidsLearning.Print.ptnMth.m01Num
             this.rd_4.UseVisualStyleBackColor = true;
             this.rd_4.CheckedChanged += new System.EventHandler(this.rd_CheckedChanged);
             // 
-            // prnMath_011Num09Fraction_LongDivision
+            // num009Fraction_LongDivision
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.Name = "prnMath_011Num09Fraction_LongDivision";
-            this.Size = new System.Drawing.Size(1377, 707);
+            this.Name = "num009Fraction_LongDivision";
+            this.Size = new System.Drawing.Size(1381, 607);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

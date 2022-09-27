@@ -11,10 +11,10 @@ using TORServices.Drawings;
 
 namespace KidsLearning.Print.ptnMth.m01Num
 {
-   public partial class num010NumSubdivision : prnControl
+   public partial class num011_02 : prnControl
     {
 
-        public num010NumSubdivision()
+        public num011_02()
         {
             InitializeComponent();
         }
@@ -25,13 +25,13 @@ namespace KidsLearning.Print.ptnMth.m01Num
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Size = new System.Drawing.Size(244, 607);
-            // 
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Size = new System.Drawing.Size(244, 607);
             // 
             // panel2
             // 
@@ -58,18 +58,18 @@ namespace KidsLearning.Print.ptnMth.m01Num
             // groupBox2
             // 
             this.groupBox2.Location = new System.Drawing.Point(244, 0);
-            this.groupBox2.Size = new System.Drawing.Size(1137, 607);
+            this.groupBox2.Size = new System.Drawing.Size(1053, 607);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(1131, 585);
+            this.printPreviewControl1.Size = new System.Drawing.Size(1047, 585);
             // 
             // num010NumSubdivision
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.Name = "num010NumSubdivision";
-            this.Size = new System.Drawing.Size(1381, 607);
-            this.Load += new System.EventHandler(this.prnMath_01_Num_01_1to50_Load);
+            this.Size = new System.Drawing.Size(1297, 607);
+            this.Load += new System.EventHandler(this.prn_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -82,16 +82,16 @@ namespace KidsLearning.Print.ptnMth.m01Num
         #region Variables
 
         int minValue = 10, maxValue = 200;
-   
+        Random random = new Random();
         #endregion
 
 
 
    
-        private void prnMath_01_Num_01_1to50_Load(object sender, EventArgs e)
+        private void prn_Load(object sender, EventArgs e)
         {
             ReportHeader = "การทดสอบ เกี่ยวกับ ตัวเลข ";
-            ReportToppic = "ตัวประกอบของจำนวนนับ";
+            ReportToppic = "เลขนัยสำคัญ และ การปัดเศษ";
             printPreviewControl1.Document = this.printDocument1;
         }
 
@@ -106,27 +106,18 @@ namespace KidsLearning.Print.ptnMth.m01Num
 
             int yC = 150, xC = 100;
             int w = 50, h = 35,wr = 25;
-            int aa;
-            for (int i = 0; i < 4; i++)
+            double aa;
+            for (int i = 0; i < 8; i++)
             {
-                aa = RandomNumberGenerator.GetInt32(minValue, maxValue);
-                e.Graphics.DrawRectangleString(aa.ToString(), fontDetail, new Pen(Color.Black, 3), new Rectangle(xC, yC, w , h));
-
-
-                for (int a = 1; a < 9; a++)
-                {
-                    e.Graphics.DrawRectangle(new Pen(Color.Black, 1), new Rectangle(xC + a*(w + wr), yC, w, h));
-                    e.Graphics.DrawRectangle(new Pen(Color.Black, 1), new Rectangle(xC + a * (w + wr), yC+2*h, w, h));
-
-                    e.Graphics.DrawLine(new Pen(Color.Black, 3), xC + a * (w + wr), yC + h / 2, xC + a * (w + wr) - wr, yC + h / 2);
-                    
-                    e.Graphics.DrawLine(new Pen(Color.Black, 3), xC+a*(w+wr)+w/2, yC + h , xC + a * (w + wr) + w / 2, yC + 2 * h);
-
-                }
-
-                e.Graphics.DrawString($"ดังนั้น {aa} สามารถนำมาแยกตัวประกอบได้เป็น \n _______________________________________________________", 
-                    new Font("Angsana New", 18), new SolidBrush(Color.Black), xC, yC+ 4 * h ); 
-                yC += 6*h + 10 ;
+              
+                aa = random.NextDouble()* RandomNumberGenerator.GetInt32(minValue, maxValue);
+            
+                int bb = RandomNumberGenerator.GetInt32(3, 10);
+                int cc = RandomNumberGenerator.GetInt32(0, bb);
+                e.Graphics.DrawString("ให้เขียน " +aa.ToString("N"+ bb) +" ให้อยู่ในรูปแบบ " +((cc==0)? " จำนวนเต็ม " :$"ทศนิยม {cc} ตำแหน่ง")+ " \n _______________________________________________________",
+                    new Font("Angsana New", 18), new SolidBrush(Color.Black), xC, yC);
+                
+                yC += 160 ;
 
             }
 
