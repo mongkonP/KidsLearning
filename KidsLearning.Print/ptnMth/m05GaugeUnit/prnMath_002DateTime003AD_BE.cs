@@ -1,4 +1,4 @@
-﻿using KidsLearning.Classed.Exten;
+using KidsLearning.Classed.Exten;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -12,11 +12,11 @@ using TORServices.Maths;
 using static TORServices.Maths.extMath;
 using TORServices.Drawings;
 
-namespace KidsLearning.Print.ptnMth.m01Num
+namespace KidsLearning.Print.ptnMth.m05GaugeUnit
 {
-  public partial  class num009Fraction_02Compare:prnControl
+  public partial  class prnMath_002DateTime003AD_BE:prnControl
     {
-        public num009Fraction_02Compare()
+        public prnMath_002DateTime003AD_BE()
         {
             InitializeComponent();
             this.Load += new System.EventHandler(this.frm_Load);
@@ -31,8 +31,8 @@ namespace KidsLearning.Print.ptnMth.m01Num
         #endregion
         private void frm_Load(object sender, EventArgs e)
         {
-            ReportHeader = "การทดสอบ เกี่ยวกับ ตัวเลข ";
-            ReportToppic = "เขียนเศษส่วน และ ใส่เครื่องหมาย < > =  ในช่องสี่เหลี่ยม";
+            ReportHeader = "การทดสอบ เกี่ยวกับ วัน เวลา ";
+            ReportToppic = "การแปลง พ.ศ. (พุทธศักราช) กับ ค.ศ. (คริสต์ศักราช) \n *** พ.ศ. = ค.ศ. + 543 ";
             iPage = 1;
             iPageAll = 1;
             
@@ -48,7 +48,7 @@ namespace KidsLearning.Print.ptnMth.m01Num
             // 
             // groupBox1
             // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 667);
+            this.groupBox1.Size = new System.Drawing.Size(250, 640);
             // 
             // panel2
             // 
@@ -57,17 +57,17 @@ namespace KidsLearning.Print.ptnMth.m01Num
             // 
             // groupBox2
             // 
-            this.groupBox2.Size = new System.Drawing.Size(694, 667);
+            this.groupBox2.Size = new System.Drawing.Size(1122, 640);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(688, 645);
+            this.printPreviewControl1.Size = new System.Drawing.Size(1116, 618);
             // 
-            // num009Fraction_02Compare
+            // prnMath_95DateTime_AD_BE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.Name = "num009Fraction_02Compare";
-            this.Size = new System.Drawing.Size(944, 667);
+            this.Name = "prnMath_95DateTime_AD_BE";
+            this.Size = new System.Drawing.Size(1372, 640);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -83,36 +83,20 @@ namespace KidsLearning.Print.ptnMth.m01Num
 
             #region _Draw Detail
 
-            List<int> Nums = new List<int>();
-            int yC = 100;
-            int xC = 100;
-            int w = 30, h = 30;
-            Pen pen = new Pen(Color.Black, 2);
-            SolidBrush solidBrush = new SolidBrush(Color.White);
-
-            xC = 150;
-            yC = yC + 30;
-            Font font = new Font("Arial", 24, FontStyle.Bold);
-
-            for (int i = 1; i <= 5; i++)
+            int yC = 100, xC = 100;
+            for (int i = 0; i < 6; i++)
             {
+                string str = "";
+                string s = (RandomNumberGenerator.GetInt32(0, 1000) < 500) ? "พ.ศ." : "ค.ศ.";
+                int c = (s == "พ.ศ.") ? RandomNumberGenerator.GetInt32(2525, 2570) : RandomNumberGenerator.GetInt32(1981, 2030);
+                str = $" ในปี {s} {c} ตรงกับ {((s == "พ.ศ.") ? "ค.ศ." : "พ.ศ.")} ใด  " +
+                    $"\n วิธีทำ __________________________________________________" +
+                    $"\n _______________________________________________________" +
+                    $"\n                         ตอบ_______________ #";
 
-                int a = RandomNumberGenerator.GetInt32(3, 6);
-                int b = RandomNumberGenerator.GetInt32(3, 6);
-                int c = RandomNumberGenerator.GetInt32(1, a * b);
+                e.Graphics.DrawString(str, fontDetail, new SolidBrush(Color.Black), xC + 50, yC + 50);
 
-
-                e.Graphics.DrawTable(pen, xC, yC, w, h, a, b, c);
-
-                e.Graphics.DrawLine(new Pen(Brushes.Black, 3), xC + 200, yC + (h * b) / 2, xC + 240, yC + (h * b) / 2);
-
-                c = RandomNumberGenerator.GetInt32(1, a * b);
-                e.Graphics.DrawTable(pen, xC+400, yC, w, h, a, b, c);
-                e.Graphics.DrawLine(new Pen(Brushes.Black, 3), xC + 310, yC + (h * b) / 2, xC + 350, yC + (h * b) / 2);
-
-                // Draw rectangle to screen.
-                e.Graphics.DrawRectangle(new Pen(Color.Black, 3), new Rectangle(xC + 250, yC + (h * b) / 2 - 25, 50, 50));
-                yC = yC + b * h + 50;
+                yC += 150;
 
             }
 

@@ -41,35 +41,36 @@ namespace KidsLearning.Print.ptnMth
 
         private void InitializeComponent()
         {
-            this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 791);
-            // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(3, 669);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(3, 19);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Size = new System.Drawing.Size(250, 602);
             // 
             // groupBox2
             // 
-            this.groupBox2.Size = new System.Drawing.Size(777, 791);
+            this.groupBox2.Size = new System.Drawing.Size(872, 602);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(771, 769);
+            this.printPreviewControl1.Size = new System.Drawing.Size(866, 580);
             // 
             // prnMath_
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.Name = "prnMath_";
-            this.Size = new System.Drawing.Size(1027, 791);
-            this.groupBox1.ResumeLayout(false);
+            this.Size = new System.Drawing.Size(1122, 602);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 

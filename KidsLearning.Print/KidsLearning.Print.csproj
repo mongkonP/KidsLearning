@@ -84,6 +84,28 @@
     <Compile Update="ptnEng\prnEng.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ptnMth\m01Num\num011Decimal_Fraction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m01Num\num011Decimal_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m01Num\num011SignificantFigure01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m01Num\num012gcf_lcm.cs" />
+    <Compile Update="ptnMth\m01Num\num_.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m02OP\op011Decimal_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m02OP\op011SignificantFigure01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m01Num\num010NumSubdivision.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="ptnMth\m02OP\op002Minus_pic.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -106,7 +128,22 @@
     <Compile Update="ptnMth\m02OP\op010FractionRuleofthreePercent.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="ptnMth\m05GaugeUnit\prnMath_010DateTime001Time.cs">
+    <Compile Update="ptnMth\m03Stat\st_002chart01dotgraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m03Stat\st_002chart04linegraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m03Stat\st_002chart03Piechart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m03Stat\st_002chart02barchart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m03Stat\st_.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m05GaugeUnit\prnMath_001DateTime001Time.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ptnMth\m01Num\num009Fraction_02NumberConvert.cs">
@@ -127,6 +164,9 @@
     <Compile Update="ptnMth\m04Trigono\prnMath_015GaugeLength_02.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ptnMth\m05GaugeUnit\prnMath_003DateTimeCompare.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="ptnMth\m06Equation\prnMath_013Money_2.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -136,7 +176,7 @@
     <Compile Update="ptnMth\m06Equation\prnMath_013Money_3.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="ptnMth\m05GaugeUnit\prnMath_010DateTime004AD_BE_Age.cs">
+    <Compile Update="ptnMth\m05GaugeUnit\prnMath_002DateTime004AD_BE_Age.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ptnPhy\ptnPhy.cs">
@@ -206,6 +246,9 @@
     <EmbeddedResource Update="ptnEng\prnEng - Copy.resx">
       <DependentUpon>prnEng.resx</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Update="ptnMth\m05GaugeUnit\prnMath_95DateTime_AD_BE - Copy - Copy.resx">
+      <DependentUpon>prnMath_002DateTime003AD_BE.resx</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Update="ptnMth\prnMath_93Money_1 - Copy %282%29 - Copy.resx">
       <DependentUpon>prnMath_93Money_1 - Copy (2).resx</DependentUpon>
     </EmbeddedResource>
@@ -228,7 +271,7 @@
       <DependentUpon>prnMath_93Money_1.resx</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Update="ptnMth\m05GaugeUnit\prnMath_95DateTime_AD_BE - Copy.resx">
-      <DependentUpon>prnMath_010DateTime003AD_BE.resx</DependentUpon>
+      <DependentUpon>prnMath_002DateTime003AD_BE.resx</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
 

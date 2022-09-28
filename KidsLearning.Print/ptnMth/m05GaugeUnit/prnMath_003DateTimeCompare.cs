@@ -14,9 +14,9 @@ using TORServices.Drawings;
 
 namespace KidsLearning.Print.ptnMth.m05GaugeUnit
 {
-  public partial  class prnMath_010DateTime003AD_BE:prnControl
+  public partial  class prnMath_003DateTimeCompare : prnControl
     {
-        public prnMath_010DateTime003AD_BE()
+        public prnMath_003DateTimeCompare()
         {
             InitializeComponent();
             this.Load += new System.EventHandler(this.frm_Load);
@@ -32,7 +32,10 @@ namespace KidsLearning.Print.ptnMth.m05GaugeUnit
         private void frm_Load(object sender, EventArgs e)
         {
             ReportHeader = "การทดสอบ เกี่ยวกับ วัน เวลา ";
-            ReportToppic = "การแปลง พ.ศ. (พุทธศักราช) กับ ค.ศ. (คริสต์ศักราช) \n *** พ.ศ. = ค.ศ. + 543 ";
+            ReportToppic = "การเปรียบเทียบระยะเวลาโดยใช้ความสัมพันธ์ ของหน่วยเวลา กำหนดให้ \n" +
+                 "1 นาที เท่ากับ 60 วินาที 1 ชั่วโมง เท่ากับ 60 นาที 1 วัน เท่ากับ 24 ชั่วโมง 1 สัปดาห์ เท่ากับ 7 วัน \n"+
+                "1 เดือน เท่ากับ 30 วัน  1 ปี เท่ากับ 12 เดือน 1 ปี เท่ากับ 365 วัน\n" ;
+            //1 นาที เท่ากับ 60 วินาที
             iPage = 1;
             iPageAll = 1;
             
@@ -48,26 +51,27 @@ namespace KidsLearning.Print.ptnMth.m05GaugeUnit
             // 
             // groupBox1
             // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 640);
+            this.groupBox1.Size = new System.Drawing.Size(250, 602);
             // 
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(3, 19);
+            this.panel2.Size = new System.Drawing.Size(244, 131);
             // 
             // groupBox2
             // 
-            this.groupBox2.Size = new System.Drawing.Size(1122, 640);
+            this.groupBox2.Size = new System.Drawing.Size(1021, 602);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(1116, 618);
+            this.printPreviewControl1.Size = new System.Drawing.Size(1015, 580);
             // 
-            // prnMath_95DateTime_AD_BE
+            // prnMath_003DateTimeCompare
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.Name = "prnMath_95DateTime_AD_BE";
-            this.Size = new System.Drawing.Size(1372, 640);
+            this.Name = "prnMath_003DateTimeCompare";
+            this.Size = new System.Drawing.Size(1271, 602);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -83,7 +87,7 @@ namespace KidsLearning.Print.ptnMth.m05GaugeUnit
 
             #region _Draw Detail
 
-            int yC = 100, xC = 100;
+            int yC = 200, xC = 100;
             for (int i = 0; i < 6; i++)
             {
                 string str = "";

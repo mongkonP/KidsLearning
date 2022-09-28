@@ -14,9 +14,9 @@ using TORServices.Drawings;
 
 namespace KidsLearning.Print.ptnMth.m03Stat
 {
-  public partial  class prnMath_016Statistics_1:prnControl
+  public partial  class st_001Statistics_2:prnControl
     {
-        public prnMath_016Statistics_1()
+        public st_001Statistics_2()
         {
             InitializeComponent();
             this.Load += new System.EventHandler(this.frm_Load);
@@ -31,7 +31,7 @@ namespace KidsLearning.Print.ptnMth.m03Stat
         #endregion
         private void frm_Load(object sender, EventArgs e)
         {
-            ReportHeader =  "การทดสอบ เกี่ยวกับ สถิติ/Statistics ";
+            ReportHeader = "การทดสอบ เกี่ยวกับ สถิติ/Statistics "; ;
             ReportToppic = "สถิติเบื้องต้น";
             iPage = 1;
             iPageAll = 1;
@@ -62,10 +62,10 @@ namespace KidsLearning.Print.ptnMth.m03Stat
             // 
             this.printPreviewControl1.Size = new System.Drawing.Size(775, 693);
             // 
-            // prnMath_98_Num_01_1to15_5
+            // prnMath_97_Num_01_1to15_5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.Name = "prnMath_98_Num_01_1to15_5";
+            this.Name = "prnMath_97_Num_01_1to15_5";
             this.Size = new System.Drawing.Size(1031, 715);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -86,7 +86,7 @@ namespace KidsLearning.Print.ptnMth.m03Stat
             int w = 100, h = 40;
             int numCount = 0;
             string numString = "";
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 4; i++)
             {
 
                 int a = RandomNumberGenerator.GetInt32(5, 20);
@@ -103,25 +103,16 @@ namespace KidsLearning.Print.ptnMth.m03Stat
                 yC += 35;
                 e.Graphics.DrawString("1.เรียงจาก น้อยไปมาก ได้ดังนี้ ", new Font("Angsana New", 15), new SolidBrush(Color.Black), xC + 50, yC);
                 yC += 25;
-                e.Graphics.DrawLine(new Pen(Color.Black, 1), xC + 50, yC + 20, xC + 600, yC + 20);
+                e.Graphics.DrawLine(new Pen(Color.Black, 1), xC + 50, yC + 20, xC + 340, yC + 20);
                 yC += 25;
                 e.Graphics.DrawString("2.จำนวนข้อมูล = ", new Font("Angsana New", 15), new SolidBrush(Color.Black), xC + 50, yC);
-                e.Graphics.DrawLine(new Pen(Color.Black, 1), xC + 220, yC + 20, xC + 300, yC + 20);
+                e.Graphics.DrawLine(new Pen(Color.Black, 1), xC + 180, yC + 20, xC + 240, yC + 20);
                 yC += 25;
-                e.Graphics.DrawString("3.ค่าต่ำสุด = ", new Font("Angsana New", 15), new SolidBrush(Color.Black), xC + 50, yC);
-                e.Graphics.DrawLine(new Pen(Color.Black, 1), xC + 220, yC + 20, xC + 300, yC + 20);
+                e.Graphics.DrawString("3.ผลรวมของข้อมูล = ", new Font("Angsana New", 15), new SolidBrush(Color.Black), xC + 50, yC);
+                e.Graphics.DrawLine(new Pen(Color.Black, 1), xC + 180, yC + 20, xC + 240, yC + 20);
                 yC += 25;
-                e.Graphics.DrawString("4.ค่าสูงสุด = ", new Font("Angsana New", 15), new SolidBrush(Color.Black), xC + 50, yC);
-                e.Graphics.DrawLine(new Pen(Color.Black, 1), xC + 220, yC + 20, xC + 300, yC + 20);
-                yC += 25;
-                e.Graphics.DrawString("5.ค่าพิสัย (Range) = ", new Font("Angsana New", 15), new SolidBrush(Color.Black), xC + 50, yC);
-                e.Graphics.DrawLine(new Pen(Color.Black, 1), xC + 220, yC + 20, xC + 300, yC + 20);
-                yC += 25;
-                e.Graphics.DrawString("6.ค่ามัธยฐาน (Median)  = ", new Font("Angsana New", 15), new SolidBrush(Color.Black), xC + 50, yC);
-                e.Graphics.DrawLine(new Pen(Color.Black, 1), xC + 220, yC + 20, xC + 300, yC + 20);
-                yC += 25;
-                e.Graphics.DrawString("7.ฐานนิยม (Mode) = ", new Font("Angsana New", 15), new SolidBrush(Color.Black), xC + 50, yC);
-                e.Graphics.DrawLine(new Pen(Color.Black, 1), xC + 220, yC + 20, xC + 300, yC + 20);
+                e.Graphics.DrawString("4.ค่าเฉลี่ย (Mean) = ", new Font("Angsana New", 15), new SolidBrush(Color.Black), xC + 50, yC);
+                e.Graphics.DrawLine(new Pen(Color.Black, 1), xC + 180, yC + 20, xC + 240, yC + 20);
 
 
                 yC += 60;

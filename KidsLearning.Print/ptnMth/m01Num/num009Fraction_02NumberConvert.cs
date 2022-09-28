@@ -56,7 +56,7 @@ namespace KidsLearning.Print.ptnMth.m01Num
             // 
             // groupBox1
             // 
-            this.groupBox1.Size = new System.Drawing.Size(368, 699);
+            this.groupBox1.Size = new System.Drawing.Size(368, 667);
             // 
             // panel2
             // 
@@ -93,11 +93,11 @@ namespace KidsLearning.Print.ptnMth.m01Num
             // groupBox2
             // 
             this.groupBox2.Location = new System.Drawing.Point(368, 0);
-            this.groupBox2.Size = new System.Drawing.Size(830, 699);
+            this.groupBox2.Size = new System.Drawing.Size(576, 667);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(824, 677);
+            this.printPreviewControl1.Size = new System.Drawing.Size(570, 645);
             // 
             // rd_1
             // 
@@ -137,11 +137,11 @@ namespace KidsLearning.Print.ptnMth.m01Num
             this.rd_3.UseVisualStyleBackColor = true;
             this.rd_3.CheckedChanged += new System.EventHandler(this.rd_1_CheckedChanged);
             // 
-            // prnMath_011Num09Fraction_02NumberConvert
+            // num009Fraction_02NumberConvert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.Name = "prnMath_011Num09Fraction_02NumberConvert";
-            this.Size = new System.Drawing.Size(1198, 699);
+            this.Name = "num009Fraction_02NumberConvert";
+            this.Size = new System.Drawing.Size(944, 667);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

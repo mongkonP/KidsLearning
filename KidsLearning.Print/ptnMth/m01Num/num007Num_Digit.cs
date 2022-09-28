@@ -48,25 +48,26 @@ namespace KidsLearning.Print.ptnMth.m01Num
             // 
             // groupBox1
             // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 581);
+            this.groupBox1.Size = new System.Drawing.Size(250, 602);
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(3, 459);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(3, 19);
             // 
             // groupBox2
             // 
-            this.groupBox2.Size = new System.Drawing.Size(1090, 581);
+            this.groupBox2.Size = new System.Drawing.Size(1114, 602);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(1084, 559);
+            this.printPreviewControl1.Size = new System.Drawing.Size(1108, 580);
             // 
-            // prnMath_007Num_Digit
+            // num007Num_Digit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.Name = "prnMath_007Num_Digit";
-            this.Size = new System.Drawing.Size(1340, 581);
+            this.Name = "num007Num_Digit";
+            this.Size = new System.Drawing.Size(1364, 602);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

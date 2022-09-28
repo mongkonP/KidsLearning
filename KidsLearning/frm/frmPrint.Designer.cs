@@ -36,31 +36,31 @@ namespace KidsLearning.frm
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.menuMathAll = new System.Windows.Forms.ToolStripDropDownButton();
             this.menuCount = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuCount25 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCount01 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCount02 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCount03 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCount04 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCount05 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuCount06 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuCount07 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuCount08 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCount09 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCount10 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCount11 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCount12 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuCount16 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuCount24 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuCount06 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuCount07 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuCount08 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuCount23 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCount13 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCount14 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCount15 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuCount16 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCount17 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCount18 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCount19 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCount20 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCount21 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCount22 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuCount23 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuCount24 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuCount25 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuOperate = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuOP01 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuOP02 = new System.Windows.Forms.ToolStripMenuItem();
@@ -166,6 +166,7 @@ namespace KidsLearning.frm
             this.menuEng06 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuSciAll = new System.Windows.Forms.ToolStripDropDownButton();
             this.menuExit = new System.Windows.Forms.ToolStripButton();
+            this.menuCount26 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -211,31 +212,12 @@ namespace KidsLearning.frm
             // menuCount
             // 
             this.menuCount.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuCount01,
-            this.menuCount02,
-            this.menuCount03,
-            this.menuCount04,
-            this.menuCount05,
-            this.menuCount06,
-            this.menuCount07,
-            this.menuCount08,
-            this.menuCount09,
-            this.menuCount10,
-            this.menuCount11,
-            this.menuCount12,
-            this.menuCount13,
-            this.menuCount14,
-            this.menuCount15,
-            this.menuCount16,
-            this.menuCount17,
-            this.menuCount18,
-            this.menuCount19,
+            this.menuCount25,
+            this.menuCount24,
+            this.menuCount23,
             this.menuCount20,
             this.menuCount21,
-            this.menuCount22,
-            this.menuCount23,
-            this.menuCount24,
-            this.menuCount25});
+            this.menuCount22});
             this.menuCount.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.menuCount.Image = global::KidsLearning.Properties.Resources.menu_number;
             this.menuCount.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -243,77 +225,124 @@ namespace KidsLearning.frm
             this.menuCount.Size = new System.Drawing.Size(234, 70);
             this.menuCount.Text = "จำนวนนับ";
             // 
+            // menuCount25
+            // 
+            this.menuCount25.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuCount01,
+            this.menuCount02,
+            this.menuCount03,
+            this.menuCount04,
+            this.menuCount05,
+            this.menuCount09,
+            this.menuCount10,
+            this.menuCount11,
+            this.menuCount12,
+            this.menuCount16,
+            this.menuCount26});
+            this.menuCount25.Name = "menuCount25";
+            this.menuCount25.Size = new System.Drawing.Size(261, 30);
+            this.menuCount25.Text = "การนับ เลข จำนวน";
+            // 
             // menuCount01
             // 
             this.menuCount01.Name = "menuCount01";
-            this.menuCount01.Size = new System.Drawing.Size(476, 30);
+            this.menuCount01.Size = new System.Drawing.Size(406, 30);
             this.menuCount01.Text = "ลากเส้นตามจำนวนที่ถูกต้อง";
             // 
             // menuCount02
             // 
             this.menuCount02.Name = "menuCount02";
-            this.menuCount02.Size = new System.Drawing.Size(476, 30);
+            this.menuCount02.Size = new System.Drawing.Size(406, 30);
             this.menuCount02.Text = "นับ และ วงรอบรูปที่แสดงจำนวน";
             // 
             // menuCount03
             // 
             this.menuCount03.Name = "menuCount03";
-            this.menuCount03.Size = new System.Drawing.Size(476, 30);
+            this.menuCount03.Size = new System.Drawing.Size(406, 30);
             this.menuCount03.Text = "นับ และ ระบายสีวงกลมให้เท่ากับจำนวนที่นับ";
             // 
             // menuCount04
             // 
             this.menuCount04.Name = "menuCount04";
-            this.menuCount04.Size = new System.Drawing.Size(476, 30);
+            this.menuCount04.Size = new System.Drawing.Size(406, 30);
             this.menuCount04.Text = "นับจำนวนตามรูปภาพ";
             // 
             // menuCount05
             // 
             this.menuCount05.Name = "menuCount05";
-            this.menuCount05.Size = new System.Drawing.Size(476, 30);
+            this.menuCount05.Size = new System.Drawing.Size(406, 30);
             this.menuCount05.Text = "การเขียน ตัวเลขฮินดู อารบิกและตัวเลขไทย";
-            // 
-            // menuCount06
-            // 
-            this.menuCount06.Name = "menuCount06";
-            this.menuCount06.Size = new System.Drawing.Size(476, 30);
-            this.menuCount06.Text = ">(มากกว่า) หรือ < (น้อยกว่า) หรือ = (เท่ากับ) ระบายสี";
-            // 
-            // menuCount07
-            // 
-            this.menuCount07.Name = "menuCount07";
-            this.menuCount07.Size = new System.Drawing.Size(476, 30);
-            this.menuCount07.Text = ">(มากกว่า) หรือ < (น้อยกว่า) หรือ = (เท่ากับ) ตัวเลข";
-            // 
-            // menuCount08
-            // 
-            this.menuCount08.Name = "menuCount08";
-            this.menuCount08.Size = new System.Drawing.Size(476, 30);
-            this.menuCount08.Text = "การเรียงตัวเลข";
             // 
             // menuCount09
             // 
             this.menuCount09.Name = "menuCount09";
-            this.menuCount09.Size = new System.Drawing.Size(476, 30);
+            this.menuCount09.Size = new System.Drawing.Size(406, 30);
             this.menuCount09.Text = "บอกค่าของเลขโดดในแต่ละหลัก ของจำนวนนับ";
             // 
             // menuCount10
             // 
             this.menuCount10.Name = "menuCount10";
-            this.menuCount10.Size = new System.Drawing.Size(476, 30);
+            this.menuCount10.Size = new System.Drawing.Size(406, 30);
             this.menuCount10.Text = "เส้นจำนวน กับ ตัวเลข";
             // 
             // menuCount11
             // 
             this.menuCount11.Name = "menuCount11";
-            this.menuCount11.Size = new System.Drawing.Size(476, 30);
+            this.menuCount11.Size = new System.Drawing.Size(406, 30);
             this.menuCount11.Text = "จำนวนคี่ จำนวนคู่แบบ รูปภาพ";
             // 
             // menuCount12
             // 
             this.menuCount12.Name = "menuCount12";
-            this.menuCount12.Size = new System.Drawing.Size(476, 30);
+            this.menuCount12.Size = new System.Drawing.Size(406, 30);
             this.menuCount12.Text = "จำนวนคี่ จำนวนคู่แบบ ตัวเลข";
+            // 
+            // menuCount16
+            // 
+            this.menuCount16.Name = "menuCount16";
+            this.menuCount16.Size = new System.Drawing.Size(406, 30);
+            this.menuCount16.Text = "ตัวประกอบของจำนวนนับ";
+            // 
+            // menuCount24
+            // 
+            this.menuCount24.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuCount06,
+            this.menuCount07,
+            this.menuCount08});
+            this.menuCount24.Name = "menuCount24";
+            this.menuCount24.Size = new System.Drawing.Size(261, 30);
+            this.menuCount24.Text = "การเปรียบเทียบ";
+            // 
+            // menuCount06
+            // 
+            this.menuCount06.Name = "menuCount06";
+            this.menuCount06.Size = new System.Drawing.Size(474, 30);
+            this.menuCount06.Text = ">(มากกว่า) หรือ < (น้อยกว่า) หรือ = (เท่ากับ) ระบายสี";
+            // 
+            // menuCount07
+            // 
+            this.menuCount07.Name = "menuCount07";
+            this.menuCount07.Size = new System.Drawing.Size(474, 30);
+            this.menuCount07.Text = ">(มากกว่า) หรือ < (น้อยกว่า) หรือ = (เท่ากับ) ตัวเลข";
+            // 
+            // menuCount08
+            // 
+            this.menuCount08.Name = "menuCount08";
+            this.menuCount08.Size = new System.Drawing.Size(474, 30);
+            this.menuCount08.Text = "การเรียงตัวเลข";
+            // 
+            // menuCount23
+            // 
+            this.menuCount23.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuCount13,
+            this.menuCount14,
+            this.menuCount15,
+            this.menuCount17,
+            this.menuCount18,
+            this.menuCount19});
+            this.menuCount23.Name = "menuCount23";
+            this.menuCount23.Size = new System.Drawing.Size(261, 30);
+            this.menuCount23.Text = "เศษส่วน ทศนิยม";
             // 
             // menuCount13
             // 
@@ -333,65 +362,41 @@ namespace KidsLearning.frm
             this.menuCount15.Size = new System.Drawing.Size(476, 30);
             this.menuCount15.Text = "เขียนให้อยู่ในรูปเศษส่วนอย่างต่ำ";
             // 
-            // menuCount16
-            // 
-            this.menuCount16.Name = "menuCount16";
-            this.menuCount16.Size = new System.Drawing.Size(476, 30);
-            this.menuCount16.Text = "toolStripMenuItem11";
-            // 
             // menuCount17
             // 
             this.menuCount17.Name = "menuCount17";
             this.menuCount17.Size = new System.Drawing.Size(476, 30);
-            this.menuCount17.Text = "toolStripMenuItem12";
+            this.menuCount17.Text = "เลขนัยสำคัญ และ การปัดเศษ";
             // 
             // menuCount18
             // 
             this.menuCount18.Name = "menuCount18";
             this.menuCount18.Size = new System.Drawing.Size(476, 30);
-            this.menuCount18.Text = "toolStripMenuItem13";
+            this.menuCount18.Text = "การคูณ/หาร ทศนิยมด้วย 10 100 และ 1,000";
             // 
             // menuCount19
             // 
             this.menuCount19.Name = "menuCount19";
             this.menuCount19.Size = new System.Drawing.Size(476, 30);
-            this.menuCount19.Text = "toolStripMenuItem14";
+            this.menuCount19.Text = "ทศนิยม เศษส่วน และ จำนวน คละ";
             // 
             // menuCount20
             // 
             this.menuCount20.Name = "menuCount20";
-            this.menuCount20.Size = new System.Drawing.Size(476, 30);
+            this.menuCount20.Size = new System.Drawing.Size(261, 30);
             this.menuCount20.Text = "toolStripMenuItem15";
             // 
             // menuCount21
             // 
             this.menuCount21.Name = "menuCount21";
-            this.menuCount21.Size = new System.Drawing.Size(476, 30);
+            this.menuCount21.Size = new System.Drawing.Size(261, 30);
             this.menuCount21.Text = "toolStripMenuItem16";
             // 
             // menuCount22
             // 
             this.menuCount22.Name = "menuCount22";
-            this.menuCount22.Size = new System.Drawing.Size(476, 30);
+            this.menuCount22.Size = new System.Drawing.Size(261, 30);
             this.menuCount22.Text = "toolStripMenuItem17";
-            // 
-            // menuCount23
-            // 
-            this.menuCount23.Name = "menuCount23";
-            this.menuCount23.Size = new System.Drawing.Size(476, 30);
-            this.menuCount23.Text = "toolStripMenuItem18";
-            // 
-            // menuCount24
-            // 
-            this.menuCount24.Name = "menuCount24";
-            this.menuCount24.Size = new System.Drawing.Size(476, 30);
-            this.menuCount24.Text = "toolStripMenuItem19";
-            // 
-            // menuCount25
-            // 
-            this.menuCount25.Name = "menuCount25";
-            this.menuCount25.Size = new System.Drawing.Size(476, 30);
-            this.menuCount25.Text = "toolStripMenuItem1";
             // 
             // menuOperate
             // 
@@ -527,19 +532,19 @@ namespace KidsLearning.frm
             // 
             this.nemuOP16.Name = "nemuOP16";
             this.nemuOP16.Size = new System.Drawing.Size(513, 30);
-            this.nemuOP16.Text = "toolStripMenuItem16";
+            this.nemuOP16.Text = "การบวกลบ เศษส่วน แบบรูปภาพ";
             // 
             // nemuOP17
             // 
             this.nemuOP17.Name = "nemuOP17";
             this.nemuOP17.Size = new System.Drawing.Size(513, 30);
-            this.nemuOP17.Text = "toolStripMenuItem17";
+            this.nemuOP17.Text = "+,-,x,÷ เศษส่วน แบบตัวเลข";
             // 
             // nemuOP18
             // 
             this.nemuOP18.Name = "nemuOP18";
             this.nemuOP18.Size = new System.Drawing.Size(513, 30);
-            this.nemuOP18.Text = "toolStripMenuItem18";
+            this.nemuOP18.Text = "การ x,÷ ด้วย 10, 100, 1,000 10,000";
             // 
             // nemuOP19
             // 
@@ -951,77 +956,78 @@ namespace KidsLearning.frm
             // menuUnit_Datetime1
             // 
             this.menuUnit_Datetime1.Name = "menuUnit_Datetime1";
-            this.menuUnit_Datetime1.Size = new System.Drawing.Size(456, 30);
+            this.menuUnit_Datetime1.Size = new System.Drawing.Size(506, 30);
             this.menuUnit_Datetime1.Text = "การบอกเวลา";
             this.menuUnit_Datetime1.Click += new System.EventHandler(this.menuUnit_Datetime1_Click);
             // 
             // menuUnit_Datetime2
             // 
             this.menuUnit_Datetime2.Name = "menuUnit_Datetime2";
-            this.menuUnit_Datetime2.Size = new System.Drawing.Size(456, 30);
+            this.menuUnit_Datetime2.Size = new System.Drawing.Size(506, 30);
             this.menuUnit_Datetime2.Text = "การบอกเวลาถัดไป";
             this.menuUnit_Datetime2.Click += new System.EventHandler(this.menuUnit_Datetime2_Click);
             // 
             // menuUnit_Datetime3
             // 
             this.menuUnit_Datetime3.Name = "menuUnit_Datetime3";
-            this.menuUnit_Datetime3.Size = new System.Drawing.Size(456, 30);
+            this.menuUnit_Datetime3.Size = new System.Drawing.Size(506, 30);
             this.menuUnit_Datetime3.Text = "การแปลง พ.ศ. (พุทธศักราช) กับ ค.ศ. (คริสต์ศักราช)";
             this.menuUnit_Datetime3.Click += new System.EventHandler(this.menuUnit_Datetime3_Click);
             // 
             // menuUnit_Datetime4
             // 
             this.menuUnit_Datetime4.Name = "menuUnit_Datetime4";
-            this.menuUnit_Datetime4.Size = new System.Drawing.Size(456, 30);
+            this.menuUnit_Datetime4.Size = new System.Drawing.Size(506, 30);
             this.menuUnit_Datetime4.Text = "การบอกอายุ";
             this.menuUnit_Datetime4.Click += new System.EventHandler(this.menuUnit_Datetime4_Click);
             // 
             // menuUnit_Datetime5
             // 
             this.menuUnit_Datetime5.Name = "menuUnit_Datetime5";
-            this.menuUnit_Datetime5.Size = new System.Drawing.Size(456, 30);
-            this.menuUnit_Datetime5.Text = "menuUnit_Datetime5";
+            this.menuUnit_Datetime5.Size = new System.Drawing.Size(506, 30);
+            this.menuUnit_Datetime5.Text = "การเปรียบเทียบระยะเวลาโดยใช้ความสัมพันธ์ ของหน่วยเวลา";
+            this.menuUnit_Datetime5.Click += new System.EventHandler(this.menuUnit_Datetime5_Click);
             // 
             // menuUnit_Datetime6
             // 
             this.menuUnit_Datetime6.Name = "menuUnit_Datetime6";
-            this.menuUnit_Datetime6.Size = new System.Drawing.Size(456, 30);
+            this.menuUnit_Datetime6.Size = new System.Drawing.Size(506, 30);
             this.menuUnit_Datetime6.Text = "menuUnit_Datetime6";
             // 
             // menuUnit_Datetime7
             // 
             this.menuUnit_Datetime7.Name = "menuUnit_Datetime7";
-            this.menuUnit_Datetime7.Size = new System.Drawing.Size(456, 30);
+            this.menuUnit_Datetime7.Size = new System.Drawing.Size(506, 30);
             this.menuUnit_Datetime7.Text = "toolStripMenuItem7";
             // 
             // menuUnit_Datetime8
             // 
             this.menuUnit_Datetime8.Name = "menuUnit_Datetime8";
-            this.menuUnit_Datetime8.Size = new System.Drawing.Size(456, 30);
+            this.menuUnit_Datetime8.Size = new System.Drawing.Size(506, 30);
             this.menuUnit_Datetime8.Text = "toolStripMenuItem8";
             // 
             // menuUnit_Datetime9
             // 
             this.menuUnit_Datetime9.Name = "menuUnit_Datetime9";
-            this.menuUnit_Datetime9.Size = new System.Drawing.Size(456, 30);
+            this.menuUnit_Datetime9.Size = new System.Drawing.Size(506, 30);
             this.menuUnit_Datetime9.Text = "toolStripMenuItem9";
             // 
             // menuUnit_Datetime10
             // 
             this.menuUnit_Datetime10.Name = "menuUnit_Datetime10";
-            this.menuUnit_Datetime10.Size = new System.Drawing.Size(456, 30);
+            this.menuUnit_Datetime10.Size = new System.Drawing.Size(506, 30);
             this.menuUnit_Datetime10.Text = "toolStripMenuItem10";
             // 
             // menuUnit_Datetime11
             // 
             this.menuUnit_Datetime11.Name = "menuUnit_Datetime11";
-            this.menuUnit_Datetime11.Size = new System.Drawing.Size(456, 30);
+            this.menuUnit_Datetime11.Size = new System.Drawing.Size(506, 30);
             this.menuUnit_Datetime11.Text = "toolStripMenuItem11";
             // 
             // menuUnit_Datetime12
             // 
             this.menuUnit_Datetime12.Name = "menuUnit_Datetime12";
-            this.menuUnit_Datetime12.Size = new System.Drawing.Size(456, 30);
+            this.menuUnit_Datetime12.Size = new System.Drawing.Size(506, 30);
             this.menuUnit_Datetime12.Text = "toolStripMenuItem12";
             // 
             // menuUnit_Mass
@@ -1187,6 +1193,12 @@ namespace KidsLearning.frm
             this.menuExit.Text = "Exit";
             this.menuExit.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
+            // menuCount26
+            // 
+            this.menuCount26.Name = "menuCount26";
+            this.menuCount26.Size = new System.Drawing.Size(406, 30);
+            this.menuCount26.Text = "ค.ร.น. และ ห.ร.ม.";
+            // 
             // frmPrint
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1343,5 +1355,6 @@ namespace KidsLearning.frm
         private System.Windows.Forms.ToolStripMenuItem menuUnit_4;
         private System.Windows.Forms.ToolStripMenuItem menuUnit_5;
         private System.Windows.Forms.ToolStripMenuItem menuUnit_6;
+        private System.Windows.Forms.ToolStripMenuItem menuCount26;
     }
 }

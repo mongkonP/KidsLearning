@@ -16,9 +16,9 @@ using KidsLearning.Classed;
 
 namespace KidsLearning.Print.ptnMth.m05GaugeUnit
 {
-  public partial  class prnMath_010DateTime001Time : prnControl
+  public partial  class prnMath_001DateTime001Time : prnControl
     {
-        public prnMath_010DateTime001Time()
+        public prnMath_001DateTime001Time()
         {
             InitializeComponent();
             this.Load += new System.EventHandler(this.frm_Load);

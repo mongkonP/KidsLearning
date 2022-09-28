@@ -11,13 +11,12 @@ using System.Windows.Forms;
 using TORServices.Maths;
 using static TORServices.Maths.extMath;
 using TORServices.Drawings;
-using System.Drawing.Drawing2D;
 
-namespace KidsLearning.Print.ptnMth.m04Trigono
+namespace KidsLearning.Print.ptnMth.m03Stat
 {
-  public partial  class prnMath_015GaugeLength_01:prnControl
+  public partial  class st_ : prnControl
     {
-        public prnMath_015GaugeLength_01()
+        public st_()
         {
             InitializeComponent();
             this.Load += new System.EventHandler(this.frm_Load);
@@ -32,8 +31,8 @@ namespace KidsLearning.Print.ptnMth.m04Trigono
         #endregion
         private void frm_Load(object sender, EventArgs e)
         {
-            ReportHeader = "การทดสอบ เกี่ยวกับ มาตรวัด ";
-            ReportToppic = "วัดความยาว ต่อไปนี้ ";
+            ReportHeader = "การทดสอบ เกี่ยวกับ สถิติ/Statistics "; ;
+            ReportToppic = "สถิติเบื้องต้น";
             iPage = 1;
             iPageAll = 1;
             
@@ -53,8 +52,7 @@ namespace KidsLearning.Print.ptnMth.m04Trigono
             // 
             // panel2
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(3, 19);
+            this.panel2.Location = new System.Drawing.Point(3, 593);
             // 
             // groupBox2
             // 
@@ -64,10 +62,10 @@ namespace KidsLearning.Print.ptnMth.m04Trigono
             // 
             this.printPreviewControl1.Size = new System.Drawing.Size(775, 693);
             // 
-            // prnMath_91_Num_01_1to15_5
+            // prnMath_97_Num_01_1to15_5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.Name = "prnMath_91_Num_01_1to15_5";
+            this.Name = "prnMath_97_Num_01_1to15_5";
             this.Size = new System.Drawing.Size(1031, 715);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -76,7 +74,7 @@ namespace KidsLearning.Print.ptnMth.m04Trigono
             this.ResumeLayout(false);
 
         }
-        private bool RandomDregee;
+
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             //Loop till all the grid rows not get printed
@@ -84,40 +82,37 @@ namespace KidsLearning.Print.ptnMth.m04Trigono
 
             #region _Draw Detail
 
-            int yC = 120, xC = 100;
+            int yC = 150, xC = 100;
             int w = 100, h = 40;
-            for (int i = 0; i < 5; i++)
+            int numCount = 0;
+            string numString = "";
+            for (int i = 0; i < 4; i++)
             {
 
-                // e.Graphics.DrawString("วัดความยาว ต่อไปนี้ ", fontDetail, new SolidBrush(Color.Black), new RectangleF(xC - 50, yC, 750, 80));
-                yC += 50;
-
-                using (Pen pen = new Pen(Color.Black, 3))
+                int a = RandomNumberGenerator.GetInt32(5, 20);
+                int b = Convert.ToInt32(a * 50 / 100);
+                numCount = RandomNumberGenerator.GetInt32(5, 15);
+                numString = "";
+                for (int x = 1; x <= numCount; x++)
                 {
-
-                    pen.StartCap = LineCap.RoundAnchor;
-                    pen.EndCap = LineCap.RoundAnchor;
-                    int x, y;
-                    if (!RandomDregee)
-                    {
-                        x = xC + RandomNumberGenerator.GetInt32(150, 600);
-                        e.Graphics.DrawLine(pen, xC + 80, yC, x, yC);
-                        e.Graphics.DrawString("A", fontDetail, new SolidBrush(Color.Black), xC + 60, yC - 20);
-                        e.Graphics.DrawString("B", fontDetail, new SolidBrush(Color.Black), x, yC - 20);
-                    }
-                    else
-                    {
-                        x = xC + RandomNumberGenerator.GetInt32(150, 600);
-                        y = yC + RandomNumberGenerator.GetInt32(-40, 40);
-                        e.Graphics.DrawLine(pen, xC + 80, yC, x, y);
-                        e.Graphics.DrawString("A", fontDetail, new SolidBrush(Color.Black), xC + 60, yC - 20);
-                        e.Graphics.DrawString("B", fontDetail, new SolidBrush(Color.Black), x, y - 20);
-
-                    }
-
+                    numString += "  " + RandomNumberGenerator.GetInt32(a - b, a + b);
                 }
-                yC += 20;
-                e.Graphics.DrawString("ความยาว ___________ เซนติเมตร __________ มิลลิเมตร", fontDetail, new SolidBrush(Color.Black), xC + 80, yC);
+
+                //  numString = "จากข้อมูล ตัวเลขต่อไปนี้ \n" + numString + "\n \n \n \n \n";
+                e.Graphics.DrawString("จากข้อมูล ตัวเลขต่อไปนี้ " + numString, new Font("Angsana New", 15), new SolidBrush(Color.Black), xC + 50, yC + 5);
+                yC += 35;
+                e.Graphics.DrawString("1.เรียงจาก น้อยไปมาก ได้ดังนี้ ", new Font("Angsana New", 15), new SolidBrush(Color.Black), xC + 50, yC);
+                yC += 25;
+                e.Graphics.DrawLine(new Pen(Color.Black, 1), xC + 50, yC + 20, xC + 340, yC + 20);
+                yC += 25;
+                e.Graphics.DrawString("2.จำนวนข้อมูล = ", new Font("Angsana New", 15), new SolidBrush(Color.Black), xC + 50, yC);
+                e.Graphics.DrawLine(new Pen(Color.Black, 1), xC + 180, yC + 20, xC + 240, yC + 20);
+                yC += 25;
+                e.Graphics.DrawString("3.ผลรวมของข้อมูล = ", new Font("Angsana New", 15), new SolidBrush(Color.Black), xC + 50, yC);
+                e.Graphics.DrawLine(new Pen(Color.Black, 1), xC + 180, yC + 20, xC + 240, yC + 20);
+                yC += 25;
+                e.Graphics.DrawString("4.ค่าเฉลี่ย (Mean) = ", new Font("Angsana New", 15), new SolidBrush(Color.Black), xC + 50, yC);
+                e.Graphics.DrawLine(new Pen(Color.Black, 1), xC + 180, yC + 20, xC + 240, yC + 20);
 
 
                 yC += 60;

@@ -12,11 +12,11 @@ using TORServices.Maths;
 using static TORServices.Maths.extMath;
 using TORServices.Drawings;
 
-namespace KidsLearning.Print.ptnMth
+namespace KidsLearning.Print.ptnMth.m03Stat
 {
-  public partial  class prnMath_016Statistics_2:prnControl
+  public partial  class st_002chart04linegraph : prnControl
     {
-        public prnMath_016Statistics_2()
+        public st_002chart04linegraph()
         {
             InitializeComponent();
             this.Load += new System.EventHandler(this.frm_Load);

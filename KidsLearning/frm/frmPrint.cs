@@ -50,6 +50,7 @@ namespace KidsLearning.frm
             this.menuCount23.Click += new System.EventHandler(this.menuCount23_Click);
             this.menuCount24.Click += new System.EventHandler(this.menuCount24_Click);
             this.menuCount25.Click += new System.EventHandler(this.menuCount25_Click);
+            this.menuCount26.Click += new System.EventHandler(this.menuCount26_Click);
             #endregion
 
 
@@ -297,19 +298,19 @@ namespace KidsLearning.frm
         private void menuCount16_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
+            panel1.Controls.Add(new num010NumSubdivision());
         }
 
         private void menuCount17_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
+            panel1.Controls.Add(new num011SignificantFigure01());
         }
 
         private void menuCount18_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
+            panel1.Controls.Add(new num011Decimal_01());
         }
 
         private void menuCount19_Click(object sender, EventArgs e)
@@ -357,7 +358,7 @@ namespace KidsLearning.frm
         private void menuCount26_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
+            panel1.Controls.Add(new num012gcf_lcm());
         }
 
         private void menuCount27_Click(object sender, EventArgs e)
@@ -593,25 +594,25 @@ namespace KidsLearning.frm
         private void nemuOP16_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
+            panel1.Controls.Add(new op010FractionPlusMinus_01Pic());
         }
 
         private void nemuOP17_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
+            panel1.Controls.Add(new op010FractionPlusMinus_02Num());
         }
 
         private void nemuOP18_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
+            panel1.Controls.Add(new op011Decimal_01());
         }
 
         private void nemuOP19_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
+            panel1.Controls.Add(new num011Decimal_Fraction());
         }
 
         private void nemuOP20_Click(object sender, EventArgs e)
@@ -802,13 +803,13 @@ namespace KidsLearning.frm
         private void menuStat01_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            panel1.Controls.Add(new prnMath_016Statistics_1());
+            panel1.Controls.Add(new st_001Statistics_1());
         }
 
         private void menuStat02_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            panel1.Controls.Add(new prnMath_016Statistics_2());
+            panel1.Controls.Add(new st_001Statistics_2());
         }
 
         private void menuStat03_Click(object sender, EventArgs e)
@@ -1052,23 +1053,28 @@ namespace KidsLearning.frm
         private void menuUnit_Datetime1_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            panel1.Controls.Add(new prnMath_010DateTime001Time());
+            panel1.Controls.Add(new prnMath_001DateTime001Time());
         }
         private void menuUnit_Datetime2_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            panel1.Controls.Add(new prnMath_010DateTime002NextTime());
+            panel1.Controls.Add(new prnMath_001DateTime002NextTime());
         }
 
-    private void menuUnit_Datetime3_Click(object sender, EventArgs e)
+        private void menuUnit_Datetime3_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            panel1.Controls.Add(new prnMath_010DateTime003AD_BE());
+            panel1.Controls.Add(new prnMath_002DateTime003AD_BE());
         }
         private void menuUnit_Datetime4_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            panel1.Controls.Add(new prnMath_010DateTime004AD_BE_Age());
+            panel1.Controls.Add(new prnMath_002DateTime004AD_BE_Age());
+        }
+        private void menuUnit_Datetime5_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            panel1.Controls.Add(new prnMath_003DateTimeCompare());
         }
         #endregion
 
