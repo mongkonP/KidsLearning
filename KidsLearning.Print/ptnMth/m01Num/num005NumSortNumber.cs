@@ -41,8 +41,8 @@ namespace KidsLearning.Print.ptnMth.m01Num
             iPage = 1;
             iPageAll = 1;
 
-            minValue = numberSelect1.Minimum;
-            maxValue = numberSelect1.Maximum;
+            minValue = Convert.ToInt32(numberSelect1.Minimum);
+            maxValue = Convert.ToInt32(numberSelect1.Maximum);
             printPreviewControl1.Document = this.printDocument1;
         }
 
@@ -168,8 +168,8 @@ namespace KidsLearning.Print.ptnMth.m01Num
         string sortFormat = "1";
         private void numberSelect1_NumberSelectChanged(object sender, EventArgs e)
         {
-            minValue = numberSelect1.Minimum;
-            maxValue = numberSelect1.Maximum;
+            minValue = Convert.ToInt32(numberSelect1.Minimum);
+            maxValue = Convert.ToInt32(numberSelect1.Maximum);
             printPreviewControl1.Document = this.printDocument1;
         }
 

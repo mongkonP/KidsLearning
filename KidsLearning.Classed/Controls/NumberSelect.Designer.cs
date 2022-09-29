@@ -329,6 +329,7 @@ namespace KidsLearning.Classed.Controls
             this.cmbDecimal.TabIndex = 55;
             this.cmbDecimal.Text = "0";
             this.cmbDecimal.SelectedIndexChanged += new System.EventHandler(this.cmbDecimal_SelectedIndexChanged);
+            this.cmbDecimal.TextChanged += new System.EventHandler(this.cmbDecimal_TextChanged);
             // 
             // NumberSelect
             // 

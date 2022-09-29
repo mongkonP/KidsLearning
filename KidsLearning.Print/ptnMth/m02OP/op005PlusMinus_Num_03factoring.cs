@@ -11,13 +11,12 @@ using System.Windows.Forms;
 using TORServices.Maths;
 using static TORServices.Maths.extMath;
 using TORServices.Drawings;
-using TORServices.Systems;
 
 namespace KidsLearning.Print.ptnMth
 {
-  public partial  class op005PlusMinus_Num_02Positive:prnControl
+  public partial  class op005PlusMinus_Num_03factoring : prnControl
     {
-        public op005PlusMinus_Num_02Positive()
+        public op005PlusMinus_Num_03factoring()
         {
             InitializeComponent();
             this.Load += new System.EventHandler(this.frm_Load);
@@ -27,20 +26,21 @@ namespace KidsLearning.Print.ptnMth
 
         #region Variables
 
-        int minValue = 1, maxValue = 15;
+        double minValue = 1, maxValue = 15;
         string strOperation = "+";
 
         #endregion
-        private Classed.Controls.NumberSelect numberSelect1;
         private GroupBox groupBox4;
         private RadioButton rd_5;
         private RadioButton rd_4;
+        private ComboBox cmbDecimal;
+        private Label label3;
         private RadioButton rd_6;
 
         private void frm_Load(object sender, EventArgs e)
         {
             ReportHeader = "การทดสอบ เกี่ยวกับ ตัวเลข ";
-            ReportToppic = "การตั้งบวก ลบ เลข";
+            ReportToppic = "การตั้งบวก ลบ ทศนิยม";
             iPage = 1;
             iPageAll = 1;
             
@@ -49,8 +49,9 @@ namespace KidsLearning.Print.ptnMth
 
         private void InitializeComponent()
         {
-            this.numberSelect1 = new KidsLearning.Classed.Controls.NumberSelect();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.cmbDecimal = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.rd_5 = new System.Windows.Forms.RadioButton();
             this.rd_4 = new System.Windows.Forms.RadioButton();
             this.rd_6 = new System.Windows.Forms.RadioButton();
@@ -63,16 +64,14 @@ namespace KidsLearning.Print.ptnMth
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.groupBox4);
-            this.groupBox1.Controls.Add(this.numberSelect1);
-            this.groupBox1.Size = new System.Drawing.Size(478, 739);
-            this.groupBox1.Controls.SetChildIndex(this.numberSelect1, 0);
+            this.groupBox1.Size = new System.Drawing.Size(350, 605);
             this.groupBox1.Controls.SetChildIndex(this.groupBox4, 0);
             this.groupBox1.Controls.SetChildIndex(this.panel2, 0);
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(3, 875);
-            this.panel2.Size = new System.Drawing.Size(472, 325);
+            this.panel2.Location = new System.Drawing.Point(3, 349);
+            this.panel2.Size = new System.Drawing.Size(344, 140);
             // 
             // bntPrint
             // 
@@ -92,41 +91,67 @@ namespace KidsLearning.Print.ptnMth
             // 
             // groupBox2
             // 
-            this.groupBox2.Location = new System.Drawing.Point(478, 0);
-            this.groupBox2.Size = new System.Drawing.Size(763, 739);
+            this.groupBox2.Location = new System.Drawing.Point(350, 0);
+            this.groupBox2.Size = new System.Drawing.Size(891, 605);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(757, 717);
-            // 
-            // numberSelect1
-            // 
-            this.numberSelect1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.numberSelect1.Location = new System.Drawing.Point(3, 19);
-            this.numberSelect1.Name = "numberSelect1";
-            this.numberSelect1.Size = new System.Drawing.Size(472, 611);
-            this.numberSelect1.TabIndex = 3;
-            this.numberSelect1.NumberSelectChanged += new System.EventHandler(this.numberSelect1_NumberSelectChanged);
+            this.printPreviewControl1.Size = new System.Drawing.Size(885, 583);
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.cmbDecimal);
+            this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Controls.Add(this.rd_5);
             this.groupBox4.Controls.Add(this.rd_4);
             this.groupBox4.Controls.Add(this.rd_6);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox4.Location = new System.Drawing.Point(3, 630);
+            this.groupBox4.Location = new System.Drawing.Point(3, 19);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(472, 245);
+            this.groupBox4.Size = new System.Drawing.Size(344, 330);
             this.groupBox4.TabIndex = 33;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "ดำเนินการ";
+            // 
+            // cmbDecimal
+            // 
+            this.cmbDecimal.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cmbDecimal.FormattingEnabled = true;
+            this.cmbDecimal.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cmbDecimal.Location = new System.Drawing.Point(229, 40);
+            this.cmbDecimal.Name = "cmbDecimal";
+            this.cmbDecimal.Size = new System.Drawing.Size(85, 53);
+            this.cmbDecimal.TabIndex = 57;
+            this.cmbDecimal.Text = "0";
+            this.cmbDecimal.TextChanged += new System.EventHandler(this.cmbDecimal_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(19, 49);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(204, 37);
+            this.label3.TabIndex = 56;
+            this.label3.Text = "decimal/ทศนิยม:";
             // 
             // rd_5
             // 
             this.rd_5.AutoSize = true;
             this.rd_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rd_5.Location = new System.Drawing.Point(15, 90);
+            this.rd_5.Location = new System.Drawing.Point(23, 155);
             this.rd_5.Name = "rd_5";
             this.rd_5.Size = new System.Drawing.Size(134, 35);
             this.rd_5.TabIndex = 36;
@@ -139,7 +164,7 @@ namespace KidsLearning.Print.ptnMth
             this.rd_4.AutoSize = true;
             this.rd_4.Checked = true;
             this.rd_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rd_4.Location = new System.Drawing.Point(15, 48);
+            this.rd_4.Location = new System.Drawing.Point(23, 113);
             this.rd_4.Name = "rd_4";
             this.rd_4.Size = new System.Drawing.Size(156, 35);
             this.rd_4.TabIndex = 34;
@@ -152,7 +177,7 @@ namespace KidsLearning.Print.ptnMth
             // 
             this.rd_6.AutoSize = true;
             this.rd_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rd_6.Location = new System.Drawing.Point(15, 131);
+            this.rd_6.Location = new System.Drawing.Point(23, 196);
             this.rd_6.Name = "rd_6";
             this.rd_6.Size = new System.Drawing.Size(120, 35);
             this.rd_6.TabIndex = 35;
@@ -160,11 +185,11 @@ namespace KidsLearning.Print.ptnMth
             this.rd_6.UseVisualStyleBackColor = true;
             this.rd_6.CheckedChanged += new System.EventHandler(this.rd_4_CheckedChanged);
             // 
-            // op005PlusMinus_Num_02Positive
+            // op005PlusMinus_Num_03factoring
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.Name = "op005PlusMinus_Num_02Positive";
-            this.Size = new System.Drawing.Size(1241, 739);
+            this.Name = "op005PlusMinus_Num_03factoring";
+            this.Size = new System.Drawing.Size(1241, 605);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -175,18 +200,16 @@ namespace KidsLearning.Print.ptnMth
 
         }
 
-        private void numberSelect1_NumberSelectChanged(object sender, EventArgs e)
-        {
-            minValue = numberSelect1.Minimum.ToInt();
-            maxValue = numberSelect1.Maximum.ToInt();
-
-            printPreviewControl1.Document = this.printDocument1;
-        }
 
         private void rd_4_CheckedChanged(object sender, EventArgs e)
         {
             printPreviewControl1.Document = this.printDocument1;
 
+        }
+
+        private void cmbDecimal_TextChanged(object sender, EventArgs e)
+        {
+            printPreviewControl1.Document = this.printDocument1;
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)

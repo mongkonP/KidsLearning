@@ -79,8 +79,8 @@ namespace KidsLearning.Print
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.txtPageCount);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(3, 630);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(3, 19);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(244, 119);
             this.panel2.TabIndex = 1;

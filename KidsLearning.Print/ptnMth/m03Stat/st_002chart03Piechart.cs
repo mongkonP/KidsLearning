@@ -48,25 +48,26 @@ namespace KidsLearning.Print.ptnMth.m03Stat
             // 
             // groupBox1
             // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 715);
+            this.groupBox1.Size = new System.Drawing.Size(250, 629);
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(3, 593);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(3, 19);
             // 
             // groupBox2
             // 
-            this.groupBox2.Size = new System.Drawing.Size(781, 715);
+            this.groupBox2.Size = new System.Drawing.Size(1148, 629);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(775, 693);
+            this.printPreviewControl1.Size = new System.Drawing.Size(1142, 607);
             // 
-            // prnMath_97_Num_01_1to15_5
+            // st_002chart03Piechart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.Name = "prnMath_97_Num_01_1to15_5";
-            this.Size = new System.Drawing.Size(1031, 715);
+            this.Name = "st_002chart03Piechart";
+            this.Size = new System.Drawing.Size(1398, 629);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

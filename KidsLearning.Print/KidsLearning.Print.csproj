@@ -93,8 +93,14 @@
     <Compile Update="ptnMth\m01Num\num011SignificantFigure01.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ptnMth\m01Num\num012gcf_lcm02_factoring.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="ptnMth\m01Num\num012gcf_lcm.cs" />
     <Compile Update="ptnMth\m01Num\num_.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m02OP\op005PlusMinus_Num_03factoring.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ptnMth\m02OP\op011Decimal_01.cs">

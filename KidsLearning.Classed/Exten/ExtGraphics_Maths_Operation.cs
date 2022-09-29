@@ -433,16 +433,14 @@ namespace KidsLearning.Classed.Exten
         }
 
 
-        public static void DrawNumPositive(this Graphics e,  Font fontDetail, int min, int max, int x, int y, string opr, int CountNum= 6)
+        public static void DrawNumPositive(this Graphics e,  Font fontDetail, int min, int max, int x, int y, string opr, int CountNum= 7)
         {
 
             
             var num = new Classed.Exten.RandomNumber(min, max);
 
-  
-            
-            string _a = TextStringExtension.SpacedString(num.MinValue.ToString());
-            string _b = TextStringExtension.SpacedString(num.MaxValue.ToString());
+            string _a = TextStringExtension.SpacedString(Convert.ToInt32(num.MinValue).ToString());
+            string _b = TextStringExtension.SpacedString(Convert.ToInt32(num.MaxValue).ToString());
 
             //System.Windows.Forms.MessageBox.Show(num.MinValue + "\n" + num.MaxValue + "\n" + _a + "\n" + _b);
 
@@ -468,7 +466,40 @@ namespace KidsLearning.Classed.Exten
 
         }
 
+        public static void DrawNumPositive(this Graphics e, Font fontDetail, double min, double max, int x, int y, string opr, int CountNum = 6)
+        {
 
+
+            var num = new Classed.Exten.RandomNumber(min, max);
+
+
+
+            string _a = TextStringExtension.SpacedString(num.MinValue.ToString());
+            string _b = TextStringExtension.SpacedString(num.MaxValue.ToString());
+
+            //System.Windows.Forms.MessageBox.Show(num.MinValue + "\n" + num.MaxValue + "\n" + _a + "\n" + _b);
+
+            int w = Convert.ToInt32(e.MeasureString("0  ", fontDetail).Width);
+            int h = Convert.ToInt32(e.MeasureString("0  ", fontDetail).Height);
+
+            //https://docs.microsoft.com/en-us/dotnet/desktop/winforms/advanced/how-to-align-drawn-text?view=netframeworkdesktop-4.8
+            StringFormat format = new StringFormat(StringFormatFlags.DirectionRightToLeft);
+
+            // https://stackoverflow.com/questions/11451001/why-isnt-my-text-right-aligned-when-i-custom-draw-my-strings
+            //https://docs.microsoft.com/en-us/dotnet/desktop/winforms/advanced/how-to-align-drawn-text?view=netframeworkdesktop-4.8&redirectedfrom=MSDN
+            StringFormat stringFormat = new StringFormat() { Alignment = StringAlignment.Far };
+
+
+            e.DrawString(_b, fontDetail, new SolidBrush(Color.Black), new Rectangle(x, y, w * CountNum, h), stringFormat);
+            e.DrawString(_a, fontDetail, new SolidBrush(Color.Black), new Rectangle(x, y + h + 10, w * CountNum, h), stringFormat);
+            e.DrawLine(new Pen(Color.Black, 3), x, y + 2 * h + 10, x + (CountNum) * w, y + 2 * h + 10);
+            e.DrawString(opr, fontDetail, new SolidBrush(Color.Black), x + (CountNum) * w, y + 10 + h / 2);
+            e.DrawLine(new Pen(Color.Black, 3), x, y + h * 3 + 15, x + (CountNum) * w, y + h * 3 + 15);
+            e.DrawLine(new Pen(Color.Black, 3), x, y + h * 3 + 20, x + (CountNum) * w, y + h * 3 + 20);
+
+
+
+        }
 
 
     }

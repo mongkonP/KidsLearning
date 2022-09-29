@@ -95,8 +95,8 @@ namespace KidsLearning.Print.ptnMth.m01Num
 
         private void numberSelect1_NumberSelectChanged(object sender, EventArgs e)
         {
-            minValue = numberSelect1.Minimum;
-            maxValue = numberSelect1.Maximum;
+            minValue =Convert.ToInt32( numberSelect1.Minimum);
+            maxValue = Convert.ToInt32(numberSelect1.Maximum);
             printPreviewControl1.Document = this.printDocument1;
         }
 

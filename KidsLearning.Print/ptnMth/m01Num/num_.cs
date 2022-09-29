@@ -11,10 +11,10 @@ using TORServices.Drawings;
 
 namespace KidsLearning.Print.ptnMth.m01Num
 {
-   public partial class num011_02 : prnControl
+   public partial class num011_02_ : prnControl
     {
 
-        public num011_02()
+        public num011_02_()
         {
             InitializeComponent();
         }

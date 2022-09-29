@@ -23,120 +23,276 @@ namespace KidsLearning.frm
         {
             InitializeComponent();
 
-            #region _menuCount
-
-            this.menuCount01.Click += new System.EventHandler(this.menuCount01_Click);
-            this.menuCount02.Click += new System.EventHandler(this.menuCount02_Click);
-            this.menuCount03.Click += new System.EventHandler(this.menuCount03_Click);
-            this.menuCount04.Click += new System.EventHandler(this.menuCount04_Click);
-            this.menuCount05.Click += new System.EventHandler(this.menuCount05_Click);
-            this.menuCount06.Click += new System.EventHandler(this.menuCount06_Click);
-            this.menuCount07.Click += new System.EventHandler(this.menuCount07_Click);
-            this.menuCount08.Click += new System.EventHandler(this.menuCount08_Click);
-            this.menuCount09.Click += new System.EventHandler(this.menuCount09_Click);
-            this.menuCount10.Click += new System.EventHandler(this.menuCount10_Click);
-            this.menuCount11.Click += new System.EventHandler(this.menuCount11_Click);
-            this.menuCount12.Click += new System.EventHandler(this.menuCount12_Click);
-            this.menuCount13.Click += new System.EventHandler(this.menuCount13_Click);
-            this.menuCount14.Click += new System.EventHandler(this.menuCount14_Click);
-            this.menuCount15.Click += new System.EventHandler(this.menuCount15_Click);
-            this.menuCount16.Click += new System.EventHandler(this.menuCount16_Click);
-            this.menuCount17.Click += new System.EventHandler(this.menuCount17_Click);
-            this.menuCount18.Click += new System.EventHandler(this.menuCount18_Click);
-            this.menuCount19.Click += new System.EventHandler(this.menuCount19_Click);
-            this.menuCount20.Click += new System.EventHandler(this.menuCount20_Click);
-            this.menuCount21.Click += new System.EventHandler(this.menuCount21_Click);
-            this.menuCount22.Click += new System.EventHandler(this.menuCount22_Click);
-            this.menuCount23.Click += new System.EventHandler(this.menuCount23_Click);
-            this.menuCount24.Click += new System.EventHandler(this.menuCount24_Click);
-            this.menuCount25.Click += new System.EventHandler(this.menuCount25_Click);
-            this.menuCount26.Click += new System.EventHandler(this.menuCount26_Click);
-            #endregion
-
-
-
-            #region _menuOP
-            this.nemuOP01.Click += new System.EventHandler(this.nemuOP01_Click);
-            this.nemuOP02.Click += new System.EventHandler(this.nemuOP02_Click);
-            this.nemuOP03.Click += new System.EventHandler(this.nemuOP03_Click);
-            this.nemuOP04.Click += new System.EventHandler(this.nemuOP04_Click);
-            this.nemuOP05.Click += new System.EventHandler(this.nemuOP05_Click);
-            this.nemuOP06.Click += new System.EventHandler(this.nemuOP06_Click);
-            this.nemuOP07.Click += new System.EventHandler(this.nemuOP07_Click);
-            this.nemuOP08.Click += new System.EventHandler(this.nemuOP08_Click);
-            this.nemuOP09.Click += new System.EventHandler(this.nemuOP09_Click);
-            this.nemuOP10.Click += new System.EventHandler(this.nemuOP10_Click);
-            this.nemuOP11.Click += new System.EventHandler(this.nemuOP11_Click);
-            this.nemuOP12.Click += new System.EventHandler(this.nemuOP12_Click);
-            this.nemuOP13.Click += new System.EventHandler(this.nemuOP13_Click);
-            this.nemuOP14.Click += new System.EventHandler(this.nemuOP14_Click);
-            this.nemuOP15.Click += new System.EventHandler(this.nemuOP15_Click);
-            this.nemuOP16.Click += new System.EventHandler(this.nemuOP16_Click);
-            this.nemuOP17.Click += new System.EventHandler(this.nemuOP17_Click);
-            this.nemuOP18.Click += new System.EventHandler(this.nemuOP18_Click);
-            this.nemuOP19.Click += new System.EventHandler(this.nemuOP19_Click);
-            this.nemuOP20.Click += new System.EventHandler(this.nemuOP20_Click);
-            this.nemuOP21.Click += new System.EventHandler(this.nemuOP21_Click);
-            this.nemuOP22.Click += new System.EventHandler(this.nemuOP22_Click);
-            this.nemuOP23.Click += new System.EventHandler(this.nemuOP23_Click);
-            this.nemuOP24.Click += new System.EventHandler(this.nemuOP24_Click);
-            this.nemuOP25.Click += new System.EventHandler(this.nemuOP25_Click);
-            this.nemuOP26.Click += new System.EventHandler(this.nemuOP26_Click);
-            this.nemuOP27.Click += new System.EventHandler(this.nemuOP27_Click);
-            this.nemuOP28.Click += new System.EventHandler(this.nemuOP28_Click);
-            this.nemuOP29.Click += new System.EventHandler(this.nemuOP29_Click);
-            this.nemuOP30.Click += new System.EventHandler(this.nemuOP30_Click);
-
+            #region _Math
+            #region _menuMathCount
+            this.menuMathCount01.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num001CountDrawtolink()); };
+            this.menuMathCount02.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num002CountandCircleNumber()); };
+            this.menuMathCount03.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num001Num002CountandCircleNumber_01()); };
+            this.menuMathCount04.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num003CountNumberPicture()); };
+            this.menuMathCount05.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num004NumberArabicThaiStringRoman()); };
+            this.menuMathCount06.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num005MoreThan01Pic()); };
+            this.menuMathCount07.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num005MoreThan02Number()); };
+            this.menuMathCount08.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num005NumSortNumber()); };
+            this.menuMathCount09.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num007Num_Digit()); };
+            this.menuMathCount10.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num007NumberByLine()); };
+            this.menuMathCount11.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num008Odd01Pic()); };
+            this.menuMathCount12.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num008Odd02Number()); };
+            this.menuMathCount13.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num009Fraction_01()); };
+            this.menuMathCount14.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num009Fraction_02Compare()); };
+            this.menuMathCount15.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num009Fraction_02NumberConvert()); };
+            this.menuMathCount16.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num010NumSubdivision()); };
+            this.menuMathCount17.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num011SignificantFigure01()); };
+            this.menuMathCount18.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num011Decimal_01()); };
+            this.menuMathCount19.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num011Decimal_Fraction()); };
+            this.menuMathCount20.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num012gcf_lcm04_relationships()); };
+            this.menuMathCount21.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            this.menuMathCount22.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            this.menuMathCount23.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            this.menuMathCount24.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            this.menuMathCount25.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            this.menuMathCount26.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num012gcf_lcm()); };
+            this.menuMathCount27.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num012gcf_lcm02_factoring()); };
+            this.menuMathCount28.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new num012gcf_lcm03_Devide()); };
+            //this.menuMathCount29.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount30.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount31.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount32.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount33.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount34.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount35.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount36.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount37.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount38.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount39.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount40.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount41.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount42.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount43.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount44.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount45.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount46.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount47.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount48.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount49.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathCount50.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
 
             #endregion
 
-            #region _menuStat
-            this.menuStat01.Click += new System.EventHandler(this.menuStat01_Click);
-            this.menuStat02.Click += new System.EventHandler(this.menuStat02_Click);
-            this.menuStat03.Click += new System.EventHandler(this.menuStat03_Click);
-            this.menuStat04.Click += new System.EventHandler(this.menuStat04_Click);
-            this.menuStat05.Click += new System.EventHandler(this.menuStat05_Click);
-            this.menuStat06.Click += new System.EventHandler(this.menuStat06_Click);
-            this.menuStat07.Click += new System.EventHandler(this.menuStat07_Click);
-            this.menuStat08.Click += new System.EventHandler(this.menuStat08_Click);
-            this.menuStat09.Click += new System.EventHandler(this.menuStat09_Click);
-            this.menuStat10.Click += new System.EventHandler(this.menuStat10_Click);
-            this.menuStat11.Click += new System.EventHandler(this.menuStat11_Click);
-            this.menuStat12.Click += new System.EventHandler(this.menuStat12_Click);
-            this.menuStat13.Click += new System.EventHandler(this.menuStat13_Click);
-            this.menuStat14.Click += new System.EventHandler(this.menuStat14_Click);
-            this.menuStat15.Click += new System.EventHandler(this.menuStat15_Click);
-            this.menuStat16.Click += new System.EventHandler(this.menuStat16_Click);
-            this.menuStat17.Click += new System.EventHandler(this.menuStat17_Click);
-            this.menuStat18.Click += new System.EventHandler(this.menuStat18_Click);
-            this.menuStat19.Click += new System.EventHandler(this.menuStat19_Click);
-            this.menuStat20.Click += new System.EventHandler(this.menuStat20_Click);
+            #region _nemuMathOP
+            this.nemuMathOP01.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op001Plus_pic()); };
+            this.nemuMathOP02.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op002Minus_pic()); };
+            this.nemuMathOP03.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op004PlusMinus_Num_01()); };
+            this.nemuMathOP04.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op003PlusMinus_Subdivision()); };
+            this.nemuMathOP05.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op005PlusMinus_Num_02Positive()); };
+            this.nemuMathOP06.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op006NumberByLine_PlusMinus()); };
+            this.nemuMathOP07.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op007MultipliedDivide_01Num()); };
+            this.nemuMathOP08.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op007MultipliedDivide_02Num()); };
+            this.nemuMathOP09.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op007MultipliedDivide_03SubSection()); };
+            this.nemuMathOP10.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op007MultipliedDivide_04SubSection_Detail()); };
+            this.nemuMathOP11.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op009Fraction01LongDivision()); };
+            this.nemuMathOP12.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op009Fraction02SortDivision()); };
+            this.nemuMathOP13.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op007MultipliedDivide_05Positive()); };
+            this.nemuMathOP14.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op010FractionRuleofthree()); };
+            this.nemuMathOP15.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op010FractionRuleofthreePercent()); };
+            this.nemuMathOP16.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op010FractionPlusMinus_01Pic()); };
+            this.nemuMathOP17.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op010FractionPlusMinus_02Num()); };
+            this.nemuMathOP18.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op011Decimal_01()); };
+            this.nemuMathOP19.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op005PlusMinus_Num_03factoring()); };
+            this.nemuMathOP20.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            this.nemuMathOP21.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            this.nemuMathOP22.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            this.nemuMathOP23.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP24.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP25.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP26.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP27.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP28.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP29.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP30.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP31.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP32.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP33.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP34.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP35.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP36.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP37.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP38.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP39.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP40.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP41.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP42.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP43.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP44.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP45.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP46.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP47.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP48.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP49.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.nemuMathOP50.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
 
             #endregion
 
-            #region _menoTrigono
+            #region _menuMathStat
+            this.menuMathStat01.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new st_001Statistics_1()); };
+            this.menuMathStat02.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new st_001Statistics_2()); };
+            this.menuMathStat03.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            this.menuMathStat04.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            this.menuMathStat05.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            this.menuMathStat06.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat07.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat08.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat09.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat10.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat11.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat12.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat13.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat14.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat15.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat16.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat17.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat18.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat19.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat20.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat21.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat22.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat23.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat24.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat25.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat26.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat27.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat28.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat29.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat30.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat31.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat32.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat33.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat34.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat35.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat36.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat37.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat38.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat39.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat40.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat41.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat42.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat43.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat44.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat45.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat46.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat47.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat48.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat49.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menuMathStat50.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
 
-            this.menoTrigono01.Click += new System.EventHandler(this.menoTrigono01_Click);
-            this.menoTrigono02.Click += new System.EventHandler(this.menoTrigono02_Click);
-            this.menoTrigono03.Click += new System.EventHandler(this.menoTrigono03_Click);
-            this.menoTrigono04.Click += new System.EventHandler(this.menoTrigono04_Click);
-            this.menoTrigono05.Click += new System.EventHandler(this.menoTrigono05_Click);
-            this.menoTrigono06.Click += new System.EventHandler(this.menoTrigono06_Click);
-            this.menoTrigono07.Click += new System.EventHandler(this.menoTrigono07_Click);
-            this.menoTrigono08.Click += new System.EventHandler(this.menoTrigono08_Click);
-            this.menoTrigono09.Click += new System.EventHandler(this.menoTrigono09_Click);
-            this.menoTrigono10.Click += new System.EventHandler(this.menoTrigono10_Click);
-            this.menoTrigono11.Click += new System.EventHandler(this.menoTrigono11_Click);
-            this.menoTrigono12.Click += new System.EventHandler(this.menoTrigono12_Click);
-            this.menoTrigono13.Click += new System.EventHandler(this.menoTrigono13_Click);
-            this.menoTrigono14.Click += new System.EventHandler(this.menoTrigono14_Click);
-            this.menoTrigono15.Click += new System.EventHandler(this.menoTrigono15_Click);
-            this.menoTrigono16.Click += new System.EventHandler(this.menoTrigono16_Click);
-            this.menoTrigono17.Click += new System.EventHandler(this.menoTrigono17_Click);
-            this.menoTrigono18.Click += new System.EventHandler(this.menoTrigono18_Click);
-            this.menoTrigono19.Click += new System.EventHandler(this.menoTrigono19_Click);
-            this.menoTrigono20.Click += new System.EventHandler(this.menoTrigono20_Click);
+            #endregion
 
+            #region _menoMathTrigono
+            this.menoMathTrigono01.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new prnMath_014GaugeAngle_01()); };
+            this.menoMathTrigono02.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new prnMath_014GaugeAngle_02()); };
+            this.menoMathTrigono03.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new prnMath_015GaugeLength_01()); };
+            this.menoMathTrigono04.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new prnMath_015GaugeLength_02()); };
+            this.menoMathTrigono05.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            this.menoMathTrigono06.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono07.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono08.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono09.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono10.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono11.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono12.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono13.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono14.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono15.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono16.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono17.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono18.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono19.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono20.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono21.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono22.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono23.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono24.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono25.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono26.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono27.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono28.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono29.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono30.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono31.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono32.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono33.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono34.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono35.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono36.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono37.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono38.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono39.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono40.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono41.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono42.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono43.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono44.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono45.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono46.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono47.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono48.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono49.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            //this.menoMathTrigono50.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            #endregion
+
+            #region _Unit
+            menuUnit_Datetime1.Click += (o, e) =>
+             {
+                 panel1.Controls.Clear();
+                 panel1.Controls.Add(new prnMath_001DateTime001Time());
+             };
+            menuUnit_Datetime2.Click += (o, e) =>
+             {
+                 panel1.Controls.Clear();
+                 panel1.Controls.Add(new prnMath_001DateTime002NextTime());
+             };
+
+            menuUnit_Datetime3.Click += (o, e) =>
+            {
+                panel1.Controls.Clear();
+                panel1.Controls.Add(new prnMath_002DateTime003AD_BE());
+            };
+            menuUnit_Datetime4.Click += (o, e) =>
+            {
+                panel1.Controls.Clear();
+                panel1.Controls.Add(new prnMath_002DateTime004AD_BE_Age());
+            };
+            menuUnit_Datetime5.Click += (o, e) =>
+            {
+                panel1.Controls.Clear();
+                panel1.Controls.Add(new prnMath_003DateTimeCompare());
+            };
+            #endregion
+            #endregion
+
+            #region _menuEng
+            menuEng01.Click += (o, e) =>
+            {
+                panel1.Controls.Clear(); panel1.Controls.Add(new prnEng002SpellingWord());
+
+            };
+            menuEng02.Click += (o, e) =>
+            {
+                panel1.Controls.Clear();  panel1.Controls.Add(new prnEng001CompareTh_En());
+
+            };
+            menuEng03.Click += (o, e) =>
+            {
+
+                panel1.Controls.Clear(); panel1.Controls.Add(new prnEng003Sentences());
+            };
+            menuEng04.Click += (o, e) =>
+            {
+                panel1.Controls.Clear(); panel1.Controls.Add(new prnEng002SpellingWord());
+            };
+            menuEng05.Click += (o, e) =>
+            {
+                panel1.Controls.Clear();  panel1.Controls.Add(new prnEng002WordLine());
+            };
             #endregion
         }
 
@@ -155,931 +311,14 @@ namespace KidsLearning.frm
 
            //panel1.Controls.Add(new prnMath_010DateTime003AD_BE());
 
-            // pictureBox1.Image = KidsLearning.Classed.Exten.ExtGraphics.ImageFromNumber(12);
-            // pictureBox2.Image = KidsLearning.Classed.Exten.ExtGraphics.ImageFromNumber(12,100,100);
-        }
-
-
-        #region _menuEng
-
-
-        private void menuEng01_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            prnEng002SpellingWord f = new prnEng002SpellingWord();
-            panel1.Controls.Add(f);
 
         }
-        private void menuEng02_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            prnEng001CompareTh_En f = new prnEng001CompareTh_En();
-            panel1.Controls.Add(f);
-
-        }
-        private void menuEng03_Click(object sender, EventArgs e)
-        {
-
-            panel1.Controls.Clear();
-            prnEng003Sentences f = new prnEng003Sentences();
-            panel1.Controls.Add(f);
-        }
-        private void menuEng04_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            prnEng002SpellingWord f = new prnEng002SpellingWord();
-            panel1.Controls.Add(f);
-        }
-        private void menuEng05_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new prnEng002WordLine());
-        }
 
 
-
-        #endregion
-
-        #region _Math
-        #region _Math_num
-
-
-        private void menuCount01_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new num001CountDrawtolink());
-        }
-
-        private void menuCount02_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new num002CountandCircleNumber());
    
-        }
 
-        private void menuCount03_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new num001Num002CountandCircleNumber_01());
-        }
+ 
 
-        private void menuCount04_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new num003CountNumberPicture());
-        }
-
-        private void menuCount05_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new num004NumberArabicThaiStringRoman());
-        }
-
-        private void menuCount06_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new num005MoreThan01Pic());
-        }
-
-        private void menuCount07_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new num005MoreThan02Number());
-        }
-
-        private void menuCount08_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new num005NumSortNumber());
-        }
-
-        private void menuCount09_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new num007Num_Digit());
-        }
-
-        private void menuCount10_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new num007NumberByLine());
-        }
-
-        private void menuCount11_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new num008Odd01Pic());
-        }
-
-        private void menuCount12_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new num008Odd02Number());
-        }
-
-        private void menuCount13_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new num009Fraction_01());
-        }
-
-        private void menuCount14_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new num009Fraction_02Compare());
-        }
-
-        private void menuCount15_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-             panel1.Controls.Add(new num009Fraction_02NumberConvert());
-        }
-
-        private void menuCount16_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new num010NumSubdivision());
-        }
-
-        private void menuCount17_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new num011SignificantFigure01());
-        }
-
-        private void menuCount18_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new num011Decimal_01());
-        }
-
-        private void menuCount19_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount20_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount21_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount22_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount23_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount24_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount25_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount26_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new num012gcf_lcm());
-        }
-
-        private void menuCount27_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount28_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount29_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount30_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount31_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount32_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount33_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount34_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount35_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount36_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount37_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount38_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount39_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount40_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount41_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount42_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount43_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount44_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount45_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount46_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount47_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount48_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuCount49_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-        #endregion
-
-        #region _nemuOP
-        private void nemuOP01_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new op001Plus_pic());
-        }
-
-        private void nemuOP02_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new op002Minus_pic());
-        }
-
-        private void nemuOP03_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new op004PlusMinus_Num_01());
-        }
-
-        private void nemuOP04_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new op003PlusMinus_Subdivision());
-        }
-
-        private void nemuOP05_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new op005PlusMinus_Num_02Positive());
-        }
-
-        private void nemuOP06_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new op006NumberByLine_PlusMinus());
-        }
-
-        private void nemuOP07_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new op007MultipliedDivide_01Num());
-        }
-
-        private void nemuOP08_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new op007MultipliedDivide_02Num());
-        }
-
-        private void nemuOP09_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new op007MultipliedDivide_03SubSection());
-        }
-
-        private void nemuOP10_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new op007MultipliedDivide_04SubSection_Detail());
-        }
-
-        private void nemuOP11_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new op009Fraction01LongDivision());
-        }
-
-        private void nemuOP12_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new op009Fraction02SortDivision());
-        }
-
-        private void nemuOP13_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new op007MultipliedDivide_05Positive());
-        }
-
-        private void nemuOP14_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new op010FractionRuleofthree());
-        }
-
-        private void nemuOP15_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new op010FractionRuleofthreePercent());
-        }
-
-        private void nemuOP16_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new op010FractionPlusMinus_01Pic());
-        }
-
-        private void nemuOP17_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new op010FractionPlusMinus_02Num());
-        }
-
-        private void nemuOP18_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new op011Decimal_01());
-        }
-
-        private void nemuOP19_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new num011Decimal_Fraction());
-        }
-
-        private void nemuOP20_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP21_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP22_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP23_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP24_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP25_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP26_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP27_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP28_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP29_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP30_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP31_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP32_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP33_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP34_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP35_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP36_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP37_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP38_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP39_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP40_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP41_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP42_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP43_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP44_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP45_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP46_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP47_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP48_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void nemuOP49_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        #endregion
-
-        #region _menuStat
-
-
-        private void menuStat01_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new st_001Statistics_1());
-        }
-
-        private void menuStat02_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new st_001Statistics_2());
-        }
-
-        private void menuStat03_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuStat04_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuStat05_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuStat06_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuStat07_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuStat08_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuStat09_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuStat10_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuStat11_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuStat12_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuStat13_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuStat14_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuStat15_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuStat16_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuStat17_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuStat18_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuStat19_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menuStat20_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        #endregion
-
-        #region _menoTrigono
-
-       
-
-        private void menoTrigono01_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new prnMath_014GaugeAngle_01());
-        }
-
-        private void menoTrigono02_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new prnMath_014GaugeAngle_02());
-        }
-
-        private void menoTrigono03_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new prnMath_015GaugeLength_01());
-        }
-
-        private void menoTrigono04_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new prnMath_015GaugeLength_02());
-        }
-
-        private void menoTrigono05_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menoTrigono06_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menoTrigono07_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menoTrigono08_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menoTrigono09_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menoTrigono10_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menoTrigono11_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menoTrigono12_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menoTrigono13_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menoTrigono14_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menoTrigono15_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menoTrigono16_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menoTrigono17_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menoTrigono18_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menoTrigono19_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-        private void menoTrigono20_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            //panel1.Controls.Add(new ());
-        }
-
-
-        #endregion
-
-        #region _Unit
-        private void menuUnit_Datetime1_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new prnMath_001DateTime001Time());
-        }
-        private void menuUnit_Datetime2_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new prnMath_001DateTime002NextTime());
-        }
-
-        private void menuUnit_Datetime3_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new prnMath_002DateTime003AD_BE());
-        }
-        private void menuUnit_Datetime4_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new prnMath_002DateTime004AD_BE_Age());
-        }
-        private void menuUnit_Datetime5_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(new prnMath_003DateTimeCompare());
-        }
-        #endregion
-
-        #endregion
-
-
+        
     }
 }

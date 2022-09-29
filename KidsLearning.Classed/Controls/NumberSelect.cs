@@ -12,8 +12,8 @@ namespace KidsLearning.Classed.Controls
 {
     public partial class NumberSelect : UserControl
     {
-        public int Minimum;
-        public int Maximum;
+        public double Minimum;
+        public double Maximum;
         public int Decimal;
         public NumberSelect()
         {
@@ -200,7 +200,22 @@ namespace KidsLearning.Classed.Controls
         {
          
             bool isNumeric = int.TryParse(cmbDecimal.Text, out Decimal);
+         
 
+            Minimum = double.Parse(Minimum.ToString("N" + Decimal));
+            Maximum = double.Parse(Maximum.ToString("N" + Decimal));
+
+            OnNumberSelectChanged(null);
+        }
+
+        private void cmbDecimal_TextChanged(object sender, EventArgs e)
+        {
+            bool isNumeric = int.TryParse(cmbDecimal.Text, out Decimal);
+
+            Minimum = double.Parse(Minimum.ToString("N" + Decimal));
+            Maximum =  double.Parse( Maximum.ToString("N" + Decimal));
+
+            OnNumberSelectChanged(null);
         }
     }
 }
