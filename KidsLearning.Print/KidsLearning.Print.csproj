@@ -100,9 +100,6 @@
     <Compile Update="ptnMth\m01Num\num_.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="ptnMth\m02OP\op005PlusMinus_Num_03factoring.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="ptnMth\m02OP\op011Decimal_01.cs">
       <SubType>UserControl</SubType>
     </Compile>

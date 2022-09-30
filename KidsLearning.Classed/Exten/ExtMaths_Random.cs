@@ -20,18 +20,24 @@ namespace KidsLearning.Classed.Exten
         }*/
         public RandomNumber(double min, double max)
         {
-            __a = random.NextDouble() + RandomNumberGenerator.GetInt32(Convert.ToInt32( min), Convert.ToInt32(max));
-            __b = random.NextDouble() + RandomNumberGenerator.GetInt32(Convert.ToInt32(min), Convert.ToInt32(max));
+            __a = Ext_Maths.Randomdouble(min,max);
+            __b = Ext_Maths.Randomdouble(min, max);
 
         }
-       /* public int MinValue
+        public RandomNumber(double min, double max,int digit)
         {
-            get { return Math.Min(_a, _b); }
+            __a = Ext_Maths.Randomdouble(min, max,digit);
+            __b = Ext_Maths.Randomdouble(min, max, digit);
+
         }
-        public int MaxValue
-        {
-            get { return Math.Max(_a, _b); }
-        }*/
+        /* public int MinValue
+         {
+             get { return Math.Min(_a, _b); }
+         }
+         public int MaxValue
+         {
+             get { return Math.Max(_a, _b); }
+         }*/
         public  double MinValue
         {
             get { return Math.Min(__a, __b); }
@@ -44,13 +50,13 @@ namespace KidsLearning.Classed.Exten
     public static partial class Ext_Maths
     {
         private static Random r = new Random();
-        public static double Randomdouble(int min, int max)
+        public static double Randomdouble(double min, double max)
         {
-            return RandomNumberGenerator.GetInt32(min, max) + r.NextDouble();
+            return Convert.ToDouble(RandomNumberGenerator.GetInt32(Convert.ToInt32(min), Convert.ToInt32(max)) + r.NextDouble());
         }
-        public static double Randomdouble(int min, int max, int _decimal)
+        public static double Randomdouble(double min, double max, int _decimal)
         {
-            double d = RandomNumberGenerator.GetInt32(min, max) + r.NextDouble();
+            double d = RandomNumberGenerator.GetInt32(Convert.ToInt32(min), Convert.ToInt32(max)) + r.NextDouble();
             return Convert.ToDouble(d.ToString("N" + _decimal));
         }
         public static double RandomInt(int min, int max)

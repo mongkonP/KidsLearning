@@ -122,11 +122,13 @@ namespace KidsLearning.Classed.Controls
             // rd_4
             // 
             this.rd_4.AutoSize = true;
+            this.rd_4.Checked = true;
             this.rd_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rd_4.Location = new System.Drawing.Point(222, 65);
             this.rd_4.Name = "rd_4";
             this.rd_4.Size = new System.Drawing.Size(86, 35);
             this.rd_4.TabIndex = 28;
+            this.rd_4.TabStop = true;
             this.rd_4.Text = "1-50";
             this.rd_4.UseVisualStyleBackColor = true;
             // 
@@ -155,13 +157,11 @@ namespace KidsLearning.Classed.Controls
             // rd_3
             // 
             this.rd_3.AutoSize = true;
-            this.rd_3.Checked = true;
             this.rd_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rd_3.Location = new System.Drawing.Point(24, 65);
             this.rd_3.Name = "rd_3";
             this.rd_3.Size = new System.Drawing.Size(86, 35);
             this.rd_3.TabIndex = 25;
-            this.rd_3.TabStop = true;
             this.rd_3.Text = "1-20";
             this.rd_3.UseVisualStyleBackColor = true;
             // 
@@ -369,29 +369,29 @@ namespace KidsLearning.Classed.Controls
 
         #endregion
 
-        private System.Windows.Forms.RadioButton rd_6;
-        private System.Windows.Forms.RadioButton rd_5;
-        private TORServices.Forms.TextBoxNumber txtMax;
-        private System.Windows.Forms.Label label1;
-        private TORServices.Forms.TextBoxNumber txtMin;
-        private System.Windows.Forms.RadioButton rd_70;
-        private System.Windows.Forms.RadioButton rd_4;
-        private System.Windows.Forms.RadioButton rd_1;
-        private System.Windows.Forms.RadioButton rd_2;
-        private System.Windows.Forms.RadioButton rd_3;
-        private System.Windows.Forms.RadioButton rd_8;
-        private System.Windows.Forms.RadioButton rd_7;
-        private System.Windows.Forms.RadioButton rd_11;
-        private System.Windows.Forms.RadioButton rd_10;
-        private System.Windows.Forms.RadioButton rd_9;
-        private System.Windows.Forms.RadioButton rd_12;
-        private System.Windows.Forms.RadioButton rd_18;
-        private System.Windows.Forms.RadioButton rd_17;
-        private System.Windows.Forms.RadioButton rd_16;
-        private System.Windows.Forms.RadioButton rd_13;
-        private System.Windows.Forms.RadioButton rd_14;
-        private System.Windows.Forms.RadioButton rd_15;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cmbDecimal;
+        public System.Windows.Forms.RadioButton rd_6;
+        public System.Windows.Forms.RadioButton rd_5;
+        public TORServices.Forms.TextBoxNumber txtMax;
+        public System.Windows.Forms.Label label1;
+        public TORServices.Forms.TextBoxNumber txtMin;
+        public System.Windows.Forms.RadioButton rd_70;
+        public System.Windows.Forms.RadioButton rd_4;
+        public System.Windows.Forms.RadioButton rd_1;
+        public System.Windows.Forms.RadioButton rd_2;
+        public System.Windows.Forms.RadioButton rd_3;
+        public System.Windows.Forms.RadioButton rd_8;
+        public System.Windows.Forms.RadioButton rd_7;
+        public System.Windows.Forms.RadioButton rd_11;
+        public System.Windows.Forms.RadioButton rd_10;
+        public System.Windows.Forms.RadioButton rd_9;
+        public System.Windows.Forms.RadioButton rd_12;
+        public System.Windows.Forms.RadioButton rd_18;
+        public System.Windows.Forms.RadioButton rd_17;
+        public System.Windows.Forms.RadioButton rd_16;
+        public System.Windows.Forms.RadioButton rd_13;
+        public System.Windows.Forms.RadioButton rd_14;
+        public System.Windows.Forms.RadioButton rd_15;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.ComboBox cmbDecimal;
     }
 }

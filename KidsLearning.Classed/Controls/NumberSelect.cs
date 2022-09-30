@@ -38,6 +38,28 @@ namespace KidsLearning.Classed.Controls
             rd_18.Click += new EventHandler(radioButton1_Click);
 
             rd_70.Click += new EventHandler(radioButton1_Click);
+
+            rd_1.CheckedChanged += new EventHandler(radioButton1_Click);
+            rd_2.CheckedChanged += new EventHandler(radioButton1_Click);
+            rd_3.CheckedChanged += new EventHandler(radioButton1_Click);
+            rd_4.CheckedChanged += new EventHandler(radioButton1_Click);
+            rd_5.CheckedChanged += new EventHandler(radioButton1_Click);
+            rd_6.CheckedChanged += new EventHandler(radioButton1_Click);
+            rd_7.CheckedChanged += new EventHandler(radioButton1_Click);
+            rd_8.CheckedChanged += new EventHandler(radioButton1_Click);
+            rd_9.CheckedChanged += new EventHandler(radioButton1_Click);
+            rd_10.CheckedChanged += new EventHandler(radioButton1_Click);
+            rd_11.CheckedChanged += new EventHandler(radioButton1_Click);
+            rd_12.CheckedChanged += new EventHandler(radioButton1_Click);
+            rd_13.CheckedChanged += new EventHandler(radioButton1_Click);
+            rd_14.CheckedChanged += new EventHandler(radioButton1_Click);
+            rd_15.CheckedChanged += new EventHandler(radioButton1_Click);
+            rd_16.CheckedChanged += new EventHandler(radioButton1_Click);
+            rd_17.CheckedChanged += new EventHandler(radioButton1_Click);
+            rd_18.CheckedChanged += new EventHandler(radioButton1_Click);
+
+            rd_70.CheckedChanged += new EventHandler(radioButton1_Click);
+        
         }
         #region _NumberSelect
         private static readonly object _NumberSelectChanged = new object();
@@ -60,29 +82,28 @@ namespace KidsLearning.Classed.Controls
         #endregion
         private void NumberSelect_Load(object sender, EventArgs e)
         {
-            rd_1.Checked= true;
-            Minimum = 1;
-            Maximum = 10;
+            rd_3.Checked = true;
             OnNumberSelectChanged(null);
         }
         private void radioButton1_Click(object sender, EventArgs e)
         {
-            if (rd_1.Checked)
+            
+            if (rd_1.Checked)//1-10
             {
                 Minimum = 1;
                 Maximum = 10;
             }
-            else if (rd_2.Checked)
+            else if (rd_2.Checked)//20-50
             {
                 Minimum = 20;
                 Maximum = 50;
             }
-            else if (rd_3.Checked)
+            else if (rd_3.Checked)//1-20
             {
                 Minimum = 1;
                 Maximum = 20;
             }
-            else if (rd_4.Checked)
+            else if (rd_4.Checked)// 1 - 50
             {
                 Minimum = 1;
                 Maximum = 50;

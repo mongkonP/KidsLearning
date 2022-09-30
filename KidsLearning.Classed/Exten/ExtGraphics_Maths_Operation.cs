@@ -466,18 +466,30 @@ namespace KidsLearning.Classed.Exten
 
         }
 
-        public static void DrawNumPositive(this Graphics e, Font fontDetail, double min, double max, int x, int y, string opr, int CountNum = 6)
+        public static void DrawNumPositive(this Graphics e, Font fontDetail, double min, double max, int x, int y, string opr, int CountNum = 6,int digit = 3)
         {
 
+            //https://pantip.com/topic/41657834/comment5
+            var num = new Classed.Exten.RandomNumber(min, max,digit);
+           /*  var c = ((Func<double, double, int>)((a, b) => {
+                var a_str = a.ToString();
+                var b_str = b.ToString();
+                var a_pos = a_str.IndexOf(".");
+                var b_pos = b_str.IndexOf(".");
+                var a_dec_len = a_pos != -1 ? a_str.Length - a_pos - 1 : 0;
+                var b_dec_len = b_pos != -1 ? b_str.Length - b_pos - 1 : 0;
+                System.Windows.Forms.MessageBox.Show(a + "\n" + b + "\n" + a_pos + "\n" + b_pos + "\n" + a_dec_len + "\n" + b_dec_len);
+                return Math.Max(a_dec_len, b_dec_len);
+            }))(num.MinValue, num.MaxValue);  // immediate lambda
+            System.Windows.Forms.MessageBox.Show(num.MinValue + "\n" + num.MaxValue +"\n" + c + "\n" + digit);
+            string _a =TextStringExtension.SpacedString(c.ToString("N" + digit));
+             string _b = TextStringExtension.SpacedString(num.MaxValue.ToString("N" + digit));*/
+            var formatted_a = String.Format($"{{0:F{digit}}}", num.MinValue);
+            var formatted_b = String.Format($"{{0:F{digit}}}", num.MaxValue);//num.MaxValue.ToString($"F{c}");
 
-            var num = new Classed.Exten.RandomNumber(min, max);
+            var _a = String.Join<char>(' ', formatted_a);
+            var _b = String.Join(' ', (IEnumerable<char>)formatted_b);
 
-
-
-            string _a = TextStringExtension.SpacedString(num.MinValue.ToString());
-            string _b = TextStringExtension.SpacedString(num.MaxValue.ToString());
-
-            //System.Windows.Forms.MessageBox.Show(num.MinValue + "\n" + num.MaxValue + "\n" + _a + "\n" + _b);
 
             int w = Convert.ToInt32(e.MeasureString("0  ", fontDetail).Width);
             int h = Convert.ToInt32(e.MeasureString("0  ", fontDetail).Height);
