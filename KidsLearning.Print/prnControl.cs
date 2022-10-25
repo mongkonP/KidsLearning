@@ -80,6 +80,7 @@ namespace KidsLearning.Print
 
                 iPageAll = int.Parse(this.txtPageCount.Text);
                 iPage = 1;
+                this.printDocument1.PrinterSettings.PrinterName = printDialog1.PrinterSettings.PrinterName;
                 this.printDocument1.DocumentName = ReportHeader + string.Format("{0:yyyyMMdd hhmmss}", DateTime.Now);
                 this.printDocument1.Print();
             }

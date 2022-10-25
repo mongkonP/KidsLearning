@@ -11,12 +11,13 @@ using System.Windows.Forms;
 using TORServices.Maths;
 using static TORServices.Maths.extMath;
 using TORServices.Drawings;
+using OfficeOpenXml.FormulaParsing.Excel.Functions.Database;
 
 namespace KidsLearning.Print.ptnMth.m02OP
 {
-    public partial class op004PlusMinus_Num_01 : prnControl
+    public partial class op004PlusMinus_Num_02 : prnControl
     {
-        public op004PlusMinus_Num_01()
+        public op004PlusMinus_Num_02()
         {
             InitializeComponent();
             this.Load += new System.EventHandler(this.frm_Load);
@@ -27,17 +28,13 @@ namespace KidsLearning.Print.ptnMth.m02OP
         #region Variables
 
         int minValue = 1, maxValue = 12;
-        string Opr = "+";
+        List<string> sOPs = new List<string>() { "++","--","+-","-+"};
         bool ramdomRect = false;
         #endregion
         private Classed.Controls.NumberSelect01 numberSelect1;
-        private GroupBox groupBox4;
-        private RadioButton rd_5;
-        private RadioButton rd_4;
         private GroupBox groupBox3;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
-        private RadioButton rd_6;
 
         private void frm_Load(object sender, EventArgs e)
         {
@@ -52,34 +49,27 @@ namespace KidsLearning.Print.ptnMth.m02OP
         private void InitializeComponent()
         {
             this.numberSelect1 = new KidsLearning.Classed.Controls.NumberSelect01();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.rd_5 = new System.Windows.Forms.RadioButton();
-            this.rd_4 = new System.Windows.Forms.RadioButton();
-            this.rd_6 = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.groupBox3);
-            this.groupBox1.Controls.Add(this.groupBox4);
             this.groupBox1.Controls.Add(this.numberSelect1);
             this.groupBox1.Size = new System.Drawing.Size(458, 648);
             this.groupBox1.Controls.SetChildIndex(this.numberSelect1, 0);
-            this.groupBox1.Controls.SetChildIndex(this.groupBox4, 0);
             this.groupBox1.Controls.SetChildIndex(this.groupBox3, 0);
             this.groupBox1.Controls.SetChildIndex(this.panel2, 0);
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(3, 717);
+            this.panel2.Location = new System.Drawing.Point(3, 488);
             this.panel2.Size = new System.Drawing.Size(452, 119);
             // 
             // groupBox2
@@ -96,61 +86,9 @@ namespace KidsLearning.Print.ptnMth.m02OP
             this.numberSelect1.Dock = System.Windows.Forms.DockStyle.Top;
             this.numberSelect1.Location = new System.Drawing.Point(3, 19);
             this.numberSelect1.Name = "numberSelect1";
-            this.numberSelect1.Size = new System.Drawing.Size(452, 359);
+            this.numberSelect1.Size = new System.Drawing.Size(452, 313);
             this.numberSelect1.TabIndex = 2;
             this.numberSelect1.NumberSelectChanged += new System.EventHandler(this.numberSelect1_NumberSelectChanged);
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.rd_5);
-            this.groupBox4.Controls.Add(this.rd_4);
-            this.groupBox4.Controls.Add(this.rd_6);
-            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox4.Location = new System.Drawing.Point(3, 378);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(452, 183);
-            this.groupBox4.TabIndex = 33;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "ดำเนินการ";
-            // 
-            // rd_5
-            // 
-            this.rd_5.AutoSize = true;
-            this.rd_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rd_5.Location = new System.Drawing.Point(15, 90);
-            this.rd_5.Name = "rd_5";
-            this.rd_5.Size = new System.Drawing.Size(134, 35);
-            this.rd_5.TabIndex = 36;
-            this.rd_5.Text = "การลบ (-)";
-            this.rd_5.UseVisualStyleBackColor = true;
-            this.rd_5.CheckedChanged += new System.EventHandler(this.rd_4_CheckedChanged);
-            // 
-            // rd_4
-            // 
-            this.rd_4.AutoSize = true;
-            this.rd_4.Checked = true;
-            this.rd_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rd_4.Location = new System.Drawing.Point(15, 48);
-            this.rd_4.Name = "rd_4";
-            this.rd_4.Size = new System.Drawing.Size(156, 35);
-            this.rd_4.TabIndex = 34;
-            this.rd_4.TabStop = true;
-            this.rd_4.Text = "การบวก (+)";
-            this.rd_4.UseVisualStyleBackColor = true;
-            this.rd_4.CheckedChanged += new System.EventHandler(this.rd_4_CheckedChanged);
-            // 
-            // rd_6
-            // 
-            this.rd_6.AutoSize = true;
-            this.rd_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rd_6.Location = new System.Drawing.Point(15, 131);
-            this.rd_6.Name = "rd_6";
-            this.rd_6.Size = new System.Drawing.Size(120, 35);
-            this.rd_6.TabIndex = 35;
-            this.rd_6.Text = "สุ่ม (+/-)";
-            this.rd_6.UseVisualStyleBackColor = true;
-            this.rd_6.CheckedChanged += new System.EventHandler(this.rd_4_CheckedChanged);
             // 
             // groupBox3
             // 
@@ -158,7 +96,7 @@ namespace KidsLearning.Print.ptnMth.m02OP
             this.groupBox3.Controls.Add(this.radioButton2);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox3.Location = new System.Drawing.Point(3, 561);
+            this.groupBox3.Location = new System.Drawing.Point(3, 332);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(452, 156);
             this.groupBox3.TabIndex = 34;
@@ -191,17 +129,15 @@ namespace KidsLearning.Print.ptnMth.m02OP
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.rd_4_CheckedChanged);
             // 
-            // op004PlusMinus_Num_01
+            // op004PlusMinus_Num_02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.Name = "op004PlusMinus_Num_01";
+            this.Name = "op004PlusMinus_Num_02";
             this.Size = new System.Drawing.Size(1417, 648);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
@@ -210,19 +146,7 @@ namespace KidsLearning.Print.ptnMth.m02OP
 
         private void rd_4_CheckedChanged(object sender, EventArgs e)
         {
-            if (rd_4.Checked)
-            {
-                Opr = "+";
-            }
-            else if (rd_5.Checked)
-            {
-                Opr = "-";
-            }
-            else if (rd_6.Checked)
-            {
-
-                Opr = "+/-";
-            }
+            
 
             if (radioButton1.Checked)
             {
@@ -243,54 +167,148 @@ namespace KidsLearning.Print.ptnMth.m02OP
             printPreviewControl1.Document = this.printDocument1;
         }
 
+       
+
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             //Loop till all the grid rows not get printed
             if (bFirstPage) printDocumentNewPage(sender, e);
 
             #region _Draw Detail
-
+            
 
             int yC = 100;
             int xC = 100;
-            int w = 80, h = 50;
+            int w = 80, h = 40;
+            Pen pen = new Pen(Color.Black, 3);
+            SolidBrush solidBrush = new SolidBrush(Color.Black);
 
-
-            xC = 100;
-            yC = yC + 50; string sOP;
+      
+            yC = yC + 50;
+            double anw;
+      
+            double _num1, _num2, _num3;
+            string op1,op2;
             for (int i = 1; i <= 10; i++)
             {
 
-                /* int a = RandomNumberGenerator.GetInt32(minValue, maxValue);
-                 int b = RandomNumberGenerator.GetInt32(minValue, maxValue);
-                 int _a = Math.Min(a, b),_b =Math.Max(a, b);*/
+                
                
-                if (Opr == "+")
-                {
-                    sOP = " + ";
-                }
-                else if (Opr == "-")
-                {
-                    sOP = " - ";
-                }
-                else
-                {
 
-                    if (RandomNumberGenerator.GetInt32(1, 2000) > 1000)
+                int d1 = (numberSelect1.Decimal < 0) ? RandomNumberGenerator.GetInt32(1, 5) : numberSelect1.Decimal;
+                int d2 = (numberSelect1.Decimal < 0) ? RandomNumberGenerator.GetInt32(1, 5) : numberSelect1.Decimal;
+                int d3 = (numberSelect1.Decimal < 0) ? RandomNumberGenerator.GetInt32(1, 5) : numberSelect1.Decimal;
+                int d4 = Math.Max(d3,Math.Max(d1, d2));
+                double num1 = Ext_Maths.Randomdouble(numberSelect1.Minimum, numberSelect1.Maximum, d1);
+                double num2 = Ext_Maths.Randomdouble(numberSelect1.Minimum, numberSelect1.Maximum, d2);
+                double num3 = Ext_Maths.Randomdouble(numberSelect1.Minimum, numberSelect1.Maximum, d2);
+
+
+                switch (RandomNumberGenerator.GetInt32(1, 4000))
+                {
+                    case > 3000:
+                        op1 = "+";op2 = "+";
+                        anw = num1 + num2 + num3;
+                        break;
+                    case <= 3000 and > 2000:
+                        op1 = "-"; op2 = "-";
+                        anw = num1 - num2 - num3;
+                        break;
+                    case <= 2000 and > 1000:
+                        op1 = "-"; op2 = "+";
+                        anw = num1 - num2 + num3;
+                        break;
+                    case <= 1000:
+                        op1 = "+"; op2 = "-";
+                        anw = num1 + num2 - num3;
+                        break;
+
+                }
+                if (radioButton2.Checked)
+                {
+                    e.Graphics.DrawString(num1.ToString($"F{d1}"), fontDetail, solidBrush, xC, yC);
+                    e.Graphics.DrawString(op1, fontDetail, solidBrush, xC + 80, yC);
+
+                    e.Graphics.DrawString(num2.ToString($"F{d2}"), fontDetail, solidBrush, xC + 130, yC);
+                    e.Graphics.DrawString(op2, fontDetail, solidBrush, xC + 220, yC);
+
+                    e.Graphics.DrawString(num3.ToString($"F{d3}"), fontDetail, solidBrush, xC + 250, yC);
+                    e.Graphics.DrawString(" = ", fontDetail, solidBrush, xC + 350, yC);
+
+                    e.Graphics.DrawRectangle(new Pen(Color.Black, 3), xC + 400, yC - 5, 150, h);
+                }
+                else if (radioButton1.Checked)
+                {
+                    switch (RandomNumberGenerator.GetInt32(1, 4000))
                     {
-                        sOP = " + ";
-                    }
-                    else
-                    {
-                        sOP = " - ";
-                    }
+                        case > 3000:
+                            e.Graphics.DrawString(num1.ToString($"F{d1}"), fontDetail, solidBrush, xC, yC);
+                            e.Graphics.DrawString(op1, fontDetail, solidBrush, xC + 80, yC);
 
+                            e.Graphics.DrawString(num2.ToString($"F{d2}"), fontDetail, solidBrush, xC + 130, yC);
+                            e.Graphics.DrawString(op2, fontDetail, solidBrush, xC + 220, yC);
+
+                            e.Graphics.DrawString(num3.ToString($"F{d3}"), fontDetail, solidBrush, xC + 250, yC);
+                            e.Graphics.DrawString(" = ", fontDetail, solidBrush, xC + 350, yC);
+
+                            e.Graphics.DrawRectangle(new Pen(Color.Black, 3), xC + 400, yC - 5, 120, h);
+                            break;
+                        case <= 3000 and > 2000:
+                            e.Graphics.DrawRectangle(new Pen(Color.Black, 3), xC-20 , yC - 5, 100, h);
+                           // e.Graphics.DrawString(num1.ToString($"F{d1}"), fontDetail, solidBrush, xC, yC);
+                            e.Graphics.DrawString(op1, fontDetail, solidBrush, xC + 80, yC);
+
+                            e.Graphics.DrawString(num2.ToString($"F{d2}"), fontDetail, solidBrush, xC + 130, yC);
+                            e.Graphics.DrawString(op2, fontDetail, solidBrush, xC + 220, yC);
+
+                            e.Graphics.DrawString(num3.ToString($"F{d3}"), fontDetail, solidBrush, xC + 250, yC);
+                            e.Graphics.DrawString(" = ", fontDetail, solidBrush, xC + 350, yC);
+
+                            e.Graphics.DrawString(anw.ToString($"F{d4}"), fontDetail, solidBrush, xC + 400, yC);
+
+                           
+                            break;
+                        case <= 2000 and > 1000:
+                            e.Graphics.DrawString(num1.ToString($"F{d1}"), fontDetail, solidBrush, xC, yC);
+                            e.Graphics.DrawString(op1, fontDetail, solidBrush, xC + 80, yC);
+
+                            e.Graphics.DrawRectangle(new Pen(Color.Black, 3), xC + 100, yC - 5, 110, h);
+                           // e.Graphics.DrawString(num2.ToString($"F{d2}"), fontDetail, solidBrush, xC + 130, yC);
+                            e.Graphics.DrawString(op2, fontDetail, solidBrush, xC + 220, yC);
+
+                            e.Graphics.DrawString(num3.ToString($"F{d3}"), fontDetail, solidBrush, xC + 250, yC);
+                            e.Graphics.DrawString(" = ", fontDetail, solidBrush, xC + 350, yC);
+
+                            e.Graphics.DrawString(anw.ToString($"F{d4}"), fontDetail, solidBrush, xC + 400, yC);
+                            break;
+                        case <= 1000:
+                            e.Graphics.DrawString(num1.ToString($"F{d1}"), fontDetail, solidBrush, xC, yC);
+                            e.Graphics.DrawString(op1, fontDetail, solidBrush, xC + 80, yC);
+
+                            e.Graphics.DrawString(num2.ToString($"F{d2}"), fontDetail, solidBrush, xC + 130, yC);
+                            e.Graphics.DrawString(op2, fontDetail, solidBrush, xC + 220, yC);
+
+                            e.Graphics.DrawRectangle(new Pen(Color.Black, 3), xC + 240, yC - 5, 110, h);
+                            //e.Graphics.DrawString(num3.ToString($"F{d3}"), fontDetail, solidBrush, xC + 250, yC);
+                            e.Graphics.DrawString(" = ", fontDetail, solidBrush, xC + 350, yC);
+
+                            e.Graphics.DrawString(anw.ToString($"F{d4}"), fontDetail, solidBrush, xC + 400, yC);
+                            break;
+
+                    }
 
                 }
+
+                
+
+                
+
                
-                e.Graphics.DrawPlusMinusFillRectangle(sOP, ramdomRect, minValue, maxValue,this.numberSelect1.Decimal, new Font("Arial", 22), xC, yC);
+               
+               
 
-
+              
+              
 
                 yC = yC + 80;
 

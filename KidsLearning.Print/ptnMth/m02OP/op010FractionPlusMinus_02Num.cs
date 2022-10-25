@@ -77,14 +77,12 @@ namespace KidsLearning.Print.ptnMth.m02OP
             // 
             // groupBox1
             // 
-            this.groupBox1.Size = new System.Drawing.Size(288, 676);
+            this.groupBox1.Size = new System.Drawing.Size(288, 593);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.panel1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(3, 19);
             this.panel2.Size = new System.Drawing.Size(282, 640);
             this.panel2.Controls.SetChildIndex(this.panel1, 0);
             this.panel2.Controls.SetChildIndex(this.panel3, 0);
@@ -112,11 +110,11 @@ namespace KidsLearning.Print.ptnMth.m02OP
             // groupBox2
             // 
             this.groupBox2.Location = new System.Drawing.Point(288, 0);
-            this.groupBox2.Size = new System.Drawing.Size(1144, 676);
+            this.groupBox2.Size = new System.Drawing.Size(1218, 593);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(1138, 654);
+            this.printPreviewControl1.Size = new System.Drawing.Size(1212, 571);
             // 
             // panel1
             // 
@@ -161,9 +159,9 @@ namespace KidsLearning.Print.ptnMth.m02OP
             this.rd_3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rd_3.Location = new System.Drawing.Point(21, 176);
             this.rd_3.Name = "rd_3";
-            this.rd_3.Size = new System.Drawing.Size(213, 36);
+            this.rd_3.Size = new System.Drawing.Size(98, 36);
             this.rd_3.TabIndex = 2;
-            this.rd_3.Text = "การบวก ลบ แบบสุ่ม";
+            this.rd_3.Text = "แบบสุ่ม";
             this.rd_3.UseVisualStyleBackColor = true;
             this.rd_3.CheckedChanged += new System.EventHandler(this.rd_1_CheckedChanged);
             // 
@@ -272,7 +270,7 @@ namespace KidsLearning.Print.ptnMth.m02OP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.Name = "op010FractionPlusMinus_02Num";
-            this.Size = new System.Drawing.Size(1432, 676);
+            this.Size = new System.Drawing.Size(1506, 593);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

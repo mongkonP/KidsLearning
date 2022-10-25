@@ -193,12 +193,10 @@ namespace KidsLearning.Print.ptnEng
             // 
             // groupBox1
             // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 720);
+            this.groupBox1.Size = new System.Drawing.Size(250, 632);
             // 
             // panel2
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(3, 19);
             this.panel2.Size = new System.Drawing.Size(244, 130);
             // 
             // bntPrint
@@ -219,17 +217,17 @@ namespace KidsLearning.Print.ptnEng
             // 
             // groupBox2
             // 
-            this.groupBox2.Size = new System.Drawing.Size(759, 720);
+            this.groupBox2.Size = new System.Drawing.Size(1353, 632);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(753, 698);
+            this.printPreviewControl1.Size = new System.Drawing.Size(1347, 610);
             // 
             // prnEng002WordLine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.Name = "prnEng002WordLine";
-            this.Size = new System.Drawing.Size(1009, 720);
+            this.Size = new System.Drawing.Size(1603, 632);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -248,12 +246,13 @@ namespace KidsLearning.Print.ptnEng
             string spell = "";
             int yC = 180 , xC = 100;
             int w = 100, h = 35;
-            string[] wordA = new string[10];
-            string[] wordB = new string[10];
-            List<string> _words = wordsAll;
+            List<string> wordA = new  List<string>();
+            List<string> wordB = new  List<string>();
+            List<string> _words = new List<string>();
+            _words.AddRange( wordsAll);
             string word;
-            List<int> ints_a = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7,8,9 };
-            List<int> ints_b = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7,8,9 };
+            /*List<int> ints_a = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7,8,9 };
+            List<int> ints_b = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7,8,9 };*/
            
             for (int i = 1; i <= 10; i++)
             {
@@ -261,13 +260,12 @@ namespace KidsLearning.Print.ptnEng
                 word = _words[zz];
                 var ww = word.Split('|');
 
-                 int z = (ints_a.Count == 1) ? 0 : RandomNumberGenerator.GetInt32(0, ints_a.Count-1);
-                  wordA[ints_a[z]] = ww[0].ToUpper();
-                 ints_a.RemoveAt(z);
-
-                 z = (ints_b.Count==1)?0:RandomNumberGenerator.GetInt32(0, ints_b.Count - 1);
-                     wordB[ints_b[z]] = ww[1];
-                 ints_b.RemoveAt(z);
+                // int z = (ints_a.Count == 1) ? 0 : RandomNumberGenerator.GetInt32(0, ints_a.Count-1);
+                  wordA.Add( ww[0].ToUpper());
+                 //ints_a.RemoveAt(z);
+                // z = (ints_b.Count==1)?0:RandomNumberGenerator.GetInt32(0, ints_b.Count - 1);
+                     wordB.Add( ww[1]);
+                // ints_b.RemoveAt(z);
 
                 _words.RemoveAt(zz);
 
@@ -275,10 +273,14 @@ namespace KidsLearning.Print.ptnEng
           
             for (int i = 0; i < 10; i++)
             {
-               
-                e.Graphics.DrawString(wordA[i], new Font("Angsana New", 22), new SolidBrush(Color.Black), xC + 5, yC + 5);
 
-                e.Graphics.DrawString(wordB[i], new Font("Angsana New", 22), new SolidBrush(Color.Black), xC + 350, yC + 5);
+                int z = (wordA.Count == 1) ? 0 : RandomNumberGenerator.GetInt32(0, wordA.Count - 1);
+                e.Graphics.DrawString(wordA[z], new Font("Angsana New", 22), new SolidBrush(Color.Black), xC + 5, yC + 5);
+                wordA.RemoveAt(z);
+
+                z = (wordB.Count == 1) ? 0 : RandomNumberGenerator.GetInt32(0, wordB.Count - 1);
+                e.Graphics.DrawString(wordB[z], new Font("Angsana New", 22), new SolidBrush(Color.Black), xC + 350, yC + 5);
+                wordB.RemoveAt(z);
                 yC += 60;
             }
             

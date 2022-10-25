@@ -15,26 +15,44 @@ namespace KidsLearning.Classed.Exten
     {
 
         public enum OperatorSelect { Addition, Subtraction, Multiplication, Division, Exponential, AddSub, MultiDiv, All };
-        public static void DrawPlusMinusFillRectangle(this Graphics e,string Opr,bool ramdomRect, int min,int max, Font fontDetail, int x, int y)
+        public static void DrawPlusMinusFillRectangle(this Graphics e, string Opr, bool ramdomRect, double min, double max,int digit, Font fontDetail, int x, int y)
         {
-            int a = RandomNumberGenerator.GetInt32(min, max);
-            int b = RandomNumberGenerator.GetInt32(min, max);
-            int _a = Math.Min(a, b), _b = Math.Max(a, b);
-           
-            int anw = (Opr.Trim() == "+") ? (a + b) : (_b - _a);
-           // Font font = new Font("Arial", 20, FontStyle.Bold);
+            int d1 = (digit < 0) ? RandomNumberGenerator.GetInt32(1, 5) : digit;
+            int d2 = (digit < 0) ? RandomNumberGenerator.GetInt32(1, 5) : digit;
+            double a = Ext_Maths.Randomdouble(min, max,d1);
+            double b = Ext_Maths.Randomdouble(min, max, d2);
+            double _a , _b ;
+
+            double anw;
+            if (Opr.Trim() == "+")
+            {
+                _a = a;
+                _b = b;
+                anw = a + b;
+            }
+            else
+            {
+                _a = Math.Min(a, b);
+                _b = Math.Max(a, b);
+                anw = _b - _a;
+            }
+         
             Pen pen = new Pen(Color.Black, 3);
             SolidBrush solidBrush = new SolidBrush(Color.Black);
-            int h = (int)e.MeasureString(b.ToString("N0"), fontDetail).Height;
-            int w_1 = (int)e.MeasureString(b.ToString("N0"), fontDetail).Width;
-            int w_2 = (int)e.MeasureString(b.ToString("N0"), fontDetail).Width;
+            int h = (int)e.MeasureString(b.ToString($"F{d2}"), fontDetail).Height;
+            int w_1 = (int)e.MeasureString(b.ToString($"F{d2}"), fontDetail).Width;
+            int w_2 = (int)e.MeasureString(b.ToString($"F{d2}"), fontDetail).Width;
+           
             if (!ramdomRect)
             {
-                e.DrawString(_b.ToString("N0"), fontDetail, solidBrush, x, y);
-                e.DrawString(Opr.Trim(), fontDetail, solidBrush, x + w_1 + 30, y - 20 + h / 2);
-                e.DrawString(_a.ToString("N0"), fontDetail, solidBrush, x + w_1 + 80, y);
-                e.DrawString(" = ", fontDetail, solidBrush, x + w_1 + w_2 + 120, y - 20 + h / 2);
-                e.DrawRectangle(new Pen(Color.Black, 3), x + w_1 + w_2 + 180, y-10, (w_2*2.5<180)?100: w_2 * 2, h+10);
+                
+
+                e.DrawString(_b.ToString($"F{d2}"), fontDetail, solidBrush, x, y);
+                e.DrawString(Opr.Trim(), fontDetail, solidBrush, x +130, y - 20 + h / 2);
+                e.DrawString(_a.ToString($"F{d1}"), fontDetail, solidBrush, x + 200, y);
+                e.DrawString(" = ", fontDetail, solidBrush, x +  340, y - 20 + h / 2);
+               
+                e.DrawRectangle(new Pen(Color.Black, 3), x + 400, y - 10, 180, h + 10);
             }
             else
             {
@@ -43,33 +61,46 @@ namespace KidsLearning.Classed.Exten
                 {
                     case < 1000:
 
-                        e.DrawString(_b.ToString("N0"), fontDetail, solidBrush, x, y);
-                        e.DrawString(Opr.Trim(), fontDetail, solidBrush, x + w_1 + 30, y - 20 + h / 2);
-                        e.DrawString(_a.ToString("N0"), fontDetail, solidBrush, x + w_1 + 80, y);
-                        e.DrawString(" = ", fontDetail, solidBrush, x + w_1 + w_2 + 120, y - 20 + h / 2);
-                        e.DrawRectangle(new Pen(Color.Black, 3), x + w_1 + w_2 + 180, y-10, (w_2 * 2.5 < 180) ? 100 : w_2 * 2, h+10);
-                        // e.DrawString(anw.ToString(), fontDetail, solidBrush, x + w_1 + w_2 + 180, y);
+                        e.DrawString(_b.ToString($"F{d2}"), fontDetail, solidBrush, x, y);
+                        e.DrawString(Opr.Trim(), fontDetail, solidBrush, x + 130, y - 20 + h / 2);
+                        e.DrawString(_a.ToString($"F{d1}"), fontDetail, solidBrush, x + 200, y);
+                        e.DrawString(" = ", fontDetail, solidBrush, x + 340, y - 20 + h / 2);
+
+                        e.DrawRectangle(new Pen(Color.Black, 3), x + 400, y - 10, 160, h + 10);
+
+
+
                         break;
                     case >= 1000 and < 2000:
-                        // e.DrawString(b.ToString(), fontDetail, solidBrush, x, y);
-                        e.DrawRectangle(new Pen(Color.Black, 3), x-5, y-10 , w_1+20, h+10);
-                        e.DrawString(Opr.Trim(), fontDetail, solidBrush, x + w_1 + 30, y - 20 + h / 2);
-                        e.DrawString(_a.ToString("N0"), fontDetail, solidBrush, x + w_1 + 80, y);
-                        e.DrawString(" = ", fontDetail, solidBrush, x + w_1 + w_2 + 120, y - 20 + h / 2);
-                        e.DrawString(anw.ToString("N0"), fontDetail, solidBrush, x + w_1 + w_2 + 180, y);
+                        
+                        
+
+                        e.DrawRectangle(new Pen(Color.Black, 2), x - 40, y - 10, 150, h + 10);
+                        
+                        e.DrawString(Opr.Trim(), fontDetail, solidBrush, x + 130, y - 20 + h / 2);
+                        e.DrawString(_a.ToString($"F{d1}"), fontDetail, solidBrush, x + 200, y);
+                        e.DrawString(" = ", fontDetail, solidBrush, x + 340, y - 20 + h / 2);
+                        e.DrawString(anw.ToString($"F{Math.Max(d1, d2)}"), fontDetail, solidBrush, x + 420, y);
+
                         break;
                     case >= 2000:
-                        e.DrawString(_b.ToString("N0"), fontDetail, solidBrush, x, y);
-                        e.DrawString(Opr.Trim(), fontDetail, solidBrush, x + w_1 + 30, y - 20 + h / 2);
-                        e.DrawRectangle(new Pen(Color.Black, 3), x + w_1 + 80-5, y-10 , w_2+20, h+10);
-                        //e.DrawString(a.ToString(), fontDetail, solidBrush, x + w_1 + 80, y);
-                        e.DrawString(" = ", fontDetail, solidBrush, x + w_1 + w_2 + 120, y - 20 + h / 2);
-                        e.DrawString(anw.ToString("N0"), fontDetail, solidBrush, x + w_1 + w_2 + 180, y);
+                      
+
+
+                        e.DrawString(_b.ToString($"F{d2}"), fontDetail, solidBrush, x, y);
+                        e.DrawString(Opr.Trim(), fontDetail, solidBrush, x + 130, y - 20 + h / 2);
+                        
+                        e.DrawRectangle(new Pen(Color.Black, 2), x + 160, y - 10, 140, h + 10);
+                        e.DrawString(" = ", fontDetail, solidBrush, x + 340, y - 20 + h / 2);
+                        e.DrawString(anw.ToString($"F{Math.Max(d1, d2)}"), fontDetail, solidBrush, x + 420, y);
+                       
+
+
                         break;
 
                 }
             }
-            
+
         }
         public static void DrawPlusMinusFillRectangleTwo(this Graphics e, string Opr, int min, int max, Font fontDetail, int x, int y)
         {
@@ -92,7 +123,7 @@ namespace KidsLearning.Classed.Exten
                     e.DrawString(Opr.Trim(), fontDetail, solidBrush, x + w_1 + 30, y - 20 + h / 2);
                     e.DrawString(a.ToString("N0"), fontDetail, solidBrush, x + w_1 + 80, y);
                     e.DrawString(" = ", fontDetail, solidBrush, x + w_1 + w_2 + 120, y - 20 + h / 2);
-                    e.DrawRectangle(new Pen(Color.Black, 3), x + w_1 + w_2 + 180, y-20, w_2 + w_1, h);
+                    e.DrawRectangle(new Pen(Color.Black, 3), x + w_1 + w_2 + 180, y - 20, w_2 + w_1, h);
                     // e.DrawString(anw.ToString(), fontDetail, solidBrush, x + w_1 + w_2 + 180, y);
                     break;
                 case >= 1000 and < 2000:
@@ -364,7 +395,7 @@ namespace KidsLearning.Classed.Exten
 
 
         }
-       
+
         public static void DrawPlusMinusTwo(this Graphics e, Font fontDetail, int min, int max, int x, int y, bool random = false, operater_AddDifTwo operater_AddDifTwo = operater_AddDifTwo.one)
         {
 
@@ -433,10 +464,10 @@ namespace KidsLearning.Classed.Exten
         }
 
 
-        public static void DrawNumPositive(this Graphics e,  Font fontDetail, int min, int max, int x, int y, string opr, int CountNum= 7)
+        public static void DrawNumPositive(this Graphics e, Font fontDetail, int min, int max, int x, int y, string opr, int CountNum = 7)
         {
 
-            
+
             var num = new Classed.Exten.RandomNumber(min, max);
 
             string _a = TextStringExtension.SpacedString(Convert.ToInt32(num.MinValue).ToString());
@@ -452,38 +483,38 @@ namespace KidsLearning.Classed.Exten
 
             // https://stackoverflow.com/questions/11451001/why-isnt-my-text-right-aligned-when-i-custom-draw-my-strings
             //https://docs.microsoft.com/en-us/dotnet/desktop/winforms/advanced/how-to-align-drawn-text?view=netframeworkdesktop-4.8&redirectedfrom=MSDN
-            StringFormat stringFormat = new StringFormat() { Alignment = StringAlignment.Far} ;
+            StringFormat stringFormat = new StringFormat() { Alignment = StringAlignment.Far };
 
 
-            e.DrawString(_b, fontDetail, new SolidBrush(Color.Black), new Rectangle(x, y, w*CountNum, h), stringFormat);
-            e.DrawString(_a, fontDetail, new SolidBrush(Color.Black), new Rectangle(x, y+h+10, w * CountNum , h), stringFormat);
-            e.DrawLine(new Pen(Color.Black, 3), x, y + 2*h + 10, x + (CountNum) * w, y + 2 * h + 10);
-            e.DrawString(opr, fontDetail, new SolidBrush(Color.Black), x + (CountNum ) * w, y + 10 + h / 2);
+            e.DrawString(_b, fontDetail, new SolidBrush(Color.Black), new Rectangle(x, y, w * CountNum, h), stringFormat);
+            e.DrawString(_a, fontDetail, new SolidBrush(Color.Black), new Rectangle(x, y + h + 10, w * CountNum, h), stringFormat);
+            e.DrawLine(new Pen(Color.Black, 3), x, y + 2 * h + 10, x + (CountNum) * w, y + 2 * h + 10);
+            e.DrawString(opr, fontDetail, new SolidBrush(Color.Black), x + (CountNum) * w, y + 10 + h / 2);
             e.DrawLine(new Pen(Color.Black, 3), x, y + h * 3 + 15, x + (CountNum) * w, y + h * 3 + 15);
-            e.DrawLine(new Pen(Color.Black, 3), x, y + h * 3 + 20, x + (CountNum ) * w, y + h * 3 + 20);
+            e.DrawLine(new Pen(Color.Black, 3), x, y + h * 3 + 20, x + (CountNum) * w, y + h * 3 + 20);
 
 
 
         }
 
-        public static void DrawNumPositive(this Graphics e, Font fontDetail, double min, double max, int x, int y, string opr, int CountNum = 6,int digit = 3)
+        public static void DrawNumPositive(this Graphics e, Font fontDetail, double min, double max, int x, int y, string opr, int CountNum = 6, int digit = 3)
         {
 
             //https://pantip.com/topic/41657834/comment5
-            var num = new Classed.Exten.RandomNumber(min, max,digit);
-           /*  var c = ((Func<double, double, int>)((a, b) => {
-                var a_str = a.ToString();
-                var b_str = b.ToString();
-                var a_pos = a_str.IndexOf(".");
-                var b_pos = b_str.IndexOf(".");
-                var a_dec_len = a_pos != -1 ? a_str.Length - a_pos - 1 : 0;
-                var b_dec_len = b_pos != -1 ? b_str.Length - b_pos - 1 : 0;
-                System.Windows.Forms.MessageBox.Show(a + "\n" + b + "\n" + a_pos + "\n" + b_pos + "\n" + a_dec_len + "\n" + b_dec_len);
-                return Math.Max(a_dec_len, b_dec_len);
-            }))(num.MinValue, num.MaxValue);  // immediate lambda
-            System.Windows.Forms.MessageBox.Show(num.MinValue + "\n" + num.MaxValue +"\n" + c + "\n" + digit);
-            string _a =TextStringExtension.SpacedString(c.ToString("N" + digit));
-             string _b = TextStringExtension.SpacedString(num.MaxValue.ToString("N" + digit));*/
+            var num = new Classed.Exten.RandomNumber(min, max, digit);
+            /*  var c = ((Func<double, double, int>)((a, b) => {
+                 var a_str = a.ToString();
+                 var b_str = b.ToString();
+                 var a_pos = a_str.IndexOf(".");
+                 var b_pos = b_str.IndexOf(".");
+                 var a_dec_len = a_pos != -1 ? a_str.Length - a_pos - 1 : 0;
+                 var b_dec_len = b_pos != -1 ? b_str.Length - b_pos - 1 : 0;
+                 System.Windows.Forms.MessageBox.Show(a + "\n" + b + "\n" + a_pos + "\n" + b_pos + "\n" + a_dec_len + "\n" + b_dec_len);
+                 return Math.Max(a_dec_len, b_dec_len);
+             }))(num.MinValue, num.MaxValue);  // immediate lambda
+             System.Windows.Forms.MessageBox.Show(num.MinValue + "\n" + num.MaxValue +"\n" + c + "\n" + digit);
+             string _a =TextStringExtension.SpacedString(c.ToString("N" + digit));
+              string _b = TextStringExtension.SpacedString(num.MaxValue.ToString("N" + digit));*/
             var formatted_a = String.Format($"{{0:F{digit}}}", num.MinValue);
             var formatted_b = String.Format($"{{0:F{digit}}}", num.MaxValue);//num.MaxValue.ToString($"F{c}");
 

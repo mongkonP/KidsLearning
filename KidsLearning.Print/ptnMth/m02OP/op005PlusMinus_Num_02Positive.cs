@@ -64,7 +64,7 @@ namespace KidsLearning.Print.ptnMth
             // 
             this.groupBox1.Controls.Add(this.groupBox4);
             this.groupBox1.Controls.Add(this.numberSelect1);
-            this.groupBox1.Size = new System.Drawing.Size(478, 746);
+            this.groupBox1.Size = new System.Drawing.Size(478, 593);
             this.groupBox1.Controls.SetChildIndex(this.numberSelect1, 0);
             this.groupBox1.Controls.SetChildIndex(this.groupBox4, 0);
             this.groupBox1.Controls.SetChildIndex(this.panel2, 0);
@@ -93,11 +93,11 @@ namespace KidsLearning.Print.ptnMth
             // groupBox2
             // 
             this.groupBox2.Location = new System.Drawing.Point(478, 0);
-            this.groupBox2.Size = new System.Drawing.Size(792, 746);
+            this.groupBox2.Size = new System.Drawing.Size(951, 593);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(786, 724);
+            this.printPreviewControl1.Size = new System.Drawing.Size(945, 571);
             // 
             // groupBox4
             // 
@@ -164,7 +164,7 @@ namespace KidsLearning.Print.ptnMth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.Name = "op005PlusMinus_Num_02Positive";
-            this.Size = new System.Drawing.Size(1270, 746);
+            this.Size = new System.Drawing.Size(1429, 593);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

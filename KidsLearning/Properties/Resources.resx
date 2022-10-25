@@ -124,8 +124,11 @@
   <data name="menu_print" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu_print.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="line_10to14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\line-10to14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="statistics_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statistics_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_eng" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_eng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="menu_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu_exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,17 +139,17 @@
   <data name="menu_math" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu_math.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="calculator_general_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calculator_general_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="stationary_triangle_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stationary_triangle_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="statistics_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\statistics_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menu_korkai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_korkai.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="talk_speak" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\talk_speak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="page_paper_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page_paper_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="menu_lab_science" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu_lab-science.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,13 +181,13 @@
   <data name="communication" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\communication.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menu_eng" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu_eng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="calculator_general_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calculator_general_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menu_korkai" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu_korkai.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="line_10to14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\line-10to14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="page_paper_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\page_paper_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="299047_address_book_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\299047_address_book_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

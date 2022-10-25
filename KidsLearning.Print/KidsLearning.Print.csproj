@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
@@ -97,7 +97,22 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ptnMth\m01Num\num012gcf_lcm.cs" />
+    <Compile Update="ptnMth\m01Num\num013_Power.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m01Num\num013_PowerPerfix_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m01Num\num013_PowerPerfix_02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m01Num\num013_PowerbyTen_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="ptnMth\m01Num\num_.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m02OP\op004PlusMinus_Num_02.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ptnMth\m02OP\op011Decimal_01.cs">
@@ -131,6 +146,9 @@
     <Compile Update="ptnMth\m02OP\op010FractionRuleofthreePercent.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ptnMth\m02OP\op013_PowerbyTen_OP_02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="ptnMth\m03Stat\st_002chart01dotgraph.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -144,6 +162,15 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ptnMth\m03Stat\st_.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m04Trigono\prnMath_02Vector_03.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m04Trigono\prnMath_02Vector_02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ptnMth\m04Trigono\prnMath_02Vector_01.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ptnMth\m05GaugeUnit\prnMath_001DateTime001Time.cs">

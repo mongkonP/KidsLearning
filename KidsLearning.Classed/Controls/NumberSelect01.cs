@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace KidsLearning.Classed.Controls
 {
-    public partial class NumberSelect : UserControl
+    public partial class NumberSelect01 : UserControl
     {
         public double Minimum;
         public double Maximum;
         public int Decimal;
-        public NumberSelect()
+        public NumberSelect01()
         {
             InitializeComponent();
             rd_1.Click += new EventHandler(radioButton1_Click);
@@ -24,20 +24,8 @@ namespace KidsLearning.Classed.Controls
             rd_4.Click += new EventHandler(radioButton1_Click);
             rd_5.Click += new EventHandler(radioButton1_Click);
             rd_6.Click += new EventHandler(radioButton1_Click);
-            rd_7.Click += new EventHandler(radioButton1_Click);
-            rd_8.Click += new EventHandler(radioButton1_Click);
-            rd_9.Click += new EventHandler(radioButton1_Click);
-            rd_10.Click += new EventHandler(radioButton1_Click);
-            rd_11.Click += new EventHandler(radioButton1_Click);
-            rd_12.Click += new EventHandler(radioButton1_Click);
             rd_13.Click += new EventHandler(radioButton1_Click);
             rd_14.Click += new EventHandler(radioButton1_Click);
-            rd_15.Click += new EventHandler(radioButton1_Click);
-            rd_16.Click += new EventHandler(radioButton1_Click);
-            rd_17.Click += new EventHandler(radioButton1_Click);
-            rd_18.Click += new EventHandler(radioButton1_Click);
-
-            rd_70.Click += new EventHandler(radioButton1_Click);
 
             rd_1.CheckedChanged += new EventHandler(radioButton1_Click);
             rd_2.CheckedChanged += new EventHandler(radioButton1_Click);
@@ -45,21 +33,9 @@ namespace KidsLearning.Classed.Controls
             rd_4.CheckedChanged += new EventHandler(radioButton1_Click);
             rd_5.CheckedChanged += new EventHandler(radioButton1_Click);
             rd_6.CheckedChanged += new EventHandler(radioButton1_Click);
-            rd_7.CheckedChanged += new EventHandler(radioButton1_Click);
-            rd_8.CheckedChanged += new EventHandler(radioButton1_Click);
-            rd_9.CheckedChanged += new EventHandler(radioButton1_Click);
-            rd_10.CheckedChanged += new EventHandler(radioButton1_Click);
-            rd_11.CheckedChanged += new EventHandler(radioButton1_Click);
-            rd_12.CheckedChanged += new EventHandler(radioButton1_Click);
             rd_13.CheckedChanged += new EventHandler(radioButton1_Click);
             rd_14.CheckedChanged += new EventHandler(radioButton1_Click);
-            rd_15.CheckedChanged += new EventHandler(radioButton1_Click);
-            rd_16.CheckedChanged += new EventHandler(radioButton1_Click);
-            rd_17.CheckedChanged += new EventHandler(radioButton1_Click);
-            rd_18.CheckedChanged += new EventHandler(radioButton1_Click);
 
-            rd_70.CheckedChanged += new EventHandler(radioButton1_Click);
-        
         }
         #region _NumberSelect
         private static readonly object _NumberSelectChanged = new object();
@@ -118,36 +94,7 @@ namespace KidsLearning.Classed.Controls
                 Minimum = 1;
                 Maximum = 100;
             }
-            else if (rd_7.Checked)
-            {
-                Minimum = 100;
-                Maximum = 500;
-            }
-            else if (rd_8.Checked)
-            {
-                Minimum = 100;
-                Maximum = 1000;
-            }
-            else if (rd_9.Checked)
-            {
-                Minimum = 1000;
-                Maximum = 10000;
-            }
-            else if (rd_10.Checked)
-            {
-                Minimum = 10000;
-                Maximum = 100000;
-            }
-            else if (rd_11.Checked)
-            {
-                Minimum = 100000;
-                Maximum = 1000000;
-            }
-            else if (rd_12.Checked)
-            {
-                Minimum = 500000;
-                Maximum = 10000000;
-            }
+           
             else if (rd_13.Checked)
             {
                 Minimum = -10;
@@ -158,63 +105,7 @@ namespace KidsLearning.Classed.Controls
                 Minimum = -50;
                 Maximum = 50;
             }
-            else if (rd_15.Checked)
-            {
-                Minimum = -100;
-                Maximum = 100;
-            }
-            else if (rd_16.Checked)
-            {
-                Minimum = -1000;
-                Maximum = 1000;
-            }
-            else if (rd_17.Checked)
-            {
-                Minimum = -10000;
-                Maximum = 1000000;
-            }
-            else if (rd_18.Checked)
-            {
-                Minimum = -10000000;
-                Maximum = 10000000;
-            }
-           
-
-            else if (rd_70.Checked)
-            {
-                if(!string.IsNullOrEmpty(txtMin.Text))
-                Minimum = Convert.ToInt32("0" + txtMin.Text);
-                if (!string.IsNullOrEmpty(txtMax. Text))
-                    Maximum = Convert.ToInt32("0" + txtMax. Text);
-            }
             OnNumberSelectChanged(null);
-        }
-
-
-        private void txtMin_Leave(object sender, EventArgs e)
-        {
-            if (rd_70.Checked)
-            {
-                if (!string.IsNullOrEmpty(txtMin.Text))
-                    Minimum = Convert.ToInt32("0" + txtMin.Text);
-                OnNumberSelectChanged(null);
-            }
-
-
-
-          
-        }
-
-        private void txtMax_Leave(object sender, EventArgs e)
-        {
-            if (rd_70.Checked)
-            {
-
-                if (!string.IsNullOrEmpty(txtMax.Text))
-                    Maximum = Convert.ToInt32("0" + txtMax.Text);
-                OnNumberSelectChanged(null);
-            }
-
         }
 
         private void cmbDecimal_SelectedIndexChanged(object sender, EventArgs e)
@@ -223,7 +114,7 @@ namespace KidsLearning.Classed.Controls
             bool isNumeric = int.TryParse(cmbDecimal.Text, out Decimal);
          
 
-            Minimum = double.Parse(Minimum.ToString($"F{Decimal}"));
+            Minimum = double.Parse(Minimum.ToString( $"F{Decimal}"  ));
             Maximum = double.Parse(Maximum.ToString($"F{Decimal}"));
 
             OnNumberSelectChanged(null);
@@ -235,6 +126,16 @@ namespace KidsLearning.Classed.Controls
 
             Minimum = double.Parse(Minimum.ToString($"F{Decimal}"));
             Maximum =  double.Parse( Maximum.ToString($"F{Decimal}"));
+
+            OnNumberSelectChanged(null);
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+                Decimal = -1;
+             else
+                Decimal = int.Parse(cmbDecimal.Text);
 
             OnNumberSelectChanged(null);
         }

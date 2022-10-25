@@ -43,6 +43,7 @@ namespace LoadFiles
             this.button3.TabIndex = 10;
             this.button3.Text = "load file in www.k5learning.com";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // lblStatus
             // 
@@ -62,6 +63,7 @@ namespace LoadFiles
             this.button2.TabIndex = 8;
             this.button2.Text = "load file in https://www.dltv.ac.th/";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -71,6 +73,7 @@ namespace LoadFiles
             this.button1.TabIndex = 7;
             this.button1.Text = "load file in http://exercise-exam.blogspot.com";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 

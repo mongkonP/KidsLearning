@@ -49,6 +49,12 @@ namespace KidsLearning.frm
             this.menuMathCount16 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMathCount26 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMathCount27 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuMathCount28 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMathCount24 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMathCount06 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMathCount07 = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,14 +68,22 @@ namespace KidsLearning.frm
             this.menuMathCount19 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMathCount20 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMathCount21 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuMathPw = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuMathPwTen = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMathCount22 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuOperate = new System.Windows.Forms.ToolStripMenuItem();
+            this.nemuMathOP22 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP01 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP02 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP03 = new System.Windows.Forms.ToolStripMenuItem();
+            this.nemuMathOP30 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP04 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP05 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP06 = new System.Windows.Forms.ToolStripMenuItem();
+            this.nemuMathOP16 = new System.Windows.Forms.ToolStripMenuItem();
+            this.nemuMathOP23 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP07 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP08 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP09 = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,21 +93,16 @@ namespace KidsLearning.frm
             this.nemuMathOP12 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP14 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP15 = new System.Windows.Forms.ToolStripMenuItem();
-            this.nemuMathOP16 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP17 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP18 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP19 = new System.Windows.Forms.ToolStripMenuItem();
-            this.nemuMathOP20 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP21 = new System.Windows.Forms.ToolStripMenuItem();
-            this.nemuMathOP22 = new System.Windows.Forms.ToolStripMenuItem();
-            this.nemuMathOP23 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP24 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP25 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP26 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP27 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP28 = new System.Windows.Forms.ToolStripMenuItem();
             this.nemuMathOP29 = new System.Windows.Forms.ToolStripMenuItem();
-            this.nemuMathOP30 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMathStat = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMathStat01 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMathStat02 = new System.Windows.Forms.ToolStripMenuItem();
@@ -121,6 +130,9 @@ namespace KidsLearning.frm
             this.menoMathTrigono03 = new System.Windows.Forms.ToolStripMenuItem();
             this.menoMathTrigono04 = new System.Windows.Forms.ToolStripMenuItem();
             this.menoMathTrigono05 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
             this.menoMathTrigono06 = new System.Windows.Forms.ToolStripMenuItem();
             this.menoMathTrigono07 = new System.Windows.Forms.ToolStripMenuItem();
             this.menoMathTrigono08 = new System.Windows.Forms.ToolStripMenuItem();
@@ -168,12 +180,6 @@ namespace KidsLearning.frm
             this.menuEng06 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuSciAll = new System.Windows.Forms.ToolStripDropDownButton();
             this.menuExit = new System.Windows.Forms.ToolStripButton();
-            this.menuMathCount28 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -215,6 +221,7 @@ namespace KidsLearning.frm
             this.menuMathAll.Name = "menuMathAll";
             this.menuMathAll.Size = new System.Drawing.Size(77, 68);
             this.menuMathAll.Text = "พื้นฐานคณิตศาสตร์";
+            this.menuMathAll.Click += new System.EventHandler(this.menuMathAll_Click);
             // 
             // menuMathCount
             // 
@@ -231,6 +238,7 @@ namespace KidsLearning.frm
             this.menuMathCount.Name = "menuMathCount";
             this.menuMathCount.Size = new System.Drawing.Size(234, 70);
             this.menuMathCount.Text = "จำนวนนับ";
+            this.menuMathCount.Click += new System.EventHandler(this.menuMathCount_Click);
             // 
             // menuMathCount25
             // 
@@ -252,9 +260,9 @@ namespace KidsLearning.frm
             this.toolStripMenuItem3,
             this.toolStripMenuItem4,
             this.toolStripMenuItem5,
-            this.toolStripMenuItem6,menuMathCount20});
+            this.toolStripMenuItem6});
             this.menuMathCount25.Name = "menuMathCount25";
-            this.menuMathCount25.Size = new System.Drawing.Size(261, 30);
+            this.menuMathCount25.Size = new System.Drawing.Size(356, 30);
             this.menuMathCount25.Text = "การนับ เลข จำนวน";
             // 
             // menuMathCount01
@@ -329,6 +337,42 @@ namespace KidsLearning.frm
             this.menuMathCount27.Size = new System.Drawing.Size(454, 30);
             this.menuMathCount27.Text = "การหา ค.ร.น. ของจำนวนนับ โดยการแยกตัวประกอบ";
             // 
+            // menuMathCount28
+            // 
+            this.menuMathCount28.Name = "menuMathCount28";
+            this.menuMathCount28.Size = new System.Drawing.Size(454, 30);
+            this.menuMathCount28.Text = "การหา ค.ร.น. โดยการหาร";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(454, 30);
+            this.toolStripMenuItem2.Text = "toolStripMenuItem2";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(454, 30);
+            this.toolStripMenuItem3.Text = "toolStripMenuItem3";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(454, 30);
+            this.toolStripMenuItem4.Text = "toolStripMenuItem4";
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(454, 30);
+            this.toolStripMenuItem5.Text = "toolStripMenuItem5";
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(454, 30);
+            this.toolStripMenuItem6.Text = "toolStripMenuItem6";
+            // 
             // menuMathCount24
             // 
             this.menuMathCount24.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -336,7 +380,7 @@ namespace KidsLearning.frm
             this.menuMathCount07,
             this.menuMathCount08});
             this.menuMathCount24.Name = "menuMathCount24";
-            this.menuMathCount24.Size = new System.Drawing.Size(261, 30);
+            this.menuMathCount24.Size = new System.Drawing.Size(356, 30);
             this.menuMathCount24.Text = "การเปรียบเทียบ";
             // 
             // menuMathCount06
@@ -367,7 +411,7 @@ namespace KidsLearning.frm
             this.menuMathCount18,
             this.menuMathCount19});
             this.menuMathCount23.Name = "menuMathCount23";
-            this.menuMathCount23.Size = new System.Drawing.Size(261, 30);
+            this.menuMathCount23.Size = new System.Drawing.Size(356, 30);
             this.menuMathCount23.Text = "เศษส่วน ทศนิยม";
             // 
             // menuMathCount13
@@ -409,30 +453,139 @@ namespace KidsLearning.frm
             // menuMathCount20
             // 
             this.menuMathCount20.Name = "menuMathCount20";
-            this.menuMathCount20.Size = new System.Drawing.Size(261, 30);
+            this.menuMathCount20.Size = new System.Drawing.Size(356, 30);
             this.menuMathCount20.Text = "ความสัมพันธ์ระหว่าง ห.ร.ม. กับ  ค.ร.น.";
             // 
             // menuMathCount21
             // 
+            this.menuMathCount21.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuMathPw,
+            this.menuMathPwTen,
+            this.toolStripMenuItem9,
+            this.toolStripMenuItem10});
             this.menuMathCount21.Name = "menuMathCount21";
-            this.menuMathCount21.Size = new System.Drawing.Size(261, 30);
-            this.menuMathCount21.Text = "toolStripMenuItem16";
+            this.menuMathCount21.Size = new System.Drawing.Size(356, 30);
+            this.menuMathCount21.Text = "เลขยกกำลัง";
+            // 
+            // menuMathPw
+            // 
+            this.menuMathPw.Name = "menuMathPw";
+            this.menuMathPw.Size = new System.Drawing.Size(286, 30);
+            this.menuMathPw.Text = "เลขยกกำลัง";
+            this.menuMathPw.Click += new System.EventHandler(this.menuMathPw_Click);
+            // 
+            // menuMathPwTen
+            // 
+            this.menuMathPwTen.Name = "menuMathPwTen";
+            this.menuMathPwTen.Size = new System.Drawing.Size(286, 30);
+            this.menuMathPwTen.Text = "การยกกำลัง 10";
+            this.menuMathPwTen.Click += new System.EventHandler(this.menuMathPwTen_Click);
+            // 
+            // toolStripMenuItem9
+            // 
+            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(286, 30);
+            this.toolStripMenuItem9.Text = "หน่วยนับ และ คำอุปสรรค 01";
+            this.toolStripMenuItem9.Click += new System.EventHandler(this.toolStripMenuItem9_Click);
+            // 
+            // toolStripMenuItem10
+            // 
+            this.toolStripMenuItem10.Name = "toolStripMenuItem10";
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(286, 30);
+            this.toolStripMenuItem10.Text = "หน่วยนับ และ คำอุปสรรค 02";
+            this.toolStripMenuItem10.Click += new System.EventHandler(this.toolStripMenuItem10_Click);
             // 
             // menuMathCount22
             // 
             this.menuMathCount22.Name = "menuMathCount22";
-            this.menuMathCount22.Size = new System.Drawing.Size(261, 30);
+            this.menuMathCount22.Size = new System.Drawing.Size(356, 30);
             this.menuMathCount22.Text = "toolStripMenuItem17";
             // 
             // menuOperate
             // 
             this.menuOperate.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nemuMathOP22,
+            this.nemuMathOP23,
+            this.nemuMathOP24,
+            this.nemuMathOP25,
+            this.nemuMathOP26,
+            this.nemuMathOP27,
+            this.nemuMathOP28,
+            this.nemuMathOP29
+            });
+            this.menuOperate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.menuOperate.Image = global::KidsLearning.Properties.Resources.calculator_general_icon;
+            this.menuOperate.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuOperate.Name = "menuOperate";
+            this.menuOperate.Size = new System.Drawing.Size(234, 70);
+            this.menuOperate.Text = "การดำเนินการ";
+            this.menuOperate.Click += new System.EventHandler(this.menuOperate_Click);
+            // 
+            // nemuMathOP22
+            // 
+            this.nemuMathOP22.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nemuMathOP01,
             this.nemuMathOP02,
-            this.nemuMathOP03,
+            this.nemuMathOP03,this.nemuMathOP30,
             this.nemuMathOP04,
             this.nemuMathOP05,
             this.nemuMathOP06,
+            this.nemuMathOP16});
+            this.nemuMathOP22.Name = "nemuMathOP22";
+            this.nemuMathOP22.Size = new System.Drawing.Size(261, 30);
+            this.nemuMathOP22.Text = "บวก ลบ (+ -)";
+            // 
+            // nemuMathOP01
+            // 
+            this.nemuMathOP01.Name = "nemuMathOP01";
+            this.nemuMathOP01.Size = new System.Drawing.Size(414, 30);
+            this.nemuMathOP01.Text = "นับจำนวนตามรูปภาพ และ รวมจำนวน";
+            // 
+            // nemuMathOP02
+            // 
+            this.nemuMathOP02.Name = "nemuMathOP02";
+            this.nemuMathOP02.Size = new System.Drawing.Size(414, 30);
+            this.nemuMathOP02.Text = "ใช้ / ขีดทับตามจำนวน และ บอกจำนวนที่เหลือ";
+            // 
+            // nemuMathOP03
+            // 
+            this.nemuMathOP03.Name = "nemuMathOP03";
+            this.nemuMathOP03.Size = new System.Drawing.Size(414, 30);
+            this.nemuMathOP03.Text = "การ บวก ลบ ตัวเลข 1";
+            // 
+            // nemuMathOP30
+            // 
+            this.nemuMathOP30.Name = "nemuMathOP30";
+            this.nemuMathOP30.Size = new System.Drawing.Size(261, 30);
+            this.nemuMathOP30.Text = "การ บวก ลบ ตัวเลข 2";
+            // 
+            // nemuMathOP04
+            // 
+            this.nemuMathOP04.Name = "nemuMathOP04";
+            this.nemuMathOP04.Size = new System.Drawing.Size(414, 30);
+            this.nemuMathOP04.Text = "ความสัมพันธ์ของจำนวนแบบส่วนย่อย-ส่วนรวม";
+            // 
+            // nemuMathOP05
+            // 
+            this.nemuMathOP05.Name = "nemuMathOP05";
+            this.nemuMathOP05.Size = new System.Drawing.Size(414, 30);
+            this.nemuMathOP05.Text = "การ ตั้ง บวก ลบ ตัวเลข";
+            // 
+            // nemuMathOP06
+            // 
+            this.nemuMathOP06.Name = "nemuMathOP06";
+            this.nemuMathOP06.Size = new System.Drawing.Size(414, 30);
+            this.nemuMathOP06.Text = "การ บวก ลบ ด้วย เส้นจำนวน";
+            // 
+            // nemuMathOP16
+            // 
+            this.nemuMathOP16.Name = "nemuMathOP16";
+            this.nemuMathOP16.Size = new System.Drawing.Size(414, 30);
+            this.nemuMathOP16.Text = "การบวกลบ เศษส่วน แบบรูปภาพ";
+            // 
+            // nemuMathOP23
+            // 
+            this.nemuMathOP23.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nemuMathOP07,
             this.nemuMathOP08,
             this.nemuMathOP09,
@@ -442,63 +595,13 @@ namespace KidsLearning.frm
             this.nemuMathOP12,
             this.nemuMathOP14,
             this.nemuMathOP15,
-            this.nemuMathOP16,
             this.nemuMathOP17,
             this.nemuMathOP18,
             this.nemuMathOP19,
-            this.nemuMathOP20,
-            this.nemuMathOP21,
-            this.nemuMathOP22,
-            this.nemuMathOP23,
-            this.nemuMathOP24,
-            this.nemuMathOP25,
-            this.nemuMathOP26,
-            this.nemuMathOP27,
-            this.nemuMathOP28,
-            this.nemuMathOP29,
-            this.nemuMathOP30});
-            this.menuOperate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.menuOperate.Image = global::KidsLearning.Properties.Resources.calculator_general_icon;
-            this.menuOperate.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menuOperate.Name = "menuOperate";
-            this.menuOperate.Size = new System.Drawing.Size(234, 70);
-            this.menuOperate.Text = "การดำเนินการ";
-            // 
-            // nemuMathOP01
-            // 
-            this.nemuMathOP01.Name = "nemuMathOP01";
-            this.nemuMathOP01.Size = new System.Drawing.Size(513, 30);
-            this.nemuMathOP01.Text = "นับจำนวนตามรูปภาพ และ รวมจำนวน";
-            // 
-            // nemuMathOP02
-            // 
-            this.nemuMathOP02.Name = "nemuMathOP02";
-            this.nemuMathOP02.Size = new System.Drawing.Size(513, 30);
-            this.nemuMathOP02.Text = "ใช้ / ขีดทับตามจำนวน และ บอกจำนวนที่เหลือ";
-            // 
-            // nemuMathOP03
-            // 
-            this.nemuMathOP03.Name = "nemuMathOP03";
-            this.nemuMathOP03.Size = new System.Drawing.Size(513, 30);
-            this.nemuMathOP03.Text = "การ บวก ลบ ตัวเลข";
-            // 
-            // nemuMathOP04
-            // 
-            this.nemuMathOP04.Name = "nemuMathOP04";
-            this.nemuMathOP04.Size = new System.Drawing.Size(513, 30);
-            this.nemuMathOP04.Text = "ความสัมพันธ์ของจำนวนแบบส่วนย่อย-ส่วนรวม";
-            // 
-            // nemuMathOP05
-            // 
-            this.nemuMathOP05.Name = "nemuMathOP05";
-            this.nemuMathOP05.Size = new System.Drawing.Size(513, 30);
-            this.nemuMathOP05.Text = "การ ตั้ง บวก ลบ ตัวเลข";
-            // 
-            // nemuMathOP06
-            // 
-            this.nemuMathOP06.Name = "nemuMathOP06";
-            this.nemuMathOP06.Size = new System.Drawing.Size(513, 30);
-            this.nemuMathOP06.Text = "การ บวก ลบ ด้วย เส้นจำนวน";
+            this.nemuMathOP21});
+            this.nemuMathOP23.Name = "nemuMathOP23";
+            this.nemuMathOP23.Size = new System.Drawing.Size(261, 30);
+            this.nemuMathOP23.Text = "คูณ หาร(x ÷)";
             // 
             // nemuMathOP07
             // 
@@ -554,12 +657,6 @@ namespace KidsLearning.frm
             this.nemuMathOP15.Size = new System.Drawing.Size(513, 30);
             this.nemuMathOP15.Text = "การหาร้อยละของจำนวน";
             // 
-            // nemuMathOP16
-            // 
-            this.nemuMathOP16.Name = "nemuMathOP16";
-            this.nemuMathOP16.Size = new System.Drawing.Size(513, 30);
-            this.nemuMathOP16.Text = "การบวกลบ เศษส่วน แบบรูปภาพ";
-            // 
             // nemuMathOP17
             // 
             this.nemuMathOP17.Name = "nemuMathOP17";
@@ -576,73 +673,49 @@ namespace KidsLearning.frm
             // 
             this.nemuMathOP19.Name = "nemuMathOP19";
             this.nemuMathOP19.Size = new System.Drawing.Size(513, 30);
-            this.nemuMathOP19.Text = "การ บวก ลบ ทศนิยม";
-            // 
-            // nemuMathOP20
-            // 
-            this.nemuMathOP20.Name = "nemuMathOP20";
-            this.nemuMathOP20.Size = new System.Drawing.Size(513, 30);
-            this.nemuMathOP20.Text = "toolStripMenuItem20";
+            this.nemuMathOP19.Text = "การคูณ หาร เลขยกกำลังของ 10 1";
             // 
             // nemuMathOP21
             // 
             this.nemuMathOP21.Name = "nemuMathOP21";
             this.nemuMathOP21.Size = new System.Drawing.Size(513, 30);
-            this.nemuMathOP21.Text = "toolStripMenuItem21";
-            // 
-            // nemuMathOP22
-            // 
-            this.nemuMathOP22.Name = "nemuMathOP22";
-            this.nemuMathOP22.Size = new System.Drawing.Size(513, 30);
-            this.nemuMathOP22.Text = "toolStripMenuItem22";
-            // 
-            // nemuMathOP23
-            // 
-            this.nemuMathOP23.Name = "nemuMathOP23";
-            this.nemuMathOP23.Size = new System.Drawing.Size(513, 30);
-            this.nemuMathOP23.Text = "toolStripMenuItem23";
+            this.nemuMathOP21.Text = "การคูณ หาร เลขยกกำลังของ 10 2";
             // 
             // nemuMathOP24
             // 
             this.nemuMathOP24.Name = "nemuMathOP24";
-            this.nemuMathOP24.Size = new System.Drawing.Size(513, 30);
-            this.nemuMathOP24.Text = "toolStripMenuItem24";
+            this.nemuMathOP24.Size = new System.Drawing.Size(261, 30);
+            this.nemuMathOP24.Text = "ระคน( + - x ÷)";
             // 
             // nemuMathOP25
             // 
             this.nemuMathOP25.Name = "nemuMathOP25";
-            this.nemuMathOP25.Size = new System.Drawing.Size(513, 30);
-            this.nemuMathOP25.Text = "toolStripMenuItem25";
+            this.nemuMathOP25.Size = new System.Drawing.Size(261, 30);
+            this.nemuMathOP25.Text = "nemuMathOP25";
             // 
             // nemuMathOP26
             // 
             this.nemuMathOP26.Name = "nemuMathOP26";
-            this.nemuMathOP26.Size = new System.Drawing.Size(513, 30);
+            this.nemuMathOP26.Size = new System.Drawing.Size(261, 30);
             this.nemuMathOP26.Text = "toolStripMenuItem26";
             // 
             // nemuMathOP27
             // 
             this.nemuMathOP27.Name = "nemuMathOP27";
-            this.nemuMathOP27.Size = new System.Drawing.Size(513, 30);
+            this.nemuMathOP27.Size = new System.Drawing.Size(261, 30);
             this.nemuMathOP27.Text = "toolStripMenuItem27";
             // 
             // nemuMathOP28
             // 
             this.nemuMathOP28.Name = "nemuMathOP28";
-            this.nemuMathOP28.Size = new System.Drawing.Size(513, 30);
+            this.nemuMathOP28.Size = new System.Drawing.Size(261, 30);
             this.nemuMathOP28.Text = "toolStripMenuItem28";
             // 
             // nemuMathOP29
             // 
             this.nemuMathOP29.Name = "nemuMathOP29";
-            this.nemuMathOP29.Size = new System.Drawing.Size(513, 30);
+            this.nemuMathOP29.Size = new System.Drawing.Size(261, 30);
             this.nemuMathOP29.Text = "toolStripMenuItem29";
-            // 
-            // nemuMathOP30
-            // 
-            this.nemuMathOP30.Name = "nemuMathOP30";
-            this.nemuMathOP30.Size = new System.Drawing.Size(513, 30);
-            this.nemuMathOP30.Text = "toolStripMenuItem30";
             // 
             // menuMathStat
             // 
@@ -850,9 +923,34 @@ namespace KidsLearning.frm
             // 
             // menoMathTrigono05
             // 
+            this.menoMathTrigono05.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem7,
+            this.toolStripMenuItem8});
             this.menoMathTrigono05.Name = "menoMathTrigono05";
             this.menoMathTrigono05.Size = new System.Drawing.Size(261, 30);
-            this.menoMathTrigono05.Text = "toolStripMenuItem5";
+            this.menoMathTrigono05.Text = "Vector";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(395, 30);
+            this.toolStripMenuItem1.Text = "Vector กำหนดจุดบนแกน x ,y";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(395, 30);
+            this.toolStripMenuItem7.Text = "Vector กำหนดจุดบนแกน x ,y หาความยาว";
+            this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
+            // 
+            // toolStripMenuItem8
+            // 
+            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(395, 30);
+            this.toolStripMenuItem8.Text = "Vector กำหนดจุดบนแกน x ,y หามุม";
+            this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
             // 
             // menoMathTrigono06
             // 
@@ -984,35 +1082,30 @@ namespace KidsLearning.frm
             this.menuUnit_Datetime1.Name = "menuUnit_Datetime1";
             this.menuUnit_Datetime1.Size = new System.Drawing.Size(506, 30);
             this.menuUnit_Datetime1.Text = "การบอกเวลา";
-          
             // 
             // menuUnit_Datetime2
             // 
             this.menuUnit_Datetime2.Name = "menuUnit_Datetime2";
             this.menuUnit_Datetime2.Size = new System.Drawing.Size(506, 30);
             this.menuUnit_Datetime2.Text = "การบอกเวลาถัดไป";
-           
             // 
             // menuUnit_Datetime3
             // 
             this.menuUnit_Datetime3.Name = "menuUnit_Datetime3";
             this.menuUnit_Datetime3.Size = new System.Drawing.Size(506, 30);
             this.menuUnit_Datetime3.Text = "การแปลง พ.ศ. (พุทธศักราช) กับ ค.ศ. (คริสต์ศักราช)";
-            
             // 
             // menuUnit_Datetime4
             // 
             this.menuUnit_Datetime4.Name = "menuUnit_Datetime4";
             this.menuUnit_Datetime4.Size = new System.Drawing.Size(506, 30);
             this.menuUnit_Datetime4.Text = "การบอกอายุ";
-          
             // 
             // menuUnit_Datetime5
             // 
             this.menuUnit_Datetime5.Name = "menuUnit_Datetime5";
             this.menuUnit_Datetime5.Size = new System.Drawing.Size(506, 30);
             this.menuUnit_Datetime5.Text = "การเปรียบเทียบระยะเวลาโดยใช้ความสัมพันธ์ ของหน่วยเวลา";
-           
             // 
             // menuUnit_Datetime6
             // 
@@ -1145,9 +1238,8 @@ namespace KidsLearning.frm
             this.menuEng02.Image = global::KidsLearning.Properties.Resources.character_;
             this.menuEng02.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuEng02.Name = "menuEng02";
-            this.menuEng02.Size = new System.Drawing.Size(304, 70);
+            this.menuEng02.Size = new System.Drawing.Size(301, 70);
             this.menuEng02.Text = "เทียบอักษร";
-         
             // 
             // menuEng04
             // 
@@ -1155,9 +1247,8 @@ namespace KidsLearning.frm
             this.menuEng04.Image = global::KidsLearning.Properties.Resources.talk_speak;
             this.menuEng04.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuEng04.Name = "menuEng04";
-            this.menuEng04.Size = new System.Drawing.Size(304, 70);
+            this.menuEng04.Size = new System.Drawing.Size(301, 70);
             this.menuEng04.Text = "การฝึกอ่าน";
-         
             // 
             // menuEng01
             // 
@@ -1165,9 +1256,8 @@ namespace KidsLearning.frm
             this.menuEng01.Image = global::KidsLearning.Properties.Resources.menu_eng;
             this.menuEng01.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuEng01.Name = "menuEng01";
-            this.menuEng01.Size = new System.Drawing.Size(304, 70);
+            this.menuEng01.Size = new System.Drawing.Size(301, 70);
             this.menuEng01.Text = "คำศัพท์";
-          
             // 
             // menuEng05
             // 
@@ -1175,9 +1265,8 @@ namespace KidsLearning.frm
             this.menuEng05.Image = global::KidsLearning.Properties.Resources.link;
             this.menuEng05.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuEng05.Name = "menuEng05";
-            this.menuEng05.Size = new System.Drawing.Size(304, 70);
+            this.menuEng05.Size = new System.Drawing.Size(301, 70);
             this.menuEng05.Text = "ลากเส้น เชื่อมคำศัพท์";
-       
             // 
             // menuEng03
             // 
@@ -1185,18 +1274,18 @@ namespace KidsLearning.frm
             this.menuEng03.Image = global::KidsLearning.Properties.Resources.communication;
             this.menuEng03.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuEng03.Name = "menuEng03";
-            this.menuEng03.Size = new System.Drawing.Size(304, 70);
+            this.menuEng03.Size = new System.Drawing.Size(301, 70);
             this.menuEng03.Text = "Sentences/แต่งประโยค";
-          
             // 
             // menuEng06
             // 
             this.menuEng06.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.menuEng06.Image = global::KidsLearning.Properties.Resources.communication;
+            this.menuEng06.Image = global::KidsLearning.Properties.Resources._299047_address_book_icon;
             this.menuEng06.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuEng06.Name = "menuEng06";
-            this.menuEng06.Size = new System.Drawing.Size(304, 70);
-            this.menuEng06.Text = "toolStripMenuItem15";
+            this.menuEng06.Size = new System.Drawing.Size(301, 70);
+            this.menuEng06.Text = "ปริ้นคำศัพท์";
+            this.menuEng06.Click += new System.EventHandler(this.menuEng06_Click);
             // 
             // menuSciAll
             // 
@@ -1218,42 +1307,6 @@ namespace KidsLearning.frm
             this.menuExit.Size = new System.Drawing.Size(68, 68);
             this.menuExit.Text = "Exit";
             this.menuExit.Click += new System.EventHandler(this.toolStripButton2_Click);
-            // 
-            // menuMathCount28
-            // 
-            this.menuMathCount28.Name = "menuMathCount28";
-            this.menuMathCount28.Size = new System.Drawing.Size(454, 30);
-            this.menuMathCount28.Text = "การหา ค.ร.น. โดยการหาร";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(454, 30);
-            this.toolStripMenuItem2.Text = "toolStripMenuItem2";
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(454, 30);
-            this.toolStripMenuItem3.Text = "toolStripMenuItem3";
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(454, 30);
-            this.toolStripMenuItem4.Text = "toolStripMenuItem4";
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(454, 30);
-            this.toolStripMenuItem5.Text = "toolStripMenuItem5";
-            // 
-            // toolStripMenuItem6
-            // 
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(454, 30);
-            this.toolStripMenuItem6.Text = "toolStripMenuItem6";
             // 
             // frmPrint
             // 
@@ -1341,7 +1394,6 @@ namespace KidsLearning.frm
         private System.Windows.Forms.ToolStripMenuItem nemuMathOP17;
         private System.Windows.Forms.ToolStripMenuItem nemuMathOP18;
         private System.Windows.Forms.ToolStripMenuItem nemuMathOP19;
-        private System.Windows.Forms.ToolStripMenuItem nemuMathOP20;
         private System.Windows.Forms.ToolStripMenuItem nemuMathOP21;
         private System.Windows.Forms.ToolStripMenuItem nemuMathOP22;
         private System.Windows.Forms.ToolStripMenuItem nemuMathOP23;
@@ -1419,5 +1471,13 @@ namespace KidsLearning.frm
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
+        private System.Windows.Forms.ToolStripMenuItem menuMathPw;
+        private System.Windows.Forms.ToolStripMenuItem menuMathPwTen;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem10;
+      
     }
 }

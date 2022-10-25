@@ -7,17 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Reference Include="TORServices.Drawings">
+      <HintPath>..\KidsLearning\bin\Debug\net5.0-windows\TORServices.Drawings.dll</HintPath>
+    </Reference>
     <Reference Include="TORServices.Forms">
-      <HintPath>..\..\..\..\KidsLearning\KidsLearning\bin\Debug\net5.0-windows\TORServices.Forms.dll</HintPath>
+      <HintPath>..\KidsLearning\bin\Debug\net5.0-windows\TORServices.Forms.dll</HintPath>
     </Reference>
     <Reference Include="TORServices.Maths">
-      <HintPath>..\..\..\..\KidsLearning\KidsLearning\bin\Debug\net5.0-windows\TORServices.Maths.dll</HintPath>
+      <HintPath>..\KidsLearning\bin\Debug\net5.0-windows\TORServices.Maths.dll</HintPath>
     </Reference>
     <Reference Include="TORServices.Network">
       <HintPath>..\..\..\Test_Code\test_Csharp_TOR\testClassTOR\TORServices\File DLL\TORServices.Network.dll</HintPath>
     </Reference>
     <Reference Include="TORServices.PathFile">
-      <HintPath>..\..\..\..\KidsLearning\KidsLearning\bin\Debug\net5.0-windows\TORServices.PathFile.dll</HintPath>
+      <HintPath>..\KidsLearning\bin\Debug\net5.0-windows\TORServices.PathFile.dll</HintPath>
     </Reference>
     <Reference Include="TORServices.Systems">
       <HintPath>..\..\..\Test_Code\test_Csharp_TOR\testClassTOR\TORServices\File DLL\TORServices.Systems.dll</HintPath>

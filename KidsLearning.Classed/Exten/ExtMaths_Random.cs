@@ -57,7 +57,12 @@ namespace KidsLearning.Classed.Exten
         public static double Randomdouble(double min, double max, int _decimal)
         {
             double d = RandomNumberGenerator.GetInt32(Convert.ToInt32(min), Convert.ToInt32(max)) + r.NextDouble();
-            return Convert.ToDouble(d.ToString("N" + _decimal));
+            return Convert.ToDouble(d.ToString($"F{_decimal}"));
+        }
+        public static string RandomdoubleString(double min, double max, int _decimal)
+        {
+            double d = RandomNumberGenerator.GetInt32(Convert.ToInt32(min), Convert.ToInt32(max)) + r.NextDouble();
+            return Convert.ToDouble(d.ToString($"F{_decimal}")).ToString($"F{_decimal}");
         }
         public static double RandomInt(int min, int max)
         {

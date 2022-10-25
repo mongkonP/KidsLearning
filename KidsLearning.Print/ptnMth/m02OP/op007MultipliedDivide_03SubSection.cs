@@ -48,26 +48,21 @@ namespace KidsLearning.Print.ptnMth.m02OP
             // 
             // groupBox1
             // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 676);
-            // 
-            // panel2
-            // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(3, 19);
+            this.groupBox1.Size = new System.Drawing.Size(250, 593);
             // 
             // groupBox2
             // 
-            this.groupBox2.Size = new System.Drawing.Size(1076, 676);
+            this.groupBox2.Size = new System.Drawing.Size(1256, 593);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(1070, 654);
+            this.printPreviewControl1.Size = new System.Drawing.Size(1250, 571);
             // 
             // op007MultipliedDivide_03SubSection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.Name = "op007MultipliedDivide_03SubSection";
-            this.Size = new System.Drawing.Size(1326, 676);
+            this.Size = new System.Drawing.Size(1506, 593);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

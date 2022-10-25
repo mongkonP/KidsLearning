@@ -97,38 +97,10 @@ namespace KidsLearning.frm
             this.nemuMathOP16.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op010FractionPlusMinus_01Pic()); };
             this.nemuMathOP17.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op010FractionPlusMinus_02Num()); };
             this.nemuMathOP18.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op011Decimal_01()); };
-            this.nemuMathOP19.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op005PlusMinus_Num_03factoring()); };
-            this.nemuMathOP20.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            this.nemuMathOP21.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            this.nemuMathOP22.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            this.nemuMathOP23.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP24.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP25.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP26.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP27.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP28.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP29.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP30.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP31.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP32.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP33.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP34.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP35.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP36.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP37.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP38.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP39.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP40.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP41.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP42.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP43.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP44.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP45.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP46.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP47.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP48.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP49.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
-            //this.nemuMathOP50.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new ()); };
+            this.nemuMathOP19.Click +=(o,e)=> { panel1.Controls.Clear(); panel1.Controls.Add(new op013_PowerbyTen_OP_01()); };
+            this.nemuMathOP21.Click += (o, e) => { panel1.Controls.Clear(); panel1.Controls.Add(new op013_PowerbyTen_OP_02()); };
+            this.nemuMathOP30.Click += (o, e) => { panel1.Controls.Clear(); panel1.Controls.Add(new op004PlusMinus_Num_02()); };
+           
 
             #endregion
 
@@ -314,11 +286,65 @@ namespace KidsLearning.frm
 
         }
 
+        private void menuEng06_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear(); panel1.Controls.Add(new prnPrintWord_());
+        }
 
-   
+        private void menuMathPw_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear(); panel1.Controls.Add(new num013_Power());
+        }
 
- 
+        private void menuMathPwTen_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear(); panel1.Controls.Add(new num013_PowerbyTen_01());
+        }
 
-        
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear(); panel1.Controls.Add(new prnMath_02Vector_01());
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear(); panel1.Controls.Add(new prnMath_02Vector_02());
+        }
+
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear(); panel1.Controls.Add(new prnMath_02Vector_03());
+        }
+
+        private void toolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear(); panel1.Controls.Add(new num013_PowerPerfix_01());
+        }
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear(); panel1.Controls.Add(new num013_PowerPerfix_02());
+        }
+
+        private void menuOperate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuMathAll_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuMathCount_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        /*   private void nemuMathOP21_Click(object sender, EventArgs e)
+           {
+               panel1.Controls.Clear(); panel1.Controls.Add(new op013_PowerbyTen_02_OP());
+           }*/
     }
 }

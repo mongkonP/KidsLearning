@@ -31,7 +31,34 @@ namespace LoadFiles
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Task.Factory.StartNew(() => loadFiledltv());
+           Task.Factory.StartNew(() => {
+               /*   List<string> lst = new List<string>() { "ภาษาไทย_1000", "คณิตศาสตร์_2000", "สังคมศึกษา ศาสนาและวัฒนธรรม_4000",
+                "สุขศึกษาและพลศึกษา_5000","ศิลปะ_6000","ภาษาอังกฤษ_8000","วิทยาศาสตร์และเทคโนโลยี_34554345","วิทยาศาสตร์และเทคโนโลยี (วิทยาการคำนวณ)_80000"
+            ,"การงานอาชีพ_3418"};*/
+
+                 List<string> lst = new List<string>() { "คณิตศาสตร์_2000", "ภาษาอังกฤษ_8000","วิทยาศาสตร์และเทคโนโลยี_34554345","วิทยาศาสตร์และเทคโนโลยี (วิทยาการคำนวณ)_80000"};
+              // List<string> lst = new List<string>() { "คณิตศาสตร์_2000" };
+
+               List<Task> tasks = new List<Task>();
+
+               lst.ForEach(c =>
+               {
+                   if (!string.IsNullOrEmpty(c.Trim()))
+                   {
+                       string cri = c;
+                       tasks.Add(Task.Factory.StartNew(() => loadfiledltv_All(cri)));
+
+                   }
+
+
+               });
+               // Wait for the tasks to complete before displaying a completion message.
+               Task.WaitAll(tasks.ToArray());
+              
+
+               lblStatus.Write(" load file complete");
+
+           });
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -52,9 +79,9 @@ namespace LoadFiles
 
             return _file;
         }
+        Random random = new Random();
         void LoadByWebClient(string link, string file)
         {
-
 
             using (WebClient webClient = new WebClient())
             {
@@ -65,12 +92,17 @@ namespace LoadFiles
                 });
                 try
                 {
+                    string _Filetemp = System.IO.Path.GetTempPath() + "Temp\\" + DateTime.Now.ToString("yyyyMMdd hhmmss ffffff" ) + random.Next(100000,10000000).ToString();
+                  
+                    if (!Directory.Exists(Path.GetDirectoryName(_Filetemp)))
+                        Directory.CreateDirectory(Path.GetDirectoryName(_Filetemp));
                     if (!Directory.Exists(Path.GetDirectoryName(file)))
                         Directory.CreateDirectory(Path.GetDirectoryName(file));
                     if (!File.Exists(file))
                     {
-                        webClient.DownloadFile(new Uri(link), file);
+                        webClient.DownloadFile(new Uri(link), _Filetemp);
                         System.Threading.Thread.Sleep(1000);
+                        File.Move(_Filetemp, file);
                     }
                 }
                 catch { }
@@ -150,41 +182,7 @@ namespace LoadFiles
             lblStatus.Write("URL complete :" + _url);
 
         }
-        void loadFiledltv()
-        {
-            List<string> lst = new List<string>() { "ภาษาไทย_1000", "คณิตศาสตร์_2000", "สังคมศึกษา ศาสนาและวัฒนธรรม_4000",
-             "สุขศึกษาและพลศึกษา_5000","ศิลปะ_6000","ภาษาอังกฤษ_8000","วิทยาศาสตร์และเทคโนโลยี_34554345","วิทยาศาสตร์และเทคโนโลยี (วิทยาการคำนวณ)_80000"
-         ,"การงานอาชีพ_3418"};
-
-            // List<string> lst = new List<string>() { "คณิตศาสตร์_2000", "ภาษาอังกฤษ_8000","วิทยาศาสตร์และเทคโนโลยี_34554345","วิทยาศาสตร์และเทคโนโลยี (วิทยาการคำนวณ)_80000"};
-
-            // Create a scheduler that uses two threads.
-            LimitedConcurrencyLevelTaskScheduler lcts = new LimitedConcurrencyLevelTaskScheduler(5);
-            List<Task> tasks = new List<Task>();
-
-            // Create a TaskFactory and pass it our custom scheduler.
-            TaskFactory factory = new TaskFactory(lcts);
-            CancellationTokenSource cts = new CancellationTokenSource();
-
-            lst.ForEach(c =>
-            {
-                if (!string.IsNullOrEmpty(c.Trim()))
-                {
-                    string cri = c;
-                    tasks.Add(factory.StartNew(() => loadfiledltv_All(cri)));
-
-                }
-
-
-            });
-            // Wait for the tasks to complete before displaying a completion message.
-            Task.WaitAll(tasks.ToArray());
-            cts.Dispose();
-
-            lblStatus.Write(" load file complete");
-
-
-        }
+       
         void loadfiledltv_All(string c)
         {
             string code = c.Split('_')[1].Trim();
@@ -193,9 +191,11 @@ namespace LoadFiles
             for (int i = 1; i <= 9; i++)
             {
 
-                int p = i;
-                //  tasks.Add(Task.Factory.StartNew(() => loadfiledltvAll($"https://dltv.ac.th/teachplan/lists/{i}/{code}", code, dir + "_" + p)));
-                loadfiledltvAll($"https://dltv.ac.th/teachplan/lists/{i}/{code}", code, dir + "_" + i);
+                List<Task> tasks = new List<Task>();
+                tasks.Add(Task.Factory.StartNew(()=> loadfiledltvAll($"https://dltv.ac.th/teachplan/lists/{i}/{code}/MjU2NCAvIDE=", code, dir + "\\" + i + "\\2564_1")));
+                tasks.Add(Task.Factory.StartNew(() => loadfiledltvAll($"https://dltv.ac.th/teachplan/lists/{i}/{code}/MjU2NCAvIDI=", code, dir + "\\" + i + "\\2564_2")));
+
+                Task.WaitAll(tasks.ToArray());
             }
 
         }
@@ -316,5 +316,7 @@ namespace LoadFiles
 
             });
         }
+
+        
     }
 }
