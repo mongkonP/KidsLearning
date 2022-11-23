@@ -52,7 +52,7 @@ namespace KidsLearning.Print.ptnEng
 
       public static  string GetWord(List<string> lst, int c = 0)
         {
-            return lst[RandomNumberGenerator.GetInt32(0, lst.Count - 1)].Split('=')[c];
+            return lst[RandomNumberGenerator.GetInt32(0, lst.Count)].Split('=')[c];
 
         }
     }

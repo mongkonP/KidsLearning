@@ -92,7 +92,7 @@ namespace KidsLearning.Print.ptnMth
 
                 // int cAll = RandomNumberGenerator.GetInt32(0, 5);
                 string name = Exts.RandomManName;
-                int c = (strType_.Count - 1 > 0) ? RandomNumberGenerator.GetInt32(0, strType_.Count - 1) : 0;
+                int c = (strType_.Count - 1 > 0) ? RandomNumberGenerator.GetInt32(0, strType_.Count ) : 0;
                 string s = strType_[c];
                 int _mc = RandomNumberGenerator.GetInt32(1, 5);
                 string _return = name + " กินก๊วยเตี๋ยว โดยสั่ง " + s + _mc + " ชาม  คิดเป็นเงินเท่าใด ? \n     สมการ";

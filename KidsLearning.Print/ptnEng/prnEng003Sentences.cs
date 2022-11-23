@@ -485,52 +485,58 @@ namespace KidsLearning.Print.ptnEng
 
                     if (rr == 0)//  ...........  Like/give/need/see/want ...........
                     {
-                        s = n_1[RandomNumberGenerator.GetInt32(0, n_1.Count - 1)] + "    " + vLike[RandomNumberGenerator.GetInt32(0, vLike.Count - 1)] + "      " + lstLike[RandomNumberGenerator.GetInt32(0, lstLike.Count - 1)];
+                        s = n_1[RandomNumberGenerator.GetInt32(0, n_1.Count)] + "    " + vLike[RandomNumberGenerator.GetInt32(0, vLike.Count )] + 
+                            "      " + lstLike[RandomNumberGenerator.GetInt32(0, lstLike.Count )];
                     }
                     else if (rr == 1)//  ...........  eat ...........
                     {
-                        s = n_1[RandomNumberGenerator.GetInt32(0, n_1.Count - 1)] + "    eat      " + lstEat[RandomNumberGenerator.GetInt32(0, lstEat.Count - 1)];
+                        s = n_1[RandomNumberGenerator.GetInt32(0, n_1.Count)] + "    eat      " 
+                            + lstEat[RandomNumberGenerator.GetInt32(0, lstEat.Count )];
                     }
                     else if (rr == 2)//............ is/am/are ...............
                     {
-                        string ss = n_1[RandomNumberGenerator.GetInt32(0, n_1.Count - 1)];
+                        string ss = n_1[RandomNumberGenerator.GetInt32(0, n_1.Count)];
 
                         if (ss == "I")
                         {
-                            s = ss + "   am     " + lstIsAmAre[RandomNumberGenerator.GetInt32(0, lstIsAmAre.Count - 1)];
+                            s = ss + "   am     " + lstIsAmAre[RandomNumberGenerator.GetInt32(0, lstIsAmAre.Count)];
                         }
                         else if (ss == "We" || ss == "They")
                         {
-                            s = ss + "   are     " + lstIsAmAre[RandomNumberGenerator.GetInt32(0, lstIsAmAre.Count - 1)];
+                            s = ss + "   are     " + lstIsAmAre[RandomNumberGenerator.GetInt32(0, lstIsAmAre.Count)];
                         }
                         else
                         {
-                            s = ss + "    is      " + lstIsAmAre[RandomNumberGenerator.GetInt32(0, lstIsAmAre.Count - 1)];
+                            s = ss + "    is      " + lstIsAmAre[RandomNumberGenerator.GetInt32(0, lstIsAmAre.Count )];
                         }
 
                     }
                     else if (rr == 3) // that/this/These / Those is ................
                     {
 
-                        s = ttLike[RandomNumberGenerator.GetInt32(0, ttLike.Count - 1)] + "    is      " + lstEat[RandomNumberGenerator.GetInt32(0, lstEat.Count - 1)];
+                        s = ttLike[RandomNumberGenerator.GetInt32(0, ttLike.Count )] + 
+                            "    is      " + lstEat[RandomNumberGenerator.GetInt32(0, lstEat.Count )];
 
                     }
                     else if (rr == 4)  //have has
                     {
-                        string ss = n_1[RandomNumberGenerator.GetInt32(0, n_1.Count - 1)];
+                        string ss = n_1[RandomNumberGenerator.GetInt32(0, n_1.Count )];
                         if (ss == "I" || ss == "You" || ss == "We" || ss == "They")
                         {
-                            s = n_1[RandomNumberGenerator.GetInt32(0, n_1.Count - 1)] + "    have      " + lstHaveHas[RandomNumberGenerator.GetInt32(0, lstHaveHas.Count - 1)];
+                            s = n_1[RandomNumberGenerator.GetInt32(0, n_1.Count )] + "    have      " 
+                                + lstHaveHas[RandomNumberGenerator.GetInt32(0, lstHaveHas.Count )];
                         }
                         else
                         {
-                            s = n_1[RandomNumberGenerator.GetInt32(0, n_1.Count - 1)] + "    has      " + lstHaveHas[RandomNumberGenerator.GetInt32(0, lstHaveHas.Count - 1)];
+                            s = n_1[RandomNumberGenerator.GetInt32(0, n_1.Count )] + "    has      " 
+                                + lstHaveHas[RandomNumberGenerator.GetInt32(0, lstHaveHas.Count )];
                         }
 
                     }
                     else if (rr == 5)  //play
                     {
-                        s = n_1[RandomNumberGenerator.GetInt32(0, n_1.Count - 1)] + "  play     " + lstPlay[RandomNumberGenerator.GetInt32(0, lstPlay.Count - 1)];
+                        s = n_1[RandomNumberGenerator.GetInt32(0, n_1.Count )] + "  play     " 
+                            + lstPlay[RandomNumberGenerator.GetInt32(0, lstPlay.Count )];
 
                     }
                     e.Graphics.DrawString(" ประโยค ", fontDetail, new SolidBrush(Color.Black), xC + 20, yC + 8);
@@ -561,42 +567,42 @@ namespace KidsLearning.Print.ptnEng
 
                     if (rr == 0)//  ...........  Like/give/need/see/want ...........
                     {
-                        s = nth_1[RandomNumberGenerator.GetInt32(0, nth_1.Count - 1)] + "    " +
-                            vLiketh[RandomNumberGenerator.GetInt32(0, vLiketh.Count - 1)] + "      " +
-                            lstLiketh[RandomNumberGenerator.GetInt32(0, lstLiketh.Count - 1)];
+                        s = nth_1[RandomNumberGenerator.GetInt32(0, nth_1.Count )] + "    " +
+                            vLiketh[RandomNumberGenerator.GetInt32(0, vLiketh.Count )] + "      " +
+                            lstLiketh[RandomNumberGenerator.GetInt32(0, lstLiketh.Count )];
                     }
                     else if (rr == 1)//  ...........  eat ...........
                     {
-                        s = nth_1[RandomNumberGenerator.GetInt32(0, nth_1.Count - 1)] + " กิน " +
-                            lstEatth[RandomNumberGenerator.GetInt32(0, lstEatth.Count - 1)];
+                        s = nth_1[RandomNumberGenerator.GetInt32(0, nth_1.Count )] + " กิน " +
+                            lstEatth[RandomNumberGenerator.GetInt32(0, lstEatth.Count )];
                     }
                     else if (rr == 2)//............ is/am/are ...............
                     {
-                        string ss = nth_1[RandomNumberGenerator.GetInt32(0, nth_1.Count - 1)];
-                        s = ss + " คือ " + lstIsAmAreth[RandomNumberGenerator.GetInt32(0, lstIsAmAreth.Count - 1)];
+                        string ss = nth_1[RandomNumberGenerator.GetInt32(0, nth_1.Count )];
+                        s = ss + " คือ " + lstIsAmAreth[RandomNumberGenerator.GetInt32(0, lstIsAmAreth.Count )];
 
 
                     }
                     else if (rr == 3) // that/this/These / Those is ................
                     {
 
-                        s = ttLiketh[RandomNumberGenerator.GetInt32(0, ttLiketh.Count - 1)] + " คือ " +
-                            lstEatth[RandomNumberGenerator.GetInt32(0, lstEatth.Count - 1)];
+                        s = ttLiketh[RandomNumberGenerator.GetInt32(0, ttLiketh.Count )] + " คือ " +
+                            lstEatth[RandomNumberGenerator.GetInt32(0, lstEatth.Count )];
 
                     }
                     else if (rr == 4)  //have has
                     {
-                        string ss = nth_1[RandomNumberGenerator.GetInt32(0, nth_1.Count - 1)];
+                        string ss = nth_1[RandomNumberGenerator.GetInt32(0, nth_1.Count )];
 
-                        s = nth_1[RandomNumberGenerator.GetInt32(0, nth_1.Count - 1)] + " มี  " +
-                            lstHaveHasth[RandomNumberGenerator.GetInt32(0, lstHaveHasth.Count - 1)];
+                        s = nth_1[RandomNumberGenerator.GetInt32(0, nth_1.Count )] + " มี  " +
+                            lstHaveHasth[RandomNumberGenerator.GetInt32(0, lstHaveHasth.Count )];
 
 
                     }
                     else if (rr == 5)  //play
                     {
-                        s = nth_1[RandomNumberGenerator.GetInt32(0, nth_1.Count - 1)] + " เล่น " +
-                            lstPlayth[RandomNumberGenerator.GetInt32(0, lstPlayth.Count - 1)];
+                        s = nth_1[RandomNumberGenerator.GetInt32(0, nth_1.Count )] + " เล่น " +
+                            lstPlayth[RandomNumberGenerator.GetInt32(0, lstPlayth.Count )];
 
                     }
                     e.Graphics.DrawString(" ประโยคไทย ", fontDetail, new SolidBrush(Color.Black), xC + 20, yC + 8);
@@ -619,7 +625,7 @@ namespace KidsLearning.Print.ptnEng
                     xC = 100;
                     rr = RandomNumberGenerator.GetInt32(0, 2000);
 
-                    s = "................   is   " + lstThatThis[RandomNumberGenerator.GetInt32(0, lstThatThis.Count - 1)];
+                    s = "................   is   " + lstThatThis[RandomNumberGenerator.GetInt32(0, lstThatThis.Count )];
 
                     e.Graphics.DrawString(" ประโยค ", fontDetail, new SolidBrush(Color.Black), xC + 20, yC + 8);
                     e.Graphics.DrawRectangle(Pens.Black, new Rectangle(xC + 20, yC + 8, 80, h));
@@ -657,16 +663,17 @@ namespace KidsLearning.Print.ptnEng
 
                     if (rr < 1000)//Animal
                     {
-                        s = lstAnimal[RandomNumberGenerator.GetInt32(0, lstAnimal.Count - 1)] + " ............. animal";
+                        s = lstAnimal[RandomNumberGenerator.GetInt32(0, lstAnimal.Count )] + " ............. animal";
 
                     }
                     else if (rr >= 1000 && rr < 2000)//Food
                     {
-                        s = lstFood[RandomNumberGenerator.GetInt32(0, lstAnimal.Count - 1)] + " ............. food";
+                        s = lstFood[RandomNumberGenerator.GetInt32(0, lstAnimal.Count )] + " ............. food";
                     }
                     else //Occupation
                     {
-                        s = lstOccupationN[RandomNumberGenerator.GetInt32(0, lstOccupationN.Count - 1)] + " ............. " + lstOccupationO[RandomNumberGenerator.GetInt32(0, lstOccupationO.Count - 1)];
+                        s = lstOccupationN[RandomNumberGenerator.GetInt32(0, lstOccupationN.Count )] + 
+                            " ............. " + lstOccupationO[RandomNumberGenerator.GetInt32(0, lstOccupationO.Count )];
                     }
 
 
@@ -694,7 +701,8 @@ namespace KidsLearning.Print.ptnEng
                 {
                     xC = 100;
                     rr = RandomNumberGenerator.GetInt32(0, 5);
-                    s = lstHaveHasN[RandomNumberGenerator.GetInt32(0, lstHaveHasN.Count - 1)] + "  .............    " + lstHaveHas[RandomNumberGenerator.GetInt32(0, lstHaveHas.Count - 1)];
+                    s = lstHaveHasN[RandomNumberGenerator.GetInt32(0, lstHaveHasN.Count )] + "  .............    " 
+                        + lstHaveHas[RandomNumberGenerator.GetInt32(0, lstHaveHas.Count )];
 
                     e.Graphics.DrawString(" ประโยค ", fontDetail, new SolidBrush(Color.Black), xC + 20, yC + 5);
                     e.Graphics.DrawRectangle(Pens.Black, new Rectangle(xC + 20, yC + 8, 80, h));

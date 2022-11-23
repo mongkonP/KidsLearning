@@ -278,7 +278,7 @@ namespace KidsLearning.Print.ptnEng
                 {
 
 
-                    e.Graphics.DrawString(lstWord[RandomNumberGenerator.GetInt32(0, lstWord.Count - 1)], fontDetail, new SolidBrush(Color.Black), xC + 20, yC + 5);
+                    e.Graphics.DrawString(lstWord[RandomNumberGenerator.GetInt32(0, lstWord.Count)], fontDetail, new SolidBrush(Color.Black), xC + 20, yC + 5);
 
                     yC += h;
                 }
@@ -309,7 +309,7 @@ namespace KidsLearning.Print.ptnEng
                 {
 
 
-                    e.Graphics.DrawString(lstWord[RandomNumberGenerator.GetInt32(0, lstWord.Count - 1)], fontDetail, new SolidBrush(Color.Black), xC + 20, yC + 5);
+                    e.Graphics.DrawString(lstWord[RandomNumberGenerator.GetInt32(0, lstWord.Count)], fontDetail, new SolidBrush(Color.Black), xC + 20, yC + 5);
 
                     yC += h;
                 }

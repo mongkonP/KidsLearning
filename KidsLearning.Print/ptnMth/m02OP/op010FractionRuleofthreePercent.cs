@@ -152,42 +152,9 @@ namespace KidsLearning.Print.ptnMth.m02OP
                 for (int i = 0; i < 6; i++)
                 {
 
-                    /* int a = RandomNumberGenerator.GetInt32(1, 50);
+                    
 
-
-                     int b = a * 100/NumP[RandomNumberGenerator.GetInt32(0, NumP.Count - 1)];
-                    // int b = a * 100 / RandomNumberGenerator.GetInt32(1, 100);//a * Nums[RandomNumberGenerator.GetInt32(0, Nums.Count - 1)];
-                     do {
-                         b--;
-                     } while (((Convert.ToDouble(a) * Convert.ToDouble(100) / Convert.ToDouble(b))%1)!=0);
-                     if (rd_1.Checked)
-                     {
-                         string _a = a.ToString(), _b = b.ToString();
-
-
-                         e.Graphics.DrawFraction(_a, _b, xC + 10, yC);
-                         e.Graphics.DrawString(" = ", new Font("Angsana New", 20), new SolidBrush(Color.Black), xC + 110, yC + 15);
-                         e.Graphics.DrawFraction("Y", "100", xC + 110, yC);
-                     }
-                     else
-                     {
-                         if (RandomNumberGenerator.GetInt32(1, 1000) > 500)
-                         {
-                             e.Graphics.DrawString($"{a} คิดเป็นร้อยละเท่าใด\nของ {b}", new Font("Angsana New", 20), new SolidBrush(Color.Black), xC + 10, yC);
-                         }
-                         else
-                         {
-                             e.Graphics.DrawString($"ร้อยละ {a} ของ{b} \nเป็นเท่าใด", new Font("Angsana New", 20), new SolidBrush(Color.Black), xC + 10, yC);
-                         }
-                     }
-
-                     e.Graphics.DrawLine(new Pen(Brushes.Black, 2), xC + 250, yC + 25, 700, yC + 25);
-                     e.Graphics.DrawLine(new Pen(Brushes.Black, 2), xC + 250, yC + 55, 700, yC + 55);
-                     e.Graphics.DrawLine(new Pen(Brushes.Black, 2), xC + 250, yC + 85, 700, yC + 85);
-                     e.Graphics.DrawLine(new Pen(Brushes.Black, 2), xC + 250, yC + 115, 700, yC + 115);
-                     yC += 150;*/
-
-                    int c = RandomNumberGenerator.GetInt32(0, ints.Count - 1);
+                    int c = RandomNumberGenerator.GetInt32(0, ints.Count );
                     var Value = ints.ElementAt(c).Value.Split(',');
                     int a = int.Parse(Value[0].Trim());
                     int b = int.Parse(Value[1].Trim());

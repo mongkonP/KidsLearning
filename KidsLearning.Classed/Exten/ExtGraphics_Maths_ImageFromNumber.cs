@@ -29,7 +29,7 @@ namespace KidsLearning.Classed.Exten
         public static Image ImageFromNumber(int number, int width, int height, bool rectangle = false)
         {
             // MessageBox.Show("" + images.Count);
-            string imag_1 = images[RandomNumberGenerator.GetInt32(0, images.Count - 1)];
+            string imag_1 = images[RandomNumberGenerator.GetInt32(0, images.Count)];
             // Image image = TORServices.Drawings.exImage.ResizeImage(TORServices.Drawings.exImage.ImageFromNumber(number, imag_1), width, height);
             Image image = TORServices.Drawings.exImage.ImageFromNumber(number, imag_1);
             if (rectangle)
@@ -82,7 +82,7 @@ namespace KidsLearning.Classed.Exten
         public static Image ImageFromNumberLong(int number, int width, int height, bool rectangle = false)
         {
             // MessageBox.Show("" + images.Count);
-            string imag_1 = images[RandomNumberGenerator.GetInt32(0, images.Count - 1)];
+            string imag_1 = images[RandomNumberGenerator.GetInt32(0, images.Count)];
             // Image image = TORServices.Drawings.exImage.ResizeImage(TORServices.Drawings.exImage.ImageFromNumber(number, imag_1), width, height);
             Image image = TORServices.Drawings.exImage.ImageFromNumberLong(number, imag_1);
             if (rectangle)

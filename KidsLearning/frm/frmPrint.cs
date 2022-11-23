@@ -1,4 +1,5 @@
-﻿using KidsLearning.Print.ptnEng;
+﻿using KidsLearning.Classed.Exten;
+using KidsLearning.Print.ptnEng;
 using KidsLearning.Print.ptnMth;
 using KidsLearning.Print.ptnMth.m01Num;
 using KidsLearning.Print.ptnMth.m02OP;
@@ -280,8 +281,7 @@ namespace KidsLearning.frm
         private void frmPrint_Load(object sender, EventArgs e)
         {
            panel1.Controls.Clear();
-
-           //panel1.Controls.Add(new prnMath_010DateTime003AD_BE());
+          
 
 
         }
@@ -338,6 +338,17 @@ namespace KidsLearning.frm
         private void menuMathCount_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Paint(object sender, PaintEventArgs e)
+        {
+           // MessageBox.Show("Test");
+          
+        }
+
+        private void mnuSciPhy_Elec_Resistor_01_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear(); panel1.Controls.Add(new prnSci_Resistor_01());
         }
 
 

@@ -122,7 +122,7 @@ namespace KidsLearning.Print.ptnMth.m01Num
                 xC = xC + 340;
                 if (NumsB.Count > 1)
                 {
-                    randomIndex = RandomNumberGenerator.GetInt32(0, NumsB.Count - 1);
+                    randomIndex = RandomNumberGenerator.GetInt32(0, NumsB.Count);
                     number = NumsB[randomIndex];
                     NumsB.RemoveAt(randomIndex);
                 }

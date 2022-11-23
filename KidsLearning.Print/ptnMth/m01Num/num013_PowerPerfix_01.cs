@@ -135,8 +135,8 @@ namespace KidsLearning.Print.ptnMth.m01Num
             {
 
                 string a;
-                Prefixe prefixe = Prefixs[RandomNumberGenerator.GetInt32(0, Prefixs.Count - 1)];
-                string _uint = units[RandomNumberGenerator.GetInt32(0, units.Count-1)];
+                Prefixe prefixe = Prefixs[RandomNumberGenerator.GetInt32(0, Prefixs.Count )];
+                string _uint = units[RandomNumberGenerator.GetInt32(0, units.Count)];
 
                  if (prefixe.factor >= 10d)
                   {

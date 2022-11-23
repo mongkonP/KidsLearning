@@ -252,7 +252,7 @@ namespace KidsLearning.Print.ptnMth.m02OP
                  else if (rd_2.Checked)
                  {
 
-                     b = b - (b % a) + ((a==2)?1:RandomNumberGenerator.GetInt32(1, a - 1));
+                     b = b - (b % a) + ((a==2)?1:RandomNumberGenerator.GetInt32(1, a));
                  }
                  else if (rd_3.Checked)
                  {
@@ -262,7 +262,7 @@ namespace KidsLearning.Print.ptnMth.m02OP
                      }
                      else
                      {
-                         b = b - (b % a) + ((a == 2) ? 1 : RandomNumberGenerator.GetInt32(1, a - 1));
+                         b = b - (b % a) + ((a == 2) ? 1 : RandomNumberGenerator.GetInt32(1, a ));
                      }
 
                  }

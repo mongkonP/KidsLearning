@@ -111,7 +111,7 @@ namespace KidsLearning.Control.MathControl.Number
                //สร้างรูปแบบ 
                //สุ่มไฟลืมาก่อน
                 System.Threading.Thread.Sleep(100);
-                string imag_1 = Files[ RandomNumberGenerator.GetInt32(0,Files.Count-1)];
+                string imag_1 = Files[ RandomNumberGenerator.GetInt32(0,Files.Count)];
 
                 string[] temp = System.IO.Path.GetFileNameWithoutExtension(imag_1).Split('-');
                 //แยกชื่อ กับ หน่วยนับด้วย split("-")

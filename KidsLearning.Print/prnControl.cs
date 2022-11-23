@@ -61,7 +61,7 @@ namespace KidsLearning.Print
             e.Graphics.DrawString(ReportHeader, fontHeader, Brushes.Black, 300, e.MarginBounds.Top - e.Graphics.MeasureString(ReportHeader, fontHeader, e.MarginBounds.Width).Height - 13);
             e.Graphics.DrawString(ReportToppic, fontHeader, Brushes.Black, 100, 90);
             //Draw Footer
-            e.Graphics.DrawString("test date ......./......./..........   by............................................", fontHeader, Brushes.Black, e.MarginBounds.Left, e.MarginBounds.Bottom + 40);
+            e.Graphics.DrawString($"test date ......./......./..........  by......................................  Print date {DateTime.Now.ToString("yyyyMMdd hhmmss FFFFFFF")}", fontHeader, Brushes.Black, e.MarginBounds.Left, e.MarginBounds.Bottom + 40);
 
         }
         private void prnControl_Load(object sender, EventArgs e)

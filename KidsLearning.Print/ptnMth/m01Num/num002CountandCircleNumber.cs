@@ -105,7 +105,7 @@ namespace KidsLearning.Print.ptnMth.m01Num
             int randomIndex, number;
             for (int i = 1; i <= 10; i += 2)
             {
-                randomIndex = RandomNumberGenerator.GetInt32(0,Nums.Count-1);
+                randomIndex = RandomNumberGenerator.GetInt32(0,Nums.Count);
                 number = Nums[randomIndex];
 
                 e.Graphics.DrawImage(KidsLearning.Classed.Exten.ExtGraphics_Maths.ImageFromNumber(number, 100,100), xC, yC);
@@ -114,7 +114,7 @@ namespace KidsLearning.Print.ptnMth.m01Num
                 xC = xC + 320;
                 if (Nums.Count > 1)
                 {
-                    randomIndex = RandomNumberGenerator.GetInt32(0, Nums.Count - 1);
+                    randomIndex = RandomNumberGenerator.GetInt32(0, Nums.Count );
                     number = Nums[randomIndex];
                     Nums.RemoveAt(randomIndex);
                 }

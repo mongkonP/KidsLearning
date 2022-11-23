@@ -98,7 +98,7 @@ namespace KidsLearning.Print.ptnMth
                 for (int cc = 0; cc <= cAll; cc++)
                 {
 
-                    int c = (strType_.Count - 1 > 0) ? RandomNumberGenerator.GetInt32(0, strType_.Count - 1) : 0;
+                    int c = (strType_.Count - 1 > 0) ? RandomNumberGenerator.GetInt32(0, strType_.Count ) : 0;
                     string s = strType_[c];
                     int _mc = RandomNumberGenerator.GetInt32(1, 5);
                     _return += s + _mc + " ชาม ";
@@ -133,7 +133,7 @@ namespace KidsLearning.Print.ptnMth
                 }
 
 
-                _return += $"  เมื่อ {name} จ่ายเงิน " + payAll[RandomNumberGenerator.GetInt32(0, payAll.Count - 1)] + " บาท แม่ค้าต้องทอนเงินเท่าไหร่ ?";
+                _return += $"  เมื่อ {name} จ่ายเงิน " + payAll[RandomNumberGenerator.GetInt32(0, payAll.Count)] + " บาท แม่ค้าต้องทอนเงินเท่าไหร่ ?";
                 e.Graphics.DrawString(_return, fontDetail, new SolidBrush(Color.Black), new RectangleF(xC - 50, yC, 750, 80));
                 yC += 75;
 

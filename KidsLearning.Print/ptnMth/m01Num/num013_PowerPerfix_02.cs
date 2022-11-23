@@ -137,14 +137,14 @@ namespace KidsLearning.Print.ptnMth.m01Num
                 int b;
                 List<Prefixe> lst = new List<Prefixe>();
                 lst.AddRange(Prefixs);
-                string _uint = units[RandomNumberGenerator.GetInt32(0, units.Count - 1)];
+                string _uint = units[RandomNumberGenerator.GetInt32(0, units.Count )];
 
 
 
-                int c = RandomNumberGenerator.GetInt32(0, lst.Count - 1);
+                int c = RandomNumberGenerator.GetInt32(0, lst.Count );
                 Prefixe pr_01 = lst[c];
                 lst.RemoveAt(c);
-                int d = RandomNumberGenerator.GetInt32(0, lst.Count - 1);
+                int d = RandomNumberGenerator.GetInt32(0, lst.Count );
                 Prefixe pr_02 = lst[d];
                 lst.RemoveAt(d);
                 /* if (c > d)

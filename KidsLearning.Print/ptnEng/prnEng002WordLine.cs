@@ -217,17 +217,17 @@ namespace KidsLearning.Print.ptnEng
             // 
             // groupBox2
             // 
-            this.groupBox2.Size = new System.Drawing.Size(1353, 632);
+            this.groupBox2.Size = new System.Drawing.Size(1328, 632);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(1347, 610);
+            this.printPreviewControl1.Size = new System.Drawing.Size(1322, 610);
             // 
             // prnEng002WordLine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.Name = "prnEng002WordLine";
-            this.Size = new System.Drawing.Size(1603, 632);
+            this.Size = new System.Drawing.Size(1578, 632);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -256,7 +256,7 @@ namespace KidsLearning.Print.ptnEng
            
             for (int i = 1; i <= 10; i++)
             {
-                int zz = RandomNumberGenerator.GetInt32(0, _words.Count - 1);
+                int zz = RandomNumberGenerator.GetInt32(0, _words.Count);
                 word = _words[zz];
                 var ww = word.Split('|');
 
@@ -274,11 +274,11 @@ namespace KidsLearning.Print.ptnEng
             for (int i = 0; i < 10; i++)
             {
 
-                int z = (wordA.Count == 1) ? 0 : RandomNumberGenerator.GetInt32(0, wordA.Count - 1);
+                int z = (wordA.Count == 1) ? 0 : RandomNumberGenerator.GetInt32(0, wordA.Count );
                 e.Graphics.DrawString(wordA[z], new Font("Angsana New", 22), new SolidBrush(Color.Black), xC + 5, yC + 5);
                 wordA.RemoveAt(z);
 
-                z = (wordB.Count == 1) ? 0 : RandomNumberGenerator.GetInt32(0, wordB.Count - 1);
+                z = (wordB.Count == 1) ? 0 : RandomNumberGenerator.GetInt32(0, wordB.Count );
                 e.Graphics.DrawString(wordB[z], new Font("Angsana New", 22), new SolidBrush(Color.Black), xC + 350, yC + 5);
                 wordB.RemoveAt(z);
                 yC += 60;

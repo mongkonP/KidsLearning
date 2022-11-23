@@ -42,7 +42,7 @@ namespace KidsLearning.Control.ThaiControl
                System.Threading.Thread.Sleep(100);
                do
                {
-                   i = RandomNumberGenerator.GetInt32(0, ck.Choies.Count - 1);
+                   i = RandomNumberGenerator.GetInt32(0, ck.Choies.Count );
                    Ans = ck.Choies[i].Answer;
                    _Choies = ck.Choies[i].Choie;
                } while (string.IsNullOrEmpty(Ans) || _Choies.Count <= 0);

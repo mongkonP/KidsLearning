@@ -94,7 +94,7 @@ namespace KidsLearning.Print.ptnMth
                 int ccc = 0;
                 for (int ip = 1; ip <= RandomNumberGenerator.GetInt32(1, 5); ip++)
                 {
-                    string m = Exts.RandomMoney; // lstMoney[RandomNumberGenerator.GetInt32(0, lstMoney.Count - 1)];
+                    string m = Exts.RandomMoney; 
                     str += m + " จำนวน " + RandomNumberGenerator.GetInt32(1, 10) + " " + new Regex(@"(^.*?\s)\d+", RegexOptions.None).Match(m).Groups[1].Value;
                     ccc++;
                     if (ccc > 2)

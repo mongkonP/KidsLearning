@@ -212,6 +212,9 @@
     <Compile Update="ptnPhy\ptnPhy.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ptnSci\prnSci_Resistor_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="ptnSci\ptnSci.cs">
       <SubType>UserControl</SubType>
     </Compile>

@@ -429,9 +429,9 @@ namespace KidsLearning.Print.ptnMth.m02OP
                     //ถ้าเป็นจำนวนเต็ม _den จะ เท่ากับ 1
 
                     _a = (_den_1 == 1) ? RandomNumberGenerator.GetInt32(1, 10) :
-                    ((_den_1 == 2) ? 1 : RandomNumberGenerator.GetInt32(1, _den_1 - 1));
+                    ((_den_1 == 2) ? 1 : RandomNumberGenerator.GetInt32(1, _den_1 ));
                 _b = (_den_2 == 1) ? RandomNumberGenerator.GetInt32(1, 10) : 
-                    ((_den_2 == 2) ? 1 : RandomNumberGenerator.GetInt32(1, _den_2 - 1));
+                    ((_den_2 == 2) ? 1 : RandomNumberGenerator.GetInt32(1, _den_2 ));
 
                 a = _a;
                 b = _b;

@@ -220,12 +220,7 @@ namespace KidsLearning.Print.ptnEng
             // 
             // groupBox1
             // 
-            this.groupBox1.Size = new System.Drawing.Size(250, 313);
-            // 
-            // panel2
-            // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(3, 19);
+            this.groupBox1.Size = new System.Drawing.Size(250, 593);
             // 
             // txtPageCount
             // 
@@ -233,17 +228,17 @@ namespace KidsLearning.Print.ptnEng
             // 
             // groupBox2
             // 
-            this.groupBox2.Size = new System.Drawing.Size(761, 313);
+            this.groupBox2.Size = new System.Drawing.Size(1218, 593);
             // 
             // printPreviewControl1
             // 
-            this.printPreviewControl1.Size = new System.Drawing.Size(755, 291);
+            this.printPreviewControl1.Size = new System.Drawing.Size(1212, 571);
             // 
             // prnEngWordSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.Name = "prnEngWordSearch";
-            this.Size = new System.Drawing.Size(1011, 313);
+            this.Size = new System.Drawing.Size(1468, 593);
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -579,9 +574,9 @@ namespace KidsLearning.Print.ptnEng
             string _word = "";
             int c = RandomNumberGenerator.GetInt32(5, 10);
             for (int i = 0; i < c; i++)
-                _word += WordAll[RandomNumberGenerator.GetInt32(0, WordAll.Count - 1)] + "|";
+                _word += WordAll[RandomNumberGenerator.GetInt32(0, WordAll.Count )] + "|";
 
-            _word += WordAll[RandomNumberGenerator.GetInt32(0, WordAll.Count - 1)];
+            _word += WordAll[RandomNumberGenerator.GetInt32(0, WordAll.Count )];
             Words = _word.Split('|');
 
 

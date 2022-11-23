@@ -115,6 +115,9 @@
     <None Update="File\Book\คูณ หาร เลขยกกำลัง.docx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="File\Book\การอ่านและตรวจสอบตัวต้านทานแบบคงที่.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="File\Book\หน่วยนับ และ คำอุปสรรค.docx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1064,6 +1067,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="File\PIC\Math_1\ไอศครีม-โคน.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="File\PIC\Sci\resistorBlank.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="File\PIC\Sci\resistorBlank_4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="File\PIC\Sci\resistorBlank_5.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="File\PIC\SymbolThai\txt.txt">

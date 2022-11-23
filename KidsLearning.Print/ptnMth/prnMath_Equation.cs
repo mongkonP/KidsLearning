@@ -145,7 +145,7 @@ namespace KidsLearning.Print
         List<string> lstOP_1 = new List<string>() { "+_x", "x_+", "-_x", "x_-", "+_÷", "÷_+", "-_÷", "÷_-" };
         string GetPEMDAS_1()
         {
-            string op = lstOP_1[RandomNumberGenerator.GetInt32(0, lstOP_1.Count - 1)];
+            string op = lstOP_1[RandomNumberGenerator.GetInt32(0, lstOP_1.Count)];
             int a = RandomNumberGenerator.GetInt32(1, 10);
             int b = RandomNumberGenerator.GetInt32(1, 10);
             int c = RandomNumberGenerator.GetInt32(1, 10);
@@ -273,7 +273,7 @@ namespace KidsLearning.Print
                                  "-_+_÷", "-_÷_+", "÷_-_+"};
         string GetPEMDAS_2()
         {
-            string op = lstOP_2[RandomNumberGenerator.GetInt32(0, lstOP_2.Count - 1)];
+            string op = lstOP_2[RandomNumberGenerator.GetInt32(0, lstOP_2.Count)];
             int a = RandomNumberGenerator.GetInt32(1, 10);
             int b = RandomNumberGenerator.GetInt32(1, 10);
             int c = RandomNumberGenerator.GetInt32(1, 10);
@@ -405,7 +405,7 @@ namespace KidsLearning.Print
 
                         // int cAll = RandomNumberGenerator.GetInt32(0, 5);
                         string name = Exts.RandomManName;
-                        int c = (strType_.Count - 1 > 0) ? RandomNumberGenerator.GetInt32(0, strType_.Count - 1) : 0;
+                        int c = (strType_.Count - 1 > 0) ? RandomNumberGenerator.GetInt32(0, strType_.Count) : 0;
                         string s = strType_[c];
                         int _mc = RandomNumberGenerator.GetInt32(1, 5);
                         string _return = name + " กินก๊วยเตี๋ยว โดยสั่ง " + s + _mc + " ชาม  คิดเป็นเงินเท่าใด ? \n     สมการ";
@@ -463,61 +463,7 @@ namespace KidsLearning.Print
 
         }
 
-       /* protected void PrintFromAddition_and_Subtraction_1PrintPage(object sender, PrintPageEventArgs e)
-        {
-
-            //Loop till all the grid rows not get printed
-            if (bFirstPage) printDocumentNewPage(sender, e);
-            // System.Windows.Forms.MessageBox.Show("page " + iPage);
-            int yC = 120, xC = 100;
-            int w = 100, h = 40;
-            for (int i = 0; i < 10; i++)
-            {
-                List<string> strType_ = new List<string>();
-                strType_.AddRange(Exts.strType);
-
-                // int cAll = RandomNumberGenerator.GetInt32(0, 5);
-                string name = KidsLearning.Exts.RandomManName;
-                int c = (strType_.Count - 1 > 0) ? RandomNumberGenerator.GetInt32(0, strType_.Count - 1) : 0;
-                string s = strType_[c];
-                int _mc = RandomNumberGenerator.GetInt32(1, 5);
-                string _return = name + " กินก๊วยเตี๋ยว โดยสั่ง " + s + _mc + " ชาม  คิดเป็นเงินเท่าใด ? \n     สมการ";
-                e.Graphics.DrawString(_return, fontDetail, new SolidBrush(Color.Black), xC + 10, yC);
-
-                if (HaveGuideline)
-                {
-                    e.Graphics.DrawRectangle(new Pen(Color.Black, 1), new Rectangle(xC + 95, yC + 30, 100, 30));
-                    e.Graphics.DrawString(" x ", fontDetail, new SolidBrush(Color.Black), xC + 195, yC + 30);
-                    e.Graphics.DrawRectangle(new Pen(Color.Black, 1), new Rectangle(xC + 220, yC + 30, 100, 30));
-                    e.Graphics.DrawString(" = ", fontDetail, new SolidBrush(Color.Black), xC + 320, yC + 30);
-                    e.Graphics.DrawRectangle(new Pen(Color.Black, 1), new Rectangle(xC + 350, yC + 30, 100, 30));
-                }
-                else
-                {
-                    e.Graphics.DrawLine(new Pen(Color.Black, 1), xC + 90, yC + 60, xC + 700, yC + 60);
-                }
-
-                yC += 100;
-
-            }
-
-            if (iPage > iPageAll - 1)
-            {
-                bNewPage = false;
-                bMorePagesToPrint = false;
-            }
-
-            if (bNewPage)
-            {
-                printDocumentNewPage(sender, e);
-            }
-
-            iPage++;
-
-            //If more lines exist, print another page.
-            e.HasMorePages = (bMorePagesToPrint) ? true : false;
-        }*/
-
+       
         #endregion
     }
 

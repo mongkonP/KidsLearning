@@ -180,6 +180,12 @@ namespace KidsLearning.frm
             this.menuEng06 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuSciAll = new System.Windows.Forms.ToolStripDropDownButton();
             this.menuExit = new System.Windows.Forms.ToolStripButton();
+            this.mnuSciCH = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSciBio = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSciPhy = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem14 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSciPhy_Elec = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSciPhy_Elec_Resistor_01 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -511,8 +517,7 @@ namespace KidsLearning.frm
             this.nemuMathOP26,
             this.nemuMathOP27,
             this.nemuMathOP28,
-            this.nemuMathOP29
-            });
+            this.nemuMathOP29});
             this.menuOperate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.menuOperate.Image = global::KidsLearning.Properties.Resources.calculator_general_icon;
             this.menuOperate.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -526,7 +531,8 @@ namespace KidsLearning.frm
             this.nemuMathOP22.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nemuMathOP01,
             this.nemuMathOP02,
-            this.nemuMathOP03,this.nemuMathOP30,
+            this.nemuMathOP03,
+            this.nemuMathOP30,
             this.nemuMathOP04,
             this.nemuMathOP05,
             this.nemuMathOP06,
@@ -556,7 +562,7 @@ namespace KidsLearning.frm
             // nemuMathOP30
             // 
             this.nemuMathOP30.Name = "nemuMathOP30";
-            this.nemuMathOP30.Size = new System.Drawing.Size(261, 30);
+            this.nemuMathOP30.Size = new System.Drawing.Size(414, 30);
             this.nemuMathOP30.Text = "การ บวก ลบ ตัวเลข 2";
             // 
             // nemuMathOP04
@@ -1200,19 +1206,19 @@ namespace KidsLearning.frm
             this.กขคToolStripMenuItem.Image = global::KidsLearning.Properties.Resources.menu_korkai;
             this.กขคToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.กขคToolStripMenuItem.Name = "กขคToolStripMenuItem";
-            this.กขคToolStripMenuItem.Size = new System.Drawing.Size(170, 70);
+            this.กขคToolStripMenuItem.Size = new System.Drawing.Size(228, 70);
             this.กขคToolStripMenuItem.Text = "ก ข ค";
             // 
             // แบบงายToolStripMenuItem
             // 
             this.แบบงายToolStripMenuItem.Name = "แบบงายToolStripMenuItem";
-            this.แบบงายToolStripMenuItem.Size = new System.Drawing.Size(145, 30);
+            this.แบบงายToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
             this.แบบงายToolStripMenuItem.Text = "แบบง่าย";
             // 
             // แบบยากToolStripMenuItem
             // 
             this.แบบยากToolStripMenuItem.Name = "แบบยากToolStripMenuItem";
-            this.แบบยากToolStripMenuItem.Size = new System.Drawing.Size(145, 30);
+            this.แบบยากToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
             this.แบบยากToolStripMenuItem.Text = "แบบยาก";
             // 
             // menuEngAll
@@ -1290,6 +1296,12 @@ namespace KidsLearning.frm
             // menuSciAll
             // 
             this.menuSciAll.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.menuSciAll.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuSciCH,
+            this.mnuSciBio,
+            this.mnuSciPhy,
+            this.toolStripMenuItem14});
+            this.menuSciAll.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.menuSciAll.Image = global::KidsLearning.Properties.Resources.menu_lab_science;
             this.menuSciAll.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuSciAll.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -1307,6 +1319,53 @@ namespace KidsLearning.frm
             this.menuExit.Size = new System.Drawing.Size(68, 68);
             this.menuExit.Text = "Exit";
             this.menuExit.Click += new System.EventHandler(this.toolStripButton2_Click);
+            // 
+            // mnuSciCH
+            // 
+            this.mnuSciCH.Image = global::KidsLearning.Properties.Resources.chemistry_icon;
+            this.mnuSciCH.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.mnuSciCH.Name = "mnuSciCH";
+            this.mnuSciCH.Size = new System.Drawing.Size(293, 54);
+            this.mnuSciCH.Text = "เคมี";
+            // 
+            // mnuSciBio
+            // 
+            this.mnuSciBio.Image = global::KidsLearning.Properties.Resources.bio_icon;
+            this.mnuSciBio.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.mnuSciBio.Name = "mnuSciBio";
+            this.mnuSciBio.Size = new System.Drawing.Size(293, 54);
+            this.mnuSciBio.Text = "ชีววิทยา";
+            // 
+            // mnuSciPhy
+            // 
+            this.mnuSciPhy.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuSciPhy_Elec});
+            this.mnuSciPhy.Image = global::KidsLearning.Properties.Resources.physics_icon;
+            this.mnuSciPhy.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.mnuSciPhy.Name = "mnuSciPhy";
+            this.mnuSciPhy.Size = new System.Drawing.Size(293, 54);
+            this.mnuSciPhy.Text = "ฟิสิกส์";
+            // 
+            // toolStripMenuItem14
+            // 
+            this.toolStripMenuItem14.Name = "toolStripMenuItem14";
+            this.toolStripMenuItem14.Size = new System.Drawing.Size(293, 54);
+            this.toolStripMenuItem14.Text = "toolStripMenuItem14";
+            // 
+            // mnuSciPhy_Elec
+            // 
+            this.mnuSciPhy_Elec.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuSciPhy_Elec_Resistor_01});
+            this.mnuSciPhy_Elec.Name = "mnuSciPhy_Elec";
+            this.mnuSciPhy_Elec.Size = new System.Drawing.Size(181, 30);
+            this.mnuSciPhy_Elec.Text = "อิเล็กทรอนิกส์";
+            // 
+            // mnuSciPhy_Elec_Resistor_01
+            // 
+            this.mnuSciPhy_Elec_Resistor_01.Name = "mnuSciPhy_Elec_Resistor_01";
+            this.mnuSciPhy_Elec_Resistor_01.Size = new System.Drawing.Size(262, 30);
+            this.mnuSciPhy_Elec_Resistor_01.Text = "คำนวณรหัสสีตัวต้านทาน";
+            this.mnuSciPhy_Elec_Resistor_01.Click += new System.EventHandler(this.mnuSciPhy_Elec_Resistor_01_Click);
             // 
             // frmPrint
             // 
@@ -1478,6 +1537,11 @@ namespace KidsLearning.frm
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem10;
-      
+        private System.Windows.Forms.ToolStripMenuItem mnuSciCH;
+        private System.Windows.Forms.ToolStripMenuItem mnuSciBio;
+        private System.Windows.Forms.ToolStripMenuItem mnuSciPhy;
+        private System.Windows.Forms.ToolStripMenuItem mnuSciPhy_Elec;
+        private System.Windows.Forms.ToolStripMenuItem mnuSciPhy_Elec_Resistor_01;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem14;
     }
 }

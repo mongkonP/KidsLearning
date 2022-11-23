@@ -98,7 +98,7 @@ namespace KidsLearning.Print.ptnMth
                 for (int cc = 0; cc <= cAll; cc++)
                 {
                     int mc = 0;
-                    int c = (strType_.Count - 1 > 0) ? RandomNumberGenerator.GetInt32(0, strType_.Count - 1) : 0;
+                    int c = (strType_.Count - 1 > 0) ? RandomNumberGenerator.GetInt32(0, strType_.Count ) : 0;
                     string s = strType_[c];
                     int _mc = RandomNumberGenerator.GetInt32(1, 5);
                     _return += s + _mc + " ชาม ";

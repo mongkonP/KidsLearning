@@ -44,31 +44,31 @@ namespace KidsLearning.Classed
         #endregion
         public static string RandomManName
         {
-            get {return name[RandomNumberGenerator.GetInt32(0,name.Count-1)]; }
+            get {return name[RandomNumberGenerator.GetInt32(0,name.Count)]; }
             
         }
         public static string RandomMoney
         {
-            get {  return lstMoney[RandomNumberGenerator.GetInt32(0, lstMoney.Count - 1)]; }
+            get {  return lstMoney[RandomNumberGenerator.GetInt32(0, lstMoney.Count)]; }
           
         }
         public static string RandomMoneyBye
         {
-            get {return lstMoneyBye[RandomNumberGenerator.GetInt32(0, lstMoneyBye.Count - 1)]; }
+            get {return lstMoneyBye[RandomNumberGenerator.GetInt32(0, lstMoneyBye.Count)]; }
             
         }
         public static string RandomDetailFoodBye
         {
             get
             {
-                return lstDetailBye[RandomNumberGenerator.GetInt32(0, lstDetailBye.Count - 1)];
+                return lstDetailBye[RandomNumberGenerator.GetInt32(0, lstDetailBye.Count)];
             }
         }        
         public static string RandomDetailNoodlesBye
         {
             get
             {
-               return lstNoodles[RandomNumberGenerator.GetInt32(0, lstNoodles.Count - 1)];
+               return lstNoodles[RandomNumberGenerator.GetInt32(0, lstNoodles.Count)];
             }
 
         }
@@ -177,7 +177,7 @@ namespace KidsLearning.Classed
             List<string> _lst = new List<string>();
             List<string> __lst = lst;
             do {
-               int randomIndex  = RandomNumberGenerator.GetInt32(0, __lst.Count - 1);
+               int randomIndex  = RandomNumberGenerator.GetInt32(0, __lst.Count );
                 _lst.Add(__lst[randomIndex]);
                 __lst.RemoveAt(randomIndex);
 

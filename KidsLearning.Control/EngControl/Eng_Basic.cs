@@ -60,14 +60,14 @@ namespace KidsLearning.Control.EngControl
                 _Choies = new List<string>();
                 string Ans_file;  string str;
                 System.Threading.Thread.Sleep(100);
-                Ans_file = wordFile[ RandomNumberGenerator.GetInt32(0, wordFile.Count - 1)];
+                Ans_file = wordFile[ RandomNumberGenerator.GetInt32(0, wordFile.Count )];
                 List<string> lstc = System.IO.Directory.GetFiles(System.IO.Path.GetDirectoryName(Ans_file), "*.*", System.IO.SearchOption.AllDirectories).ToList<string>();
                 Ans = System.IO.Path.GetFileNameWithoutExtension(Ans_file).ToUpper();
                 _Choies.Add(Ans);
                 do
                 {
                     System.Threading.Thread.Sleep(100);
-                    str = System.IO.Path.GetFileNameWithoutExtension(lstc[ RandomNumberGenerator.GetInt32(0, lstc.Count - 1)]);
+                    str = System.IO.Path.GetFileNameWithoutExtension(lstc[ RandomNumberGenerator.GetInt32(0, lstc.Count )]);
                     if (!_Choies.Contains(str)) _Choies.Add( str.ToUpper());
                 } while (_Choies.Count <= 4);
                 pictureBox1.Invoke(new Action(() => { pictureBox1.Image = Image.FromFile(Ans_file); }));

@@ -60,7 +60,7 @@ namespace KidsLearning.Print
                 }
                 else
                 {
-                    e.Graphics.DrawString(_prefix[RandomNumberGenerator.GetInt32(0, _prefix.Count - 1)] + " " + _unit[RandomNumberGenerator.GetInt32(0, _unit.Count - 1)], fontHeader, Brushes.Black, 130, yC + 20);
+                    e.Graphics.DrawString(_prefix[RandomNumberGenerator.GetInt32(0, _prefix.Count)] + " " + _unit[RandomNumberGenerator.GetInt32(0, _unit.Count )], fontHeader, Brushes.Black, 130, yC + 20);
                 }
                 e.Graphics.DrawLine(new Pen(Color.Black, 1), new Point(120, yC), new Point(720, yC));
 
