@@ -1,0 +1,1422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{863EA153-1BDB-4B08-BAE0-9E62591191E6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KidsLearning</RootNamespace>
+    <AssemblyName>KidsLearning</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1562699_book_energy_idea_knowledge_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TORServices.Drawings, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TORServices.Drawings.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TORServices.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Maths, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TORServices.Maths.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Network, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TORServices.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.PathFile, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TORServices.PathFile.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Systems, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TORServices.Systems.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTest.Designer.cs">
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmPrint.Designer.cs">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmTestPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmTestPrint.Designer.cs">
+      <DependentUpon>frmTestPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="test code\analog-clock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test code\ClockFace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test code\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test code\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmTest.resx">
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmPrint.resx">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmTestPrint.resx">
+      <DependentUpon>frmTestPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="test code\analog-clock.resx">
+      <DependentUpon>analog-clock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test code\ClockFace.resx">
+      <DependentUpon>ClockFace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test code\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="File\Book\Com\Flowchart.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Eng\Eng Sentences_1.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Eng\Eng Verb to be.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Eng\Eng Basic.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Eng\Eng word.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Eng\Eng Verb to have.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Eng\Eng Verb.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\13.หน่วยการเรียนรู้ที่-9-เรื่องการบอกจำนวนเงิน.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\Mth เศษส่วน การบวก ลบ คูณ หาร  เศษส่วน.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\Mth สมการกำลัง2แบบตัวแปรเดียว.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\Mth เศษส่วน จำนวนคละ.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\Mth เอกนาม พหุนาม.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\Mth เศษส่วน อย่างต่ำ.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\Mth เศษส่วน.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\MthCal การเขียนผังงาน.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\การ บวก ลบ เส้นจำนวน.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\การปัดเศษทศนิยม.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\การหาปริมาตรและพื้นที่ผิว.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\การแก้สมการตัวแปรเดียว สองตัวแปร.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\การแยกตัวประกอบพหุนามที่มีดีกรีสูงกว่าสอง.docx" />
+    <None Include="File\Book\Mth\คูณ หาร เลขยกกำลัง.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\จำนวนจริงในรูปกรณฑ์ หรือ ราก.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\การแปลงเลขฐาน.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\ตัวประกอบของจํานวนนับ.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\บท1_0_ห.ร.ม. และ ค.ร.น..pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\บทที่ 3 ปริซึมและทรงกระบอก - PubHTML5.pdf" />
+    <None Include="File\Book\Mth\สถิติเบื้องต้น.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\เส้นตรง.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\เส้นตรงในระบบพิกัด.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Mth\เส้นตรงในระบบพิกัด.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Sci\acs-periodic-table-poster_download.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Sci\ChemMF.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Sci\ChemMF_1.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Sci\periodic-table.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Sci\significant figure.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Sci\การคำนวณมวลโมเลกุลของสาร.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Sci\การปัดเศษ.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Sci\การอ่านและตรวจสอบตัวต้านทานแบบคงที่.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Sci\การอ่านและตรวจสอบตัวต้านทานแบบคงที่.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Sci\ตัวอย่างการเจือจาง.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Sci\หน่วยนับ และ คำอุปสรรค.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Sci\หน่วยนับ และ คำอุปสรรค.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Sci\หน่วยและการแปลงหน่วยอุณหภูมิ.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Sci\หน่วยและการแปลงหน่วยอุณหภูมิ.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Sci\เลขนัยสำคัญ และ การปัดเศษ.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Sci\เวกเตอร์ในระบบพิกัดฉาก.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Book\Sci\เวกเตอร์ในระบบพิกัดฉาก.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\DLTV_Math.xlsx" />
+    <None Include="File\Math\Book1.xlsx" />
+    <None Include="File\PicSam\subsec.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\PIC\Count.rar" />
+    <None Include="File\PIC\Math\Math.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="File\เนื้อหา คณิตศาสตร์.docx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1562699_book_energy_idea_knowledge_icon.ico" />
+    <Content Include="book_education_icon.ico" />
+    <Content Include="File\Book\Mth\EQ.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\Book\Sci\FILE_3381748097.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\Book\Sci\FM_CHEM - Copy.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\Book\Sci\FM_CHEM.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\Book\Sci\PeriodicTable.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\Book\Sci\เคมี เตรียมสาร การเจือจาง.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\Book\Sci\เคมี เตรียมสาร ร้อยละ.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\DLTV_Math_ต้นฉบับ - Copy.txt" />
+    <Content Include="File\DLTV_Math_ต้นฉบับ.txt" />
+    <Content Include="File\File JS\molecular-weight-calculator.js" />
+    <Content Include="File\File JS\unitconverter_area1.js" />
+    <Content Include="File\File JS\unitconverter_force1.js" />
+    <Content Include="File\File JS\unitconverter_length1.js" />
+    <Content Include="File\File JS\unitconverter_speed1.js" />
+    <Content Include="File\File JS\unitconverter_temperature1.js" />
+    <Content Include="File\File JS\unitconverter_time1.js" />
+    <Content Include="File\File JS\unitconverter_volume1.js" />
+    <Content Include="File\File JS\unitconverter_Weight_Mass1.js" />
+    <Content Include="File\Math\blank1.png" />
+    <Content Include="File\Math\blank2.png" />
+    <Content Include="File\Math\blank3.png" />
+    <Content Include="File\Math\blank4.png" />
+    <Content Include="File\Math\blank5.png" />
+    <Content Include="File\Math\blank_2.png" />
+    <Content Include="File\Math\New Text Document.txt" />
+    <Content Include="File\Math\NumPercent.txt" />
+    <Content Include="File\PicSam\ExBlank.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PicSam\ExNumLine.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PicSam\ExNumLine_01.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PicSam\ExNumLine_03.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PicSam\Ex_sub-section_Detail.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PicSam\Sam_Blank.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PicSam\Sam_NumbyLine.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PicSam\Sam_NumbyLine_01.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PicSam\Sam_sub-section.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PicSam\Sam_sub-section_01.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PicSam\Sam_sub-section_01_Detail.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PicSam\Sam_sub-section_Detail.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\10.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\11.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\12.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\13.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\14.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\15.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\17.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\18.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\19.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\20.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\21.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\22.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\800px_COLOURBOX18160305_001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\800px_COLOURBOX18160305_002.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\800px_COLOURBOX18160305_003.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\800px_COLOURBOX18160305_004.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\800px_COLOURBOX18160305_005.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\800px_COLOURBOX18160305_006.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\800px_COLOURBOX18160305_007.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\800px_COLOURBOX18160305_008.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\800px_COLOURBOX18160305_009.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\800px_COLOURBOX18160305_010.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\800px_COLOURBOX18160305_011.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\800px_COLOURBOX18160305_012.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\800px_COLOURBOX18160305_013.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\800px_COLOURBOX18160305_014.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\800px_COLOURBOX18160305_015.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\800px_COLOURBOX18160305_016.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\9.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Animal\Tree.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\App\bye.jpg" />
+    <Content Include="File\PIC\App\eng.png" />
+    <Content Include="File\PIC\App\exit.png" />
+    <Content Include="File\PIC\App\images %28Custom%29 %282%29.jpg" />
+    <Content Include="File\PIC\App\images %28Custom%29.jpg" />
+    <Content Include="File\PIC\App\korkai.png" />
+    <Content Include="File\PIC\App\Log Ou.png" />
+    <Content Include="File\PIC\App\math.png" />
+    <Content Include="File\PIC\App\right.gif" />
+    <Content Include="File\PIC\App\right.png" />
+    <Content Include="File\PIC\App\School.png" />
+    <Content Include="File\PIC\App\Untitled.png" />
+    <Content Include="File\PIC\App\wait2.gif" />
+    <Content Include="File\PIC\App\Wrong.gif" />
+    <Content Include="File\PIC\App\Wrong.png" />
+    <Content Include="File\PIC\Coding\FlwIf.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Coding\FlwIfElse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Coding\FlwIfElseMore.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Coding\FlwIfElse_2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Coding\FlwLoop.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Coding\FlwPlusNum.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\10.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\11.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\12.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\13.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\14.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\15.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\17.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\18.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\19.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\20.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\21.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\22.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\23.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\24.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\25.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\26.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\27.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\28.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\29.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\30.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\31.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\33.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\34.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\35.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\36.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\37.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\38.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\39.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\40.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\41.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\42.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\43.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\44.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\45.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\46.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\47.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\48.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\49.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\50.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\51.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\52.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\53.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\54.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\55.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\56.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\57.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\58.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\59.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\60.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\61.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\62.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\63.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\64.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\65.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\66.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\67.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\69.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\70.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\71.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\72.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\73.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\74.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\75.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\76.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\77.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\78.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\79.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\80.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Count\9.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Eng_Basic\App\that.png" />
+    <Content Include="File\PIC\Eng_Basic\App\this.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\ANT.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\BAT.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Bear.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Bee.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Beetle.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Bird.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Bison.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\buffalo.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\butterfly.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Camel.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\CAT.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\centipede.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\cheetah.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Chicken.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\cockroach.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Cow.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Crab.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\crocodile.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Deer.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\DOG.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\dragonfly.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Duck.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\eagle.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\earthworms.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Elephant.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\FISH.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Fly.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Fox.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Frog.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\gecko.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Goat.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\grasshopper.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\hippopotamus.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Horse.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Hyena.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Kangaroo.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Lion.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\lizard.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\millipede.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Mole.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Monkey.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Moose.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\mosquito.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Octopus.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Oyster.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\panda.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\penguin.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Pig.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Rabbit.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Raccoon.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\rat.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\rhinoceros.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\scorpion.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Seal.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\shark.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Sheep.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Snake.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\spider.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Swan.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Tiger.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\toad.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\turkey.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\wasp.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\white ants.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Wolf.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Animal\Zebra.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\abacaxi.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\Apple.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\bacon.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\Banana.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\Barbecue.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\boiled egg.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\bread.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\burger.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\cake.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\cantaloupe.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\carrot.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\catfish.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\cereal.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\cheese.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\Cherry.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\CHINESE PEAR.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\chocolate.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\COCONUT.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\cookie.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\croissant.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\Donut.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\DRAGON FRUIT.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\durian.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\Egg.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\french fries.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\fried egg.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\fried rice.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\Garnet.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\Grape.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\GUAVA.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\ham.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\hamburger.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\jackfruit.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\JUJUBE.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\KIWI.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\Lemon.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\lobster.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\LONGAN.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\Macaroni.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\Mango.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\MANGOSTEEN.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\milk.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\mulberry.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\mussel.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\noodle.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\omelette.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\Orange.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\papaya.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\Pasta.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\pepper.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\pineapple.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\pizza.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\pomegranate.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\pomelo.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\pork.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\rambutan.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\rice.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\rose apple.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\salak.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\sandwich.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\santol.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\sapodilla plum.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\sausage.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\scallop.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\southern langsat.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\Spaghetti.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\star fruit.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\star gooseberry.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\steak.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\Strawberry.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\sugar.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\sweet potato.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\tamarind.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\tamarindo.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\Tomato.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Food\watermellon.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\acrobat.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\air hostess.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\archaeologist.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\architect.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\artist.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\astronaut.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\astronomer.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\aviator.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\baker.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\barber.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\butcher.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\carpenter.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\chemist.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\detective.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\doctor.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\driver.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\electrician.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\engine driver.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\farmer.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\firefighter.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\fisherman.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\magician.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\musician.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\nurse.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\occupation.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\painter.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\photographer.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\police.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\postman.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\programmer.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\reporter.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\singer.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\student.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Occupation\veterinarian.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\basket.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\bed.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\bell.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\bin.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\bottle.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\bowl.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\box.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\broom.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\can.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\chair.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\clock.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\comb.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\door.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\duster.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\fan.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\flag.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\flower.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\fork.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\fridge.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\glass.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\iron.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\jar.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\jug.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\lamp.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\map.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\mat.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\mirror.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\money.jpeg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\notebook.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\paper.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\pencil.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\pillow.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\plug.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\radio.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\soap.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\spoon.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\switch.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\telephone.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\television.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\tissue.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\toothbrush.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\tree.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\vase.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Thing\window.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\acacia pennata.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\angle luffa.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\asparagus.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\baby corn.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\basil.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\bean sprout.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\bean.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\bitter melon.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\broccoli.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\cabbage.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\calabash.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\carrot.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\cassava.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\celery.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\chaplu leaf.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\chayote.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\chili.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\coriander.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\cucumber.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\dill.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\egg plant.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\fingerroot.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\galangal.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\garlic.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\ginger.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\green onion.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\hairy eggplant.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\horse tamarind.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\ivy gourd.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\kaffir lime.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\lemon.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\lemongrass.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\lettuce.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\long bean.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\mushroom.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\okra.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\onion.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\pepper.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\potato.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\pumpkin.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\radish.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\snake gourd.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\taro.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\tomato.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\water mimosa.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\water Spinach.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\winged bean.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\winter melon.jpg" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\yam.png" />
+    <Content Include="File\PIC\Eng_Basic\Eng_Vegetables\zucchini.jpg" />
+    <Content Include="File\PIC\FigNum\Num_0.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\FigNum\Num_1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\FigNum\Num_10.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\FigNum\Num_2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\FigNum\Num_3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\FigNum\Num_4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\FigNum\Num_5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\FigNum\Num_6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\FigNum\Num_7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\FigNum\Num_8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\FigNum\Num_9.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\10.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\11.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\12.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\13.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\14.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\15.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\9.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\Apple.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\bread.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\bread1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\bread10.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\bread11.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\bread2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\bread4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\bread5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\bread6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\bread7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\bread8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\bread9.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\carrot.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\Chicken Drumstick.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\corn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\food1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\food2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\food3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\food4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\food5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\Green grapes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\icecream.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\Lemon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\mushroom.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\rice.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\Strawberry.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\tomato.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Food\watermelon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Math\MathPrefix.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Math\xyG.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Sci\resistorBlank_4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\Sci\resistorBlank_5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\txt.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ก.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ข.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ฃ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ค.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ฅ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ฆ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ง.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\จ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ฉ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ช.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ซ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ฌ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ญ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ฎ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ฏ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ฐ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ฑ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ฒ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ณ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ด.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ต.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ถ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ท.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ธ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\น.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\บ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ป.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ผ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ฝ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\พ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ฟ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ภ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ม.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ย.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ร.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ล.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ว.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ศ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ษ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ส.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ห.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ฬ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\อ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\PIC\SymbolThai\ฮ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="File\คณิตศาสตร์ _01.txt" />
+    <Content Include="File\คณิตศาสตร์.txt" />
+    <Content Include="File\คุณสมบัติ โปแรกรม.txt" />
+    <Content Include="File\หัวข้อคณิต ตาม gpt.txt" />
+    <Content Include="notebook_reading_study_icon.ico" />
+    <None Include="Resources\Wrong.png" />
+    <None Include="Resources\Wrong.gif" />
+    <None Include="Resources\wait2.gif" />
+    <None Include="Resources\talk_speak.png" />
+    <None Include="Resources\statistics_icon.png" />
+    <None Include="Resources\stationary_triangle_icon.png" />
+    <None Include="Resources\right.png" />
+    <None Include="Resources\right.gif" />
+    <None Include="Resources\physics_icon.png" />
+    <None Include="Resources\page_paper_icon.png" />
+    <None Include="Resources\menu_print.png" />
+    <None Include="Resources\menu_number.png" />
+    <None Include="Resources\menu_math.png" />
+    <None Include="Resources\menu_lab-science.png" />
+    <None Include="Resources\menu_korkai.png" />
+    <None Include="Resources\menu_exit.png" />
+    <None Include="Resources\menu_eng.png" />
+    <None Include="Resources\link.png" />
+    <None Include="Resources\line-4to20.png" />
+    <None Include="Resources\line-10to14.png" />
+    <None Include="Resources\communication.png" />
+    <None Include="Resources\chemistry_icon.png" />
+    <None Include="Resources\character_.png" />
+    <None Include="Resources\calculator_general_icon.png" />
+    <None Include="Resources\bye.jpg" />
+    <None Include="Resources\bio_icon.png" />
+    <None Include="Resources\299047_address_book_icon.png" />
+    <Content Include="TextFile1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KidsLearning.Classed\KidsLearning.Classed.csproj">
+      <Project>{db1d7623-3947-40fd-a3f0-34a425fdf90e}</Project>
+      <Name>KidsLearning.Classed</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KidsLearning.Control\KidsLearning.Control.csproj">
+      <Project>{853ec764-1e38-45af-979f-30b02f42c03c}</Project>
+      <Name>KidsLearning.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KidsLearning.Print\KidsLearning.Print.csproj">
+      <Project>{2f64b0f1-3d5b-4d5b-8535-e4b578f92a0e}</Project>
+      <Name>KidsLearning.Print</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

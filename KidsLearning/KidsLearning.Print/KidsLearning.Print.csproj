@@ -1,0 +1,823 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F64B0F1-3D5B-4D5B-8535-E4B578F92A0E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KidsLearning.Print</RootNamespace>
+    <AssemblyName>KidsLearning.Print</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=6.2.8.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EPPlus.6.2.8\lib\net462\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces, Version=6.1.1.0, Culture=neutral, PublicKeyToken=a694d7f3b0907a61, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EPPlus.Interfaces.6.1.1\lib\net462\EPPlus.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing, Version=6.1.1.0, Culture=neutral, PublicKeyToken=2308d35469c9bac0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EPPlus.System.Drawing.6.1.1\lib\net462\EPPlus.System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=1.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.IO.RecyclableMemoryStream.1.4.1\lib\net46\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TORServices.Drawings, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\KidsLearning\bin\Debug\TORServices.Drawings.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\KidsLearning\bin\Debug\TORServices.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Maths, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\KidsLearning\bin\Debug\TORServices.Maths.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Network, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\KidsLearning\bin\Debug\TORServices.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.PathFile, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\KidsLearning\bin\Debug\TORServices.PathFile.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Systems, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\KidsLearning\bin\Debug\TORServices.Systems.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="iprnControl.cs" />
+    <Compile Include="prnClass.cs" />
+    <Compile Include="prnControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="prnControl.Designer.cs">
+      <DependentUpon>prnControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prnConvertUnit.cs" />
+    <Compile Include="prnDistance.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ptnChem\Class1.cs" />
+    <Compile Include="ptnChem\prnChem_01_Calc_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnChem\prnChem_01_Calc_02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnChem\prnChem_04_Atom_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnChem\prnChem_05_Molecular_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnChem\prnChem_05_Molecular_02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnChem\prnChem_05_Molecular_03.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnCoding\ptnCoding_Flowchart_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnEng\Eng_Word.cs" />
+    <Compile Include="ptnEng\prnEng.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnEng\prnEng001CompareTh_En.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnEng\prnEng002SpellingWord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnEng\prnEng002WordLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnEng\prnEng003Sentences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnEng\prnEngWordSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnEng\prnPrintWord_.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnEng\prnPrintWord_.Designer.cs">
+      <DependentUpon>prnPrintWord_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ptnEng\WordSearch\DrawWordSearch.cs" />
+    <Compile Include="ptnEng\WordSearch\GameBoardNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnEng\WordSearch\GameBoardNew.Designer.cs">
+      <DependentUpon>GameBoardNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ptnEng\WordSearch\GameEngine.cs" />
+    <Compile Include="ptnEng\WordSearch\Responsive.cs" />
+    <Compile Include="ptnEng\WordSearch\WordPosition.cs" />
+    <Compile Include="ptnMth\m01Num\01Num\num001CountDrawtolink.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\01Num\num001Num002CountandCircleNumber_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\01Num\num002CountandCircleNumber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\01Num\num003CountNumberPicture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\01Num\num004NumberArabicThaiStringRoman.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\01Num\num007NumberByLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\01Num\num007Num_Digit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\01Num\num008Odd01Pic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\01Num\num008Odd02Number.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\01Num\num011SignificantFigure00.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\01Num\num011SignificantFigure01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\01Num\num011SignificantFigure02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\02Compare\num005MoreThan01Pic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\02Compare\num005MoreThan02Number.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\02Compare\num005NumSortNumber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\03FractionDecimal\num009Fraction_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\03FractionDecimal\num009Fraction_02Compare.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\03FractionDecimal\num009Fraction_02NumberConvert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\03FractionDecimal\num009Fraction_LongDivision.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\03FractionDecimal\num011Decimal_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\04Factoring\num010NumSubdivision.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\04Factoring\num012gcf_lcm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\04Factoring\num012gcf_lcm03_Devide.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\04Factoring\num012gcf_lcm04_relationships.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\05Power\num05_Power.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\05Power\num05_PowerbyTen_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\05Power\num013_PowerPerfix_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\05Power\num013_PowerPerfix_02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\06DecimalConvert\num06DecimalConvert01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\num01DecimalConvert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m02OP\01PlusMinus\op001Plus_pic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m02OP\01PlusMinus\op002Minus_pic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m02OP\01PlusMinus\op003PlusMinus_Subdivision.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m02OP\01PlusMinus\op004PlusMinus_Num_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m02OP\01PlusMinus\op004PlusMinus_Num_02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m02OP\01PlusMinus\op005PlusMinus_Num_02Positive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m02OP\01PlusMinus\op006NumberByLine_PlusMinus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m02OP\01PlusMinus\op010FractionPlusMinus_01Pic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m02OP\01PlusMinus\op010FractionRuleofthree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m02OP\01PlusMinus\op010FractionRuleofthreePercent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m02OP\02MultiplyDivide\op007MultipliedDivide_01Num.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m02OP\02MultiplyDivide\op007MultipliedDivide_02Num.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m02OP\02MultiplyDivide\op007MultipliedDivide_03SubSection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m02OP\02MultiplyDivide\op007MultipliedDivide_04SubSection_Detail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m02OP\02MultiplyDivide\op007MultipliedDivide_05Positive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m02OP\02MultiplyDivide\op009Fraction01LongDivision.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m02OP\02MultiplyDivide\op009Fraction02SortDivision.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m02OP\02MultiplyDivide\op011Multipliedbyten.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m02OP\02MultiplyDivide\op012MultipledFraction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\05Power\num05_PowerbyTen_02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\05Power\num05_PowerbyTen_03.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m01Num\05Power\num05_PowerbyTen_04.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m02OP\03Mix\op010FractionPMMD_02Num.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m03Stat\st_.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m03Stat\st_001Statistics_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m03Stat\st_001Statistics_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m03Stat\st_002chart01dotgraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m03Stat\st_002chart02barchart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m03Stat\st_002chart03Piechart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m03Stat\st_002chart04linegraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m04Trigono\prnMath_014GaugeAngle_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m04Trigono\prnMath_014GaugeAngle_02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m04Trigono\prnMath_015GaugeLength_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m04Trigono\prnMath_015GaugeLength_02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m04Trigono\prnMath_02Vector_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m04Trigono\prnMath_02Vector_02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m04Trigono\prnMath_02Vector_03.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m04Trigono\prnMath_03Area_Volume.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m05GaugeUnit\prnMath_001DateTime001Time.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m05GaugeUnit\prnMath_001DateTime002NextTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m05GaugeUnit\prnMath_002DateTime003AD_BE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m05GaugeUnit\prnMath_002DateTime004AD_BE_Age.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m05GaugeUnit\prnMath_003DateTimeCompare.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m06Equation\prnMath_013Equation_1_MoneyNoodles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m06Equation\prnMath_013Money_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m06Equation\prnMath_013Money_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m06Equation\prnMath_013Money_3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m06Equation\prnMath_013Money_4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m06Equation\prnMath_013Money_ChangeSentence.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m06Equation\prnMath_06Equation_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m06Equation\prnMath_06Equation_02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m09Polynomial\01_Monomial_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m09Polynomial\01_Monomial_02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m09Polynomial\03_Monomial_Factorization_03.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m09Polynomial\03_Monomial_Factorization_02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m09Polynomial\03_Monomial_Factorization_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m09Polynomial\02_Monomial_Add_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\m09Polynomial\01_Monomial_03.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\prnMath_.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\prnMath_017Exponent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\prnMath_02Oper10.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnMth\prnMath_Equation.cs" />
+    <Compile Include="ptnPhy\prnPhysic_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnPhy\prnPhysic_01_Significant_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnPhy\prnPhysic_01_Significant_02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnPhy\prnPhysic_Temp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnPhy\prnSci_Resistor_01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnPhy\ptnSci.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptnTh\ptnTh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ptnMth\math list.txt" />
+    <Content Include="Resources\LineNum0to20.jpg" />
+    <Content Include="Resources\menu_print.png" />
+    <Content Include="Resources\เส้นจำนวน -10 ถึง 14.png" />
+    <Content Include="Resources\เส้นจำนวน -4 ถึง 20.png" />
+    <Content Include="TextFile1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="prnControl.resx">
+      <DependentUpon>prnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnChem\prnChem_01_Calc_01.resx">
+      <DependentUpon>prnChem_01_Calc_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnChem\prnChem_01_Calc_02.resx">
+      <DependentUpon>prnChem_01_Calc_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnChem\prnChem_04_Atom_01.resx">
+      <DependentUpon>prnChem_04_Atom_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnChem\prnChem_05_Molecular_01.resx">
+      <DependentUpon>prnChem_05_Molecular_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnChem\prnChem_05_Molecular_02.resx">
+      <DependentUpon>prnChem_05_Molecular_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnChem\prnChem_05_Molecular_03.resx">
+      <DependentUpon>prnChem_05_Molecular_03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnCoding\ptnCoding_Flowchart_01.resx">
+      <DependentUpon>ptnCoding_Flowchart_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnEng\prnEng - Copy - Copy %282%29 - Copy %282%29.resx" />
+    <EmbeddedResource Include="ptnEng\prnEng - Copy - Copy %282%29 - Copy - Copy.resx" />
+    <EmbeddedResource Include="ptnEng\prnEng - Copy - Copy %282%29 - Copy.resx" />
+    <EmbeddedResource Include="ptnEng\prnEng - Copy - Copy %282%29.resx" />
+    <EmbeddedResource Include="ptnEng\prnEng - Copy - Copy %283%29 - Copy.resx" />
+    <EmbeddedResource Include="ptnEng\prnEng - Copy - Copy %283%29.resx" />
+    <EmbeddedResource Include="ptnEng\prnEng - Copy - Copy %284%29.resx" />
+    <EmbeddedResource Include="ptnEng\prnEng - Copy - Copy - Copy %282%29 - Copy.resx" />
+    <EmbeddedResource Include="ptnEng\prnEng - Copy - Copy - Copy %282%29.resx" />
+    <EmbeddedResource Include="ptnEng\prnEng - Copy - Copy - Copy %283%29.resx" />
+    <EmbeddedResource Include="ptnEng\prnEng - Copy - Copy - Copy - Copy %282%29.resx" />
+    <EmbeddedResource Include="ptnEng\prnEng - Copy - Copy - Copy - Copy - Copy.resx" />
+    <EmbeddedResource Include="ptnEng\prnEng - Copy - Copy - Copy - Copy.resx" />
+    <EmbeddedResource Include="ptnEng\prnEng - Copy - Copy - Copy.resx" />
+    <EmbeddedResource Include="ptnEng\prnEng - Copy - Copy.resx" />
+    <EmbeddedResource Include="ptnEng\prnEng - Copy.resx" />
+    <EmbeddedResource Include="ptnEng\prnEng.resx">
+      <DependentUpon>prnEng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnEng\prnEng001CompareTh_En.resx">
+      <DependentUpon>prnEng001CompareTh_En.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnEng\prnEng002SpellingWord.resx">
+      <DependentUpon>prnEng002SpellingWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnEng\prnEng002WordLine.resx">
+      <DependentUpon>prnEng002WordLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnEng\prnEng003Sentences.resx">
+      <DependentUpon>prnEng003Sentences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnEng\prnEngWordSearch.resx">
+      <DependentUpon>prnEngWordSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnEng\prnPrintWord_.resx">
+      <DependentUpon>prnPrintWord_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnEng\WordSearch\GameBoardNew.resx">
+      <DependentUpon>GameBoardNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\01Num\num001CountDrawtolink.resx">
+      <DependentUpon>num001CountDrawtolink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\01Num\num001Num002CountandCircleNumber_01.resx">
+      <DependentUpon>num001Num002CountandCircleNumber_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\01Num\num002CountandCircleNumber.resx">
+      <DependentUpon>num002CountandCircleNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\01Num\num003CountNumberPicture.resx">
+      <DependentUpon>num003CountNumberPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\01Num\num004NumberArabicThaiStringRoman.resx">
+      <DependentUpon>num004NumberArabicThaiStringRoman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\01Num\num007NumberByLine.resx">
+      <DependentUpon>num007NumberByLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\01Num\num007Num_Digit.resx">
+      <DependentUpon>num007Num_Digit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\01Num\num008Odd01Pic.resx">
+      <DependentUpon>num008Odd01Pic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\01Num\num008Odd02Number.resx">
+      <DependentUpon>num008Odd02Number.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\01Num\num011SignificantFigure00.resx">
+      <DependentUpon>num011SignificantFigure00.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\01Num\num011SignificantFigure01.resx">
+      <DependentUpon>num011SignificantFigure01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\01Num\num011SignificantFigure02.resx">
+      <DependentUpon>num011SignificantFigure02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\02Compare\num005MoreThan01Pic.resx">
+      <DependentUpon>num005MoreThan01Pic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\02Compare\num005MoreThan02Number.resx">
+      <DependentUpon>num005MoreThan02Number.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\02Compare\num005NumSortNumber.resx">
+      <DependentUpon>num005NumSortNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\03FractionDecimal\num009Fraction_01.resx">
+      <DependentUpon>num009Fraction_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\03FractionDecimal\num009Fraction_02Compare.resx">
+      <DependentUpon>num009Fraction_02Compare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\03FractionDecimal\num009Fraction_02NumberConvert.resx">
+      <DependentUpon>num009Fraction_02NumberConvert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\03FractionDecimal\num009Fraction_LongDivision.resx">
+      <DependentUpon>num009Fraction_LongDivision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\03FractionDecimal\num011Decimal_01.resx">
+      <DependentUpon>num011Decimal_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\04Factoring\num010NumSubdivision.resx">
+      <DependentUpon>num010NumSubdivision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\04Factoring\num012gcf_lcm.resx">
+      <DependentUpon>num012gcf_lcm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\04Factoring\num012gcf_lcm03_Devide.resx">
+      <DependentUpon>num012gcf_lcm03_Devide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\04Factoring\num012gcf_lcm04_relationships.resx">
+      <DependentUpon>num012gcf_lcm04_relationships.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\05Power\num05_Power.resx">
+      <DependentUpon>num05_Power.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\05Power\num05_PowerbyTen_01.resx">
+      <DependentUpon>num05_PowerbyTen_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\05Power\num013_PowerPerfix_01.resx">
+      <DependentUpon>num013_PowerPerfix_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\05Power\num013_PowerPerfix_02.resx">
+      <DependentUpon>num013_PowerPerfix_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\06DecimalConvert\num06DecimalConvert01.resx">
+      <DependentUpon>num06DecimalConvert01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\num01DecimalConvert.resx">
+      <DependentUpon>num01DecimalConvert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m02OP\01PlusMinus\op001Plus_pic.resx">
+      <DependentUpon>op001Plus_pic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m02OP\01PlusMinus\op002Minus_pic.resx">
+      <DependentUpon>op002Minus_pic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m02OP\01PlusMinus\op003PlusMinus_Subdivision.resx">
+      <DependentUpon>op003PlusMinus_Subdivision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m02OP\01PlusMinus\op004PlusMinus_Num_01.resx">
+      <DependentUpon>op004PlusMinus_Num_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m02OP\01PlusMinus\op004PlusMinus_Num_02.resx">
+      <DependentUpon>op004PlusMinus_Num_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m02OP\01PlusMinus\op005PlusMinus_Num_02Positive.resx">
+      <DependentUpon>op005PlusMinus_Num_02Positive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m02OP\01PlusMinus\op006NumberByLine_PlusMinus.resx">
+      <DependentUpon>op006NumberByLine_PlusMinus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m02OP\01PlusMinus\op010FractionPlusMinus_01Pic.resx">
+      <DependentUpon>op010FractionPlusMinus_01Pic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m02OP\01PlusMinus\op010FractionRuleofthree.resx">
+      <DependentUpon>op010FractionRuleofthree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m02OP\01PlusMinus\op010FractionRuleofthreePercent.resx">
+      <DependentUpon>op010FractionRuleofthreePercent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m02OP\02MultiplyDivide\op007MultipliedDivide_01Num.resx">
+      <DependentUpon>op007MultipliedDivide_01Num.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m02OP\02MultiplyDivide\op007MultipliedDivide_02Num.resx">
+      <DependentUpon>op007MultipliedDivide_02Num.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m02OP\02MultiplyDivide\op007MultipliedDivide_03SubSection.resx">
+      <DependentUpon>op007MultipliedDivide_03SubSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m02OP\02MultiplyDivide\op007MultipliedDivide_04SubSection_Detail.resx">
+      <DependentUpon>op007MultipliedDivide_04SubSection_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m02OP\02MultiplyDivide\op007MultipliedDivide_05Positive.resx">
+      <DependentUpon>op007MultipliedDivide_05Positive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m02OP\02MultiplyDivide\op009Fraction01LongDivision.resx">
+      <DependentUpon>op009Fraction01LongDivision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m02OP\02MultiplyDivide\op009Fraction02SortDivision.resx">
+      <DependentUpon>op009Fraction02SortDivision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m02OP\02MultiplyDivide\op011Multipliedbyten.resx">
+      <DependentUpon>op011Multipliedbyten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m02OP\02MultiplyDivide\op012MultipledFraction.resx">
+      <DependentUpon>op012MultipledFraction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\05Power\num05_PowerbyTen_02.resx">
+      <DependentUpon>num05_PowerbyTen_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\05Power\num05_PowerbyTen_03.resx">
+      <DependentUpon>num05_PowerbyTen_03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m01Num\05Power\num05_PowerbyTen_04.resx">
+      <DependentUpon>num05_PowerbyTen_04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m02OP\03Mix\op010FractionPMMD_02Num.resx">
+      <DependentUpon>op010FractionPMMD_02Num.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m03Stat\st_001Statistics_1.resx">
+      <DependentUpon>st_001Statistics_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m03Stat\st_001Statistics_2.resx">
+      <DependentUpon>st_001Statistics_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m03Stat\st_002chart01dotgraph.resx">
+      <DependentUpon>st_002chart01dotgraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m03Stat\st_002chart02barchart.resx">
+      <DependentUpon>st_002chart02barchart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m03Stat\st_002chart03Piechart.resx">
+      <DependentUpon>st_002chart03Piechart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m03Stat\st_002chart04linegraph.resx">
+      <DependentUpon>st_002chart04linegraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m04Trigono\prnMath_014GaugeAngle_01.resx">
+      <DependentUpon>prnMath_014GaugeAngle_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m04Trigono\prnMath_014GaugeAngle_02.resx">
+      <DependentUpon>prnMath_014GaugeAngle_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m04Trigono\prnMath_015GaugeLength_02.resx">
+      <DependentUpon>prnMath_015GaugeLength_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m04Trigono\prnMath_02Vector_01.resx">
+      <DependentUpon>prnMath_02Vector_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m04Trigono\prnMath_02Vector_02.resx">
+      <DependentUpon>prnMath_02Vector_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m04Trigono\prnMath_02Vector_03.resx">
+      <DependentUpon>prnMath_02Vector_03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m04Trigono\prnMath_03Area_Volume.resx">
+      <DependentUpon>prnMath_03Area_Volume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m05GaugeUnit\prnMath_001DateTime001Time.resx">
+      <DependentUpon>prnMath_001DateTime001Time.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m05GaugeUnit\prnMath_001DateTime002NextTime.resx">
+      <DependentUpon>prnMath_001DateTime002NextTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m05GaugeUnit\prnMath_002DateTime003AD_BE.resx">
+      <DependentUpon>prnMath_002DateTime003AD_BE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m05GaugeUnit\prnMath_002DateTime004AD_BE_Age.resx">
+      <DependentUpon>prnMath_002DateTime004AD_BE_Age.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m05GaugeUnit\prnMath_003DateTimeCompare.resx">
+      <DependentUpon>prnMath_003DateTimeCompare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m05GaugeUnit\prnMath_95DateTime_AD_BE - Copy - Copy.resx" />
+    <EmbeddedResource Include="ptnMth\m05GaugeUnit\prnMath_95DateTime_AD_BE - Copy.resx" />
+    <EmbeddedResource Include="ptnMth\m06Equation\prnMath_013Equation_1_MoneyNoodles.resx">
+      <DependentUpon>prnMath_013Equation_1_MoneyNoodles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m06Equation\prnMath_013Money_1.resx">
+      <DependentUpon>prnMath_013Money_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m06Equation\prnMath_013Money_2.resx">
+      <DependentUpon>prnMath_013Money_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m06Equation\prnMath_013Money_4.resx">
+      <DependentUpon>prnMath_013Money_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m06Equation\prnMath_013Money_ChangeSentence.resx">
+      <DependentUpon>prnMath_013Money_ChangeSentence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m06Equation\prnMath_06Equation_01.resx">
+      <DependentUpon>prnMath_06Equation_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m06Equation\prnMath_06Equation_02.resx">
+      <DependentUpon>prnMath_06Equation_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m09Polynomial\01_Monomial_01.resx">
+      <DependentUpon>01_Monomial_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m09Polynomial\01_Monomial_02.resx">
+      <DependentUpon>01_Monomial_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m09Polynomial\03_Monomial_Factorization_03.resx">
+      <DependentUpon>03_Monomial_Factorization_03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m09Polynomial\03_Monomial_Factorization_02.resx">
+      <DependentUpon>03_Monomial_Factorization_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m09Polynomial\03_Monomial_Factorization_01.resx">
+      <DependentUpon>03_Monomial_Factorization_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m09Polynomial\02_Monomial_Add_01.resx">
+      <DependentUpon>02_Monomial_Add_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\m09Polynomial\01_Monomial_03.resx">
+      <DependentUpon>01_Monomial_03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\prnMath_.resx">
+      <DependentUpon>prnMath_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\prnMath_017Exponent.resx">
+      <DependentUpon>prnMath_017Exponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnMth\prnMath_02Oper10.resx">
+      <DependentUpon>prnMath_02Oper10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnPhy\prnPhysic_01.resx">
+      <DependentUpon>prnPhysic_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnPhy\prnPhysic_Temp.resx">
+      <DependentUpon>prnPhysic_Temp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptnPhy\prnSci_Resistor_01.resx">
+      <DependentUpon>prnSci_Resistor_01.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KidsLearning.Classed\KidsLearning.Classed.csproj">
+      <Project>{db1d7623-3947-40fd-a3f0-34a425fdf90e}</Project>
+      <Name>KidsLearning.Classed</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KidsLearning.Control\KidsLearning.Control.csproj">
+      <Project>{853ec764-1e38-45af-979f-30b02f42c03c}</Project>
+      <Name>KidsLearning.Control</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

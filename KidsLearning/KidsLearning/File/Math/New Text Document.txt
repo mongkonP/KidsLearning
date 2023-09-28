@@ -1,0 +1,62 @@
+ Random r = new Random();
+        List<string> strType = new List<string>{"เส้นเล็ก","เส้นใหญ่","บะหมี่","มาม่า"};
+        List<string> strType_=null;
+        string returnType()
+        {
+            int c = r.Next(0, strType_.Count-1);
+            string _return = strType_[c];
+            strType_.Remove(_return);
+
+            return _return;
+        }
+
+        string returnString()
+        {
+            strType_ = strType;
+            int cAll = r.Next(0, strType.Count - 1);
+            string _return = "ไตเติ้ลกินก๊วยเตี๋ยว โดยสั่ง ";
+            for (int cc = 0; cc <= cAll; cc++)
+            {
+                _return += " \n " + returnType() + " " + ((r.Next(1, 100) > 50) ? " แบบน้ำ " : " แบบแห้ง ") + " ชามละ " + ((r.Next(1, 100) > 50) ? 20 : 15) + " บาท " + r.Next(1, 5) + " ชาม ";
+            }
+
+            return _return;
+        }
+        private void button8_Click(object sender, EventArgs e)
+        {
+           
+            string fileBlank = @"D:\เรียนรู้ ไตเติ้ล\Math\blank.png";
+           
+            for (int i = 0; i < 20;i++ )
+            {
+                System.Threading.Thread.Sleep(1000);
+                string file = @"D:\เรียนรู้ ไตเติ้ล\Math\test "+ i + ".png";
+                File.Copy(fileBlank, file);
+                System.Threading.Thread.Sleep(1000);
+                Bitmap cloneImage = null;
+                using (Bitmap bitMapImage = new Bitmap(file))
+                {
+                    cloneImage = new Bitmap(bitMapImage);
+                }
+               
+               
+
+               // MessageBox.Show(cAll.ToString());
+               
+
+               /* เส้นเล็ก ชามละ " + ((r.Next(1, 100) > 50) ? 20 : 15) + " บาท " + r.Next(1, 5) + " ชาม  เส้นใหญ่  ชามละ " + ((r.Next(1, 100) > 50) ? 20 : 15) + " บาท " + r.Next(1, 5) + " ชาม\n"
+                    + "มาม่า  ชามละ " + ((r.Next(1, 100) > 50) ? 20 : 15) + " บาท " + r.Next(1, 5) + " ชาม\n";*/
+
+                using (cloneImage)
+                {
+                    Graphics graphicImage = Graphics.FromImage(cloneImage);
+                    graphicImage.SmoothingMode = SmoothingMode.AntiAlias;
+                    graphicImage.DrawString(returnString(), new Font("Arial", 18, FontStyle.Bold), SystemBrushes.WindowText, new Point(10, 10));
+
+
+                    System.IO.File.Delete(file);
+
+                    cloneImage.Save(file, ImageFormat.Jpeg);
+                }
+            }
+        }

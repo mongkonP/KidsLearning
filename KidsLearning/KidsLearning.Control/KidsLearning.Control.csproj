@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{853EC764-1E38-45AF-979F-30B02F42C03C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KidsLearning.Control</RootNamespace>
+    <AssemblyName>KidsLearning.Control</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TORServices.Drawings, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\KidsLearning\bin\Debug\TORServices.Drawings.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\KidsLearning\bin\Debug\TORServices.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Maths, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\KidsLearning\bin\Debug\TORServices.Maths.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Network, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\KidsLearning\bin\Debug\TORServices.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.PathFile, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\KidsLearning\bin\Debug\TORServices.PathFile.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Systems, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\KidsLearning\bin\Debug\TORServices.Systems.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EngControl\Eng_Basic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exten\ButtonCollections.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exten\Checknowledge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exten\Choie4Choie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exten\MyProperties.cs" />
+    <Compile Include="Exten\ScorePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exten\ScorePanelInterface.cs" />
+    <Compile Include="Exten\TestPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exten\UserControlPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exten\UserControlPrint.Designer.cs">
+      <DependentUpon>UserControlPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MathControl\Number\Math_01_Number1to50.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MathControl\Number\Math_Distribution.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MathControl\Number\Math_Number01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MathControl\Number\Math_NumberArabicAndThai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MathControl\Number\Math_NumberString.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MathControl\Number\Math_NumberToText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MathControl\Number\Math_TextboxTriNum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MathControl\Number\_Math_01_Number1to50.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MathControl\Operate\Math_operate_.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MathControl\Operate\Math_operate_.Designer.cs">
+      <DependentUpon>Math_operate_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MathControl\Operate\NumberOperater.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ThaiControl\KorKaiChoie4Choie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThaiControl\KorKaiChoieMultiChoie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnitMeasure\balance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnitMeasure\Class1.cs" />
+    <Compile Include="UnitMeasure\clock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnitMeasure\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnitMeasure\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EngControl\Eng_Basic.resx">
+      <DependentUpon>Eng_Basic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exten\ButtonCollections.resx">
+      <DependentUpon>ButtonCollections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exten\Checknowledge.resx">
+      <DependentUpon>Checknowledge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exten\Choie4Choie.resx">
+      <DependentUpon>Choie4Choie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exten\ScorePanel.resx">
+      <DependentUpon>ScorePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exten\TestPanel.resx">
+      <DependentUpon>TestPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exten\UserControlPrint.resx">
+      <DependentUpon>UserControlPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MathControl\Number\Math_01_Number1to50.resx">
+      <DependentUpon>Math_01_Number1to50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MathControl\Number\Math_Distribution.resx">
+      <DependentUpon>Math_Distribution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MathControl\Number\Math_Number01.resx">
+      <DependentUpon>Math_Number01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MathControl\Number\Math_NumberArabicAndThai.resx">
+      <DependentUpon>Math_NumberArabicAndThai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MathControl\Number\Math_NumberString.resx">
+      <DependentUpon>Math_NumberString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MathControl\Number\Math_NumberToText.resx">
+      <DependentUpon>Math_NumberToText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MathControl\Number\Math_TextboxTriNum.resx">
+      <DependentUpon>Math_TextboxTriNum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MathControl\Number\_Math_01_Number1to50.resx">
+      <DependentUpon>_Math_01_Number1to50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MathControl\Operate\Math_operate_.resx">
+      <DependentUpon>Math_operate_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MathControl\Operate\NumberOperater.resx">
+      <DependentUpon>NumberOperater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThaiControl\KorKaiChoie4Choie.resx">
+      <DependentUpon>KorKaiChoie4Choie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThaiControl\KorKaiChoieMultiChoie.resx">
+      <DependentUpon>KorKaiChoieMultiChoie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitMeasure\balance.resx">
+      <DependentUpon>balance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitMeasure\clock.resx">
+      <DependentUpon>clock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitMeasure\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\korkai.png" />
+    <None Include="Resources\images %28custom%29.jpg" />
+    <None Include="Resources\images %28custom%29 %282%29.jpg" />
+    <None Include="Resources\if_package_graphics_6610.png" />
+    <None Include="Resources\if_microscope-lab-science-school_2824435.png" />
+    <None Include="Resources\if_finance_financial_report_1889193.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\eng.png" />
+    <None Include="Resources\divide.png" />
+    <None Include="Resources\ClockP %28Custom%29.jpg" />
+    <None Include="Resources\bye.jpg" />
+    <None Include="Resources\wrong.png" />
+    <None Include="Resources\wrong.gif" />
+    <None Include="Resources\wait2.gif" />
+    <None Include="Resources\untitled.png" />
+    <None Include="Resources\untitled %28custom%29.png" />
+    <None Include="Resources\toolbox %28custom%29.png" />
+    <None Include="Resources\school.png" />
+    <None Include="Resources\right.png" />
+    <None Include="Resources\right.gif" />
+    <None Include="Resources\menu_print.png" />
+    <None Include="Resources\math.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KidsLearning.Classed\KidsLearning.Classed.csproj">
+      <Project>{db1d7623-3947-40fd-a3f0-34a425fdf90e}</Project>
+      <Name>KidsLearning.Classed</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log ou.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="TORServices.Forms">
+      <HintPath>..\KidsLearning\KidsLearning\bin\Debug\TORServices.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Maths">
+      <HintPath>..\KidsLearning\KidsLearning\bin\Debug\TORServices.Maths.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Network">
+      <HintPath>..\KidsLearning\KidsLearning\bin\Debug\TORServices.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.PathFile">
+      <HintPath>..\KidsLearning\KidsLearning\bin\Debug\TORServices.PathFile.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Systems">
+      <HintPath>..\KidsLearning\KidsLearning\bin\Debug\TORServices.Systems.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
